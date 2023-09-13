@@ -5,6 +5,7 @@ function SpawnRegions()
 	return {
 		{ name = "Muldraugh, KY", file = "media/maps/Muldraugh, KY/spawnpoints.lua" },
 		{ name = "West Point, KY", file = "media/maps/West Point, KY/spawnpoints.lua" },
+		{ name = "Petroville", file = "steamapps/workshop/content/108600/2886261613/mods/Petroville/media/maps/Petroville/spawnpoints.lua" },
 		-- Uncomment the line below to add a custom spawnpoint for this server.
 --		{ name = "Twiggy's Bar", serverfile = "servertest_spawnpoints.lua" },
 	}
