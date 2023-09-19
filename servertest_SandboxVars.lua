@@ -185,7 +185,7 @@ SandboxVars = {
     -- Number of days until 100% growth. -1 means no growth. Zero means use the Erosion Speed option. Maximum 36,500 (100 years). Minimum=-1 Maximum=36500 Default=0
     ErosionDays = 0,
     -- Modifies the base XP gain from actions by this number. Minimum=0.00 Maximum=1000.00 Default=1.00
-    XpMultiplier = 0.2,
+    XpMultiplier = 0.5,
     -- Determines if the XP multiplier affects passively levelled skills eg. Fitness and Strength.
     XpMultiplierAffectsPassive = true,
     -- Use this to multiply or reduce engine general loudness. Minimum=0.00 Maximum=100.00 Default=1.00
@@ -197,7 +197,7 @@ SandboxVars = {
     -- 2 = Fast
     -- 3 = Normal
     -- 4 = Slow
-    Farming = 3,
+    Farming = 2,
     -- Controls the time it takes for food to break down in a composter. Default=2 Weeks
     -- 1 = 1 Week
     -- 2 = 2 Weeks
@@ -299,15 +299,15 @@ SandboxVars = {
     -- 1 = Never
     -- 2 = Once
     -- 3 = Sometimes
-    Helicopter = 1,
+    Helicopter = 3,
     -- How often zombie attracting metagame events like distant gunshots will occur. Default=Sometimes
     -- 1 = Never
     -- 2 = Sometimes
-    MetaEvent = 3,
+    MetaEvent = 2,
     -- Governs night-time metagame events during the player's sleep. Default=Never
     -- 1 = Never
     -- 2 = Sometimes
-    SleepingEvent = 3,
+    SleepingEvent = 2,
     -- Increase/decrease the chance of electrical generators spawning on the map. Default=Sometimes
     -- 1 = Extremely Rare
     -- 2 = Rare
@@ -356,7 +356,7 @@ SandboxVars = {
     -- 1 = Pitch Black
     -- 2 = Dark
     -- 3 = Normal
-    NightDarkness = 3,
+    NightDarkness = 2,
     -- Governs the time from dusk to dawn. Default=Normal
     -- 1 = Always Night
     -- 2 = Long
@@ -507,7 +507,7 @@ SandboxVars = {
         -- 1 = Sprinters
         -- 2 = Fast Shamblers
         -- 3 = Shamblers
-        Speed = 2,
+        Speed = 3,
         -- Controls the damage zombies inflict per attack. Default=Normal
         -- 1 = Superhuman
         -- 2 = Normal
@@ -590,7 +590,7 @@ SandboxVars = {
         -- Set by the "Zombie Count" population option. 4.0 = Insane, Very High = 3.0, 2.0 = High, 1.0 = Normal, 0.35 = Low, 0.0 = None. Minimum=0.00 Maximum=4.00 Default=1.00
         PopulationMultiplier = 3.0,
         -- Adjusts the desired population at the start of the game. Minimum=0.00 Maximum=4.00 Default=1.00
-        PopulationStartMultiplier = 3.0,
+        PopulationStartMultiplier = 1.0,
         -- Adjusts the desired population on the peak day. Minimum=0.00 Maximum=4.00 Default=1.50
         PopulationPeakMultiplier = 4.0,
         -- The day when the population reaches it's peak. Minimum=1 Maximum=365 Default=28
@@ -600,7 +600,7 @@ SandboxVars = {
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Minimum=0.00 Maximum=8760.00 Default=16.00
         RespawnUnseenHours = 168.0,
         -- The fraction of a cell's desired population that may respawn every RespawnHours. Minimum=0.00 Maximum=1.00 Default=0.10
-        RespawnMultiplier = 0.1,
+        RespawnMultiplier = 0.25,
         -- The number of hours that must pass before zombies migrate to empty parts of the same cell. If zero, migration is disabled. Minimum=0.00 Maximum=8760.00 Default=12.00
         RedistributeHours = 168.0,
         -- The distance a zombie will try to walk towards the last sound it heard. Minimum=10 Maximum=1000 Default=100
@@ -614,126 +614,42 @@ SandboxVars = {
         -- How close members of a group stay to the group's leader. Minimum=1 Maximum=10 Default=3
         RallyGroupRadius = 10,
     },
-    -- CartographyModifier = {
-    --     -- TRUE = the admin will not be subject to the restrictions, such as invisible buildings etc... if FALSE = he will be subject to the restrictions.
-    --     AdminIsNotRestricted = false,
-    --     -- Choose the type of display of the buildings on the map, you have 3 choices:
-    --     -- 
-    --     -- 0 = None
-    --     -- 1 = All of the same color (grey)
-    --     -- 2 = Vanilla (multiple colors)< br> Minimum=0 Maximum=2 Default=1
-    --     BuildingStyleOnWorldMap = 1,
-    --     -- You have the possibility to put all the structures in a uniform color on the map (roads, forest...):
-    --     -- 
-    --     -- TRUE = All of the same color
-    --     -- FALSE = Vanilla
-    --     UniformColorOnWorldMap = false,
-    --     -- You have the possibility to set the Global gamma of the structures on the map:
-    --     -- 
-    --     -- 0 = Black
-    --     -- 120 = Dark grey
-    --     -- 150 = Light grey
-    --     --  Minimum=0 Maximum=255 Default=0
-    --     AdditionalColorOnWorldMap = 0,
-    --     -- FALSE = Forests and trees will not be visible on the map.
-    --     ForestStyleOnWorldMap = true,
-    --     -- You have the option to adjust the brightness of the forest, if you approach 0, and add gamma, it will be grey:
-    --     -- 
-    --     -- 0 = Very dark
-    --     -- 5 = Dark
-    --     -- 10 = Bright Minimum=0 Maximum=10 Default=10
-    --     ForestStyleOnWorldMapBrightnessfactor = 10,
-    --     -- You have the possibility to adjust the gamma to the forest, if the brightness is very dark, by increasing this number, you will have gray :
-    --     -- 
-    --     -- 0 = Black
-    --     -- 120 = Dark gray<br >150 = Light gray
-    --     --  Minimum=0 Maximum=255 Default=0
-    --     ForestStyleOnWorldMapAdditionalColor = 0,
-    --     -- FALSE = Rivers, lakes and various water points will not be visible on the map.
-    --     WaterStyleOnWorldMap = true,
-    --     -- FALSE = Principal roads will not be visible on the map.
-    --     RoadPrimaryStyleOnWorldMap = true,
-    --     -- FALSE = Secondary roads will not be visible on the map.
-    --     RoadSecondaryStyleOnWorldMap = true,
-    --     -- FALSE = Tertiary roads will not be visible on the map.
-    --     RoadTertiaryStyleOnWorldMap = true,
-    --     -- FALSE = Pathways roads will not be visible on the map.
-    --     RoadTrailStyleOnWorldMap = true,
-    --     -- FALSE = Railways roads will not be visible on the map.
-    --     RailwayStyleOnWorldMap = true,
-    --     -- If the Darker map mod is present, and Uniform color on the map = FALSE, you have the possibility to adjust the global luminosity of the structures on the map (roads, forest...):
-    --     -- 
-    --     -- 0 = Very dark
-    --     -- 5 = Dark
-    --     -- 10 = Bright
-    --     --  Minimum=0 Maximum=10 Default=8
-    --     BrightnessfactorDarkerMap = 8,
-    --     -- If the Darker map mod is present, you have the option to adjust the brightness of the map background:
-    --     -- 
-    --     -- 0 = Very dark
-    --     -- 5 = Dark
-    --     -- 10 = Bright
-    --     --  Minimum=0 Maximum=10 Default=8
-    --     BrightnessBackGroundfactorDarkerMap = 8,
-    --     -- If the Darker map mod is present, you have the possibility to adjust the brightness of the unvisited areas on the map and the minimap (the fog):
-    --     -- 
-    --     -- 0 = Very dark
-    --     -- 5 = Dark<br >10 = Bright
-    --     --  Minimum=0 Maximum=10 Default=5
-    --     BrightnessUnvisitefactorDarkerMap = 5,
-    --     -- If the Darker map mod is present, and Uniform color on the minimap = FALSE, you have the possibility to adjust the global luminosity of the structures on the minimap (roads, forest...):
-    --     -- 
-    --     -- 0 = Very dark
-    --     -- 5 = Dark
-    --     -- 10 = Bright
-    --     --  Minimum=0 Maximum=10 Default=9
-    --     BrightnessfactorDarkerMiniMap = 9,
-    --     -- If the Darker map mod is present, you have the option to adjust the brightness of the minimap background:
-    --     -- 
-    --     -- 0 = Very dark
-    --     -- 5 = Dark
-    --     -- 10 = Bright
-    --     --  Minimum=0 Maximum=10 Default=10
-    --     BrightnessBackGroundfactorDarkerMiniMap = 10,
-    --     -- Choose the type of display of the buildings on the minimap, you have 3 choices:
-    --     -- 
-    --     -- 0 = None
-    --     -- 1 = All of the same color (grey)
-    --     -- 2 = Vanilla (multiple colors)< br> Minimum=0 Maximum=2 Default=1
-    --     BuildingStyleOnMiniMap = 1,
-    --     -- You have the possibility to put all the structures in a uniform color on the minimap (roads, forest...):
-    --     -- 
-    --     -- TRUE = All of the same color
-    --     -- FALSE = Vanilla
-    --     UniformColorOnMiniMap = false,
-    --     -- You have the possibility to set the Global gamma of the structures on the minimap:
-    --     -- 
-    --     -- 0 = Black
-    --     -- 120 = Dark grey
-    --     -- 150 = Light grey
-    --     --  Minimum=0 Maximum=255 Default=0
-    --     AdditionalColorOnMiniMap = 0,
-    --     -- FALSE = Forests and trees will not be visible on the minimap.
-    --     ForestStyleOnMiniMap = true,
-    --     -- FALSE = Rivers, lakes and various water points will not be visible on the minimap.
-    --     WaterStyleOnMiniMap = true,
-    --     -- FALSE = Principal roads will not be visible on the minimap.
-    --     RoadPrimaryStyleOnMiniMap = true,
-    --     -- FALSE = Secondary roads will not be visible on the minimap.
-    --     RoadSecondaryStyleOnMiniMap = true,
-    --     -- FALSE = Tertiary roads will not be visible on the minimap.
-    --     RoadTertiaryStyleOnMiniMap = true,
-    --     -- FALSE = Pathways roads will not be visible on the minimap.
-    --     RoadTrailStyleOnMiniMap = true,
-    --     -- FALSE = Railways roads will not be visible on the minimap.
-    --     RailwayStyleOnMiniMap = true,
-    --     -- If TRUE and the itemGPS mod is present: If you have a gps turned on, the settings of the cartographic structures of the minimap will be applied to the map.
-    --     -- 
-    --     itemGPSByPass = true,
-    --     -- If TRUE and the itemGPS mod is present: the textures of some gps will go dark to have a good aesthetic rendering.
-    --     -- 
-    --     itemGPSdarkMod = false,
-    -- },
+    ProxInv = {
+        -- Enable this if you want the Proximity Inventory to work only on zombies
+        ZombieOnly = true,
+    },
+    RadioFrequencyManager = {
+        -- All players start with these channels in their RFM already defined
+        EnablePredefinedChannels = false,
+        -- Input format MUST BE: freq1;channel1|freq2|channel2
+        PredefinedChannels = "89.4;Hitz FM|93.2;LBMW - Kentucky Radio|98;NNR Radio|101.2;KnoxTalk Radio",
+        -- 1: Green, 2: Yellow, 3: Red, 4: Gray Minimum=1 Maximum=4 Default=1
+        DefaultColor = 1,
+    },
+    FirstAidOverhaul = {
+        -- From this level onward, the Player will be able to treat fractures.  Minimum=0 Maximum=10 Default=1
+        FractureTreatmentLevel = 1,
+        -- From this level onward, the Player will be able to stitch wounds.  Minimum=0 Maximum=10 Default=2
+        StitchingTreatmentLevel = 2,
+        -- From this level onward, the Player won't have a chance to fail wound treatments.  Minimum=0 Maximum=10 Default=4
+        FailureLevelThreshold = 4,
+        -- The chance of failure when treating wounds.  Minimum=0 Maximum=100 Default=30
+        FailureChance = 30,
+        -- How many in-game minutes before you can practice first aid on corpses again.  Minimum=1 Maximum=1440 Default=60
+        PracticeCooldown = 1,
+        -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=10
+        BandagePracticeXP = 10,
+        -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=25
+        SuturePracticeXP = 25,
+        -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=50
+        StudyPracticeXP = 50,
+        -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=75
+        ScalpelPracticeXP = 75,
+        -- Makes wound treatment faster or slower.  Minimum=0.10 Maximum=5.00 Default=1.00
+        SpeedMultiplier = 2.0,
+        -- Display cheaty info of wounds when at Level 8 or higher. 
+        ShowDebugInfo = true,
+    },
     WaterPipes = {
         SmartPipes = true,
         -- Minimum=3 Maximum=100 Default=20
@@ -743,7 +659,7 @@ SandboxVars = {
     DynamicMonolog = {
         -- Chance that when your character can speak, will.
         -- Certain actions will give speech 100% of the time. Minimum=1 Maximum=100 Default=85
-        ChanceToSpeak = 85,
+        ChanceToSpeak = 70,
         -- If true, then your character will not say coded lines, for example: "UI_DM_SpottedZombieFirst_Veteran0"
         -- Keep in mind, reporting bugs will be pretty much impossible, because you don't know if something went wrong.
         -- It's recommended you turn this on if you're hosting a server or doing a youtube playthrough.
@@ -874,7 +790,7 @@ SandboxVars = {
         -- Changes the amount of loot on dead zombies.  It does not impact on vanilla loot, just the 'extra' loot added by Hydrocraft (which includes some vanilla items). Default=Normal (default)
         -- 1 = Normal (default)
         -- 2 = Low
-        ZombieLoot = 2,
+        ZombieLoot = 1,
     },
     MIR = {
         -- Will not add maintenance as a skill to repair recipes for these items. Uses item IDs, not their names. Separate them with ';' for example Axe; HandAxe
@@ -1308,13 +1224,13 @@ SandboxVars = {
     },
     SkillRecoveryJournal = {
         -- The amount of experienced recovered from reading bound journals. Minimum=1 Maximum=100 Default=100
-        RecoveryPercentage = 75,
+        RecoveryPercentage = 100,
         -- A multiplier on the speed of transcribing journals. Minimum=0.00 Maximum=1000.00 Default=1.00
         TranscribeSpeed = 15.0,
         -- A multiplier on the speed of reading bound journals. Minimum=0.00 Maximum=1000.00 Default=1.00
         ReadTimeSpeed = 12.0,
         -- Starting with more than 1 point in a skill generally nets you bonus XP - with this toggled off that XP is not recorded. All XP recorded is that of a character with no starting skills. This does NOT recover starting levels - only the bonus XP earned.
-        RecoverProfessionAndTraitsBonuses = false,
+        RecoverProfessionAndTraitsBonuses = true,
         -- Toggling this on will allow people to transcribe XP earned from watching TV/VHS. Note: This means players can carry over watched XP between characters cumulatively.
         TranscribeTVXP = true,
         -- Toggle on to record passive skills.
@@ -1426,13 +1342,13 @@ SandboxVars = {
         -- 7 = 15x
         -- 8 = 25x
         -- 9 = 50x
-        FitnessBoost = 1,
+        FitnessBoost = 3,
         -- Increases the chance to gain fitness XP from all activities other than exercise. Default=Vanilla
         -- 1 = 3.5x
         -- 2 = 2.3x
         -- 3 = 1.4x
         -- 4 = Vanilla
-        FitnessChance = 4,
+        FitnessChance = 3,
         -- Increases the strength XP you gain from all activities other than exercise. Default=Vanilla
         -- 1 = 0.5x
         -- 2 = Vanilla
@@ -1443,13 +1359,13 @@ SandboxVars = {
         -- 7 = 7.5x
         -- 8 = 12.5x
         -- 9 = 25x
-        StrengthBoost = 2,
+        StrengthBoost = 5,
         -- Increases the chance to gain strength XP from all activities other than exercise. Default=Vanilla
         -- 1 = 3.5x
         -- 2 = 2.3x
         -- 3 = 1.4x
         -- 4 = Vanilla
-        StrengthChance = 4,
+        StrengthChance = 3,
     },
     DecreasingLoot = {
         -- The day the chance to remove items will start increasing proportionally every day, from the starting chance setting to the peak chance setting. Minimum=0 Maximum=1000 Default=2
@@ -1598,11 +1514,11 @@ SandboxVars = {
     },
     FC4WorkingTreadmill = {
         -- Minimum=0.00 Maximum=100.00 Default=1.00
-        FitnessXPMultiply = 1.0,
+        FitnessXPMultiply = 5.0,
         -- Minimum=0.00 Maximum=100.00 Default=1.00
-        StrengthXPMultiply = 1.0,
+        StrengthXPMultiply = 5.0,
         -- Minimum=0.00 Maximum=100.00 Default=1.00
-        SprintingXPMultiply = 1.0,
+        SprintingXPMultiply = 5.0,
     },
     PassiveSkillsFix = {
         -- Additional multiplier for passive skills Minimum=1.00 Maximum=999.00 Default=2.00
@@ -1696,8 +1612,6 @@ SandboxVars = {
         CContainers = 2,
         -- If Enabled You'll be Able to Craft Fanny Packs
         CraftableFannyPack = true,
-        -- Respawn Recipes are Used for Respawning Items with Unaltered Values. Don't Enable Unless They're Needed.
-        Recipes = false,
     },
     CustomizableBackpacks = {
         -- Affects the WeightReduction of Backpacks. Normal sets the Values to Vanilla Values. For Well Balanced/Balanced Values(Including Randomized), Check out "The Options Guide". 75 through Weightless sets a Static Value for WeightReduction. Custom Values Allow You to Set them Yourself Under "Advanced Customizable Characteristics". Default=Well Balanced
@@ -2106,7 +2020,7 @@ SandboxVars = {
         Weight = 1,
     },
     CustomizableClothing = {
-        -- DON'T USE WITH RANDOMIZED OPTIONS - Fanny Pack Slot: Allows Equpping 1 Fanny Pack with a Satchel & Backpack, Ammo Strap Slot: Allows Equpping 2 Fanny Packs with a Sathel & Backpack Default=Fanny Pack Slot
+        -- Fanny Pack Slot: Allows Equpping 1 Fanny Pack with a Satchel & Backpack, Ammo Strap Slot: Allows Equpping 2 Fanny Packs with a Sathel & Backpack Default=Fanny Pack Slot
         -- 1 = Disabled
         -- 2 = Fanny Pack Slot
         SatchelWearable = 2,
@@ -2130,6 +2044,10 @@ SandboxVars = {
     CustomizablePickUp = {
         -- Allows You to Equip Insanely Heavy Backpacks, but ONLY Backpacks. Other Container Types use Different Functions to Equip.
         Limit = false,
+    },
+    CustomizableRespawn = {
+        -- This Setting is for Respawning Items with Unwanted Values. Once Enabled, just Right Click a Container in Your Inventory and Select "Respawn". Doesn't Need to be Enabled All the Time
+        Respawnable = false,
     },
     FancyHandwork = {
         -- Player Firearm Level to change to Tactical Aiming animation. <LINE> Set to 0 to always use this.  Set to 11 to never. Minimum=0 Maximum=11 Default=3
