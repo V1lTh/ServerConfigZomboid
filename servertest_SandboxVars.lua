@@ -36,7 +36,7 @@ SandboxVars = {
     -- 23 = 21 Hours
     -- 24 = 22 Hours
     -- 25 = 23 Hours
-    DayLength = 4,
+    DayLength = 3,
     StartYear = 1,
     -- Default=July
     -- 1 = January
@@ -50,8 +50,8 @@ SandboxVars = {
     -- 9 = September
     -- 10 = October
     -- 11 = November
-    StartMonth = 4,
-    StartDay = 2,
+    StartMonth = 3,
+    StartDay = 1,
     -- Default=9 AM
     -- 1 = 7 AM
     -- 2 = 9 AM
@@ -70,7 +70,7 @@ SandboxVars = {
     -- 5 = 0-1 Year
     -- 6 = 0-5 Years
     -- 7 = 2-6 Months
-    WaterShut = 2,
+    WaterShut = 1,
     -- Default=0-30 Days
     -- 1 = Instant
     -- 2 = 0-30 Days
@@ -79,7 +79,7 @@ SandboxVars = {
     -- 5 = 0-1 Year
     -- 6 = 0-5 Years
     -- 7 = 2-6 Months
-    ElecShut = 2,
+    ElecShut = 1,
     -- Minimum=-1 Maximum=2147483647 Default=14
     WaterShutModifier = 14,
     -- Minimum=-1 Maximum=2147483647 Default=14
@@ -115,7 +115,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    SurvivalGearsLoot = 2,
+    SurvivalGearsLoot = 3,
     -- Default=Rare
     -- 1 = None (not recommended)
     -- 2 = Insanely Rare
@@ -147,7 +147,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    AmmoLoot = 2,
+    AmmoLoot = 3,
     -- Default=Rare
     -- 1 = None (not recommended)
     -- 2 = Insanely Rare
@@ -155,7 +155,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    MechanicsLoot = 2,
+    MechanicsLoot = 3,
     -- Everything else. Also affects foraging for all items in Town/Road zones. Default=Rare
     -- 1 = None (not recommended)
     -- 2 = Insanely Rare
@@ -163,7 +163,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    OtherLoot = 2,
+    OtherLoot = 3,
     -- Controls the global temperature. Default=Normal
     -- 1 = Very Cold
     -- 2 = Cold
@@ -185,9 +185,9 @@ SandboxVars = {
     -- Number of days until 100% growth. -1 means no growth. Zero means use the Erosion Speed option. Maximum 36,500 (100 years). Minimum=-1 Maximum=36500 Default=0
     ErosionDays = 0,
     -- Modifies the base XP gain from actions by this number. Minimum=0.00 Maximum=1000.00 Default=1.00
-    XpMultiplier = 0.5,
+    XpMultiplier = 0.3,
     -- Determines if the XP multiplier affects passively levelled skills eg. Fitness and Strength.
-    XpMultiplierAffectsPassive = true,
+    XpMultiplierAffectsPassive = false,
     -- Use this to multiply or reduce engine general loudness. Minimum=0.00 Maximum=100.00 Default=1.00
     ZombieAttractionMultiplier = 1.0,
     -- Governs whether cars are locked, need keys to start etc.
@@ -197,7 +197,7 @@ SandboxVars = {
     -- 2 = Fast
     -- 3 = Normal
     -- 4 = Slow
-    Farming = 2,
+    Farming = 3,
     -- Controls the time it takes for food to break down in a composter. Default=2 Weeks
     -- 1 = 1 Week
     -- 2 = 2 Weeks
@@ -206,7 +206,7 @@ SandboxVars = {
     -- 5 = 6 Weeks
     -- 6 = 8 Weeks
     -- 7 = 10 Weeks
-    CompostTime = 1,
+    CompostTime = 2,
     -- How fast character's hunger, thirst and fatigue will decrease. Default=Normal
     -- 1 = Very Fast
     -- 2 = Fast
@@ -218,14 +218,14 @@ SandboxVars = {
     -- 2 = Poor
     -- 3 = Normal
     -- 4 = Abundant
-    NatureAbundance = 3,
+    NatureAbundance = 2,
     -- Default=Sometimes
     -- 1 = Never
     -- 2 = Extremely Rare
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    Alarm = 4,
+    Alarm = 5,
     -- How frequently homes and buildings will be discovered locked Default=Very Often
     -- 1 = Never
     -- 2 = Extremely Rare
@@ -256,7 +256,7 @@ SandboxVars = {
     -- 4 = Every Month
     LootRespawn = 1,
     -- When > 0, loot will not respawn in zones that have been visited within this number of in-game hours. Minimum=0 Maximum=2147483647 Default=0
-    SeenHoursPreventLootRespawn = 0,
+    SeenHoursPreventLootRespawn = 1780,
     -- A comma-separated list of item types that will be removed after HoursForWorldItemRemoval hours.
     WorldItemRemovalList = "Base.Hat,Base.Glasses,Base.Maggots,EHE.EvacuationFlyer,EHE.EmergencyFlyer,EHE.QuarantineFlyer,EHE.PreventionFlyer,EHE.NoticeFlyer",
     -- Number of hours since an item was dropped on the ground before it is removed.  Items are removed the next time that part of the map is loaded.  Zero means items are not removed. Minimum=0.00 Maximum=2147483647.00 Default=24.00
@@ -282,70 +282,70 @@ SandboxVars = {
     -- 2 = High
     -- 3 = Normal
     -- 4 = Low
-    PlantResilience = 3,
+    PlantResilience = 2,
     -- Controls the yield of plants when harvested. Default=Normal
     -- 1 = Very Poor
     -- 2 = Poor
     -- 3 = Normal
     -- 4 = Abundant
-    PlantAbundance = 3,
+    PlantAbundance = 1,
     -- Recovery from being tired from performing actions Default=Normal
     -- 1 = Very Fast
     -- 2 = Fast
     -- 3 = Normal
     -- 4 = Slow
-    EndRegen = 3,
+    EndRegen = 2,
     -- How regularly helicopters pass over the event zone. Default=Once
     -- 1 = Never
     -- 2 = Once
     -- 3 = Sometimes
-    Helicopter = 3,
+    Helicopter = 4,
     -- How often zombie attracting metagame events like distant gunshots will occur. Default=Sometimes
     -- 1 = Never
     -- 2 = Sometimes
-    MetaEvent = 2,
+    MetaEvent = 3,
     -- Governs night-time metagame events during the player's sleep. Default=Never
     -- 1 = Never
     -- 2 = Sometimes
-    SleepingEvent = 2,
+    SleepingEvent = 3,
     -- Increase/decrease the chance of electrical generators spawning on the map. Default=Sometimes
     -- 1 = Extremely Rare
     -- 2 = Rare
     -- 3 = Sometimes
     -- 4 = Often
-    GeneratorSpawning = 1,
+    GeneratorSpawning = 2,
     -- How much fuel is consumed per in-game hour. Minimum=0.00 Maximum=100.00 Default=1.00
-    GeneratorFuelConsumption = 1.0,
+    GeneratorFuelConsumption = 0.2,
     -- Increase/decrease probability of discovering randomized safe houses on the map: either burnt out, containing loot stashes, dead survivor bodies etc. Default=Rare
     -- 1 = Never
     -- 2 = Extremely Rare
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    SurvivorHouseChance = 3,
+    SurvivorHouseChance = 2,
     -- Default=Rare
     -- 1 = Never
     -- 2 = Extremely Rare
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    VehicleStoryChance = 3,
+    VehicleStoryChance = 2,
     -- Default=Rare
     -- 1 = Never
     -- 2 = Extremely Rare
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    ZoneStoryChance = 3,
+    ZoneStoryChance = 2,
     -- Impacts on how often a looted map will have annotations marked on it by a deceased survivor. Default=Sometimes
     -- 1 = Never
     -- 2 = Extremely Rare
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    AnnotatedMapChance = 3,
+    AnnotatedMapChance = 2,
     -- Adds free points during character creation. Minimum=-100 Maximum=100 Default=0
-    CharacterFreePoints = 5,
+    CharacterFreePoints = 0,
     -- Gives player-built constructions extra hit points so they are more resistant to zombie damage. Default=Normal
     -- 1 = Very Low
     -- 2 = Low
@@ -356,7 +356,7 @@ SandboxVars = {
     -- 1 = Pitch Black
     -- 2 = Dark
     -- 3 = Normal
-    NightDarkness = 2,
+    NightDarkness = 3,
     -- Governs the time from dusk to dawn. Default=Normal
     -- 1 = Always Night
     -- 2 = Long
@@ -381,7 +381,7 @@ SandboxVars = {
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    BloodLevel = 4,
+    BloodLevel = 3,
     -- Governs how quickly clothing degrades, becomes dirty, and bloodied. Default=Normal
     -- 1 = Disabled
     -- 2 = Slow
@@ -418,7 +418,7 @@ SandboxVars = {
     -- 2 = Very Low
     -- 3 = Low
     -- 4 = Normal
-    CarSpawnRate = 3,
+    CarSpawnRate = 2,
     -- Governs the chances of finding vehicles with gas in the tank. Default=Low
     -- 1 = Low
     -- 2 = Normal
@@ -439,7 +439,7 @@ SandboxVars = {
     -- 6 = High
     -- 7 = Very High
     -- 8 = Full
-    FuelStationGas = 5,
+    FuelStationGas = 3,
     -- How gas-hungry vehicles on the map are. Minimum=0.00 Maximum=100.00 Default=1.00
     CarGasConsumption = 1.0,
     -- Default=Rare
@@ -448,13 +448,13 @@ SandboxVars = {
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    LockedCar = 3,
+    LockedCar = 5,
     -- General condition of vehicles discovered on the map Default=Low
     -- 1 = Very Low
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    CarGeneralCondition = 2,
+    CarGeneralCondition = 1,
     -- Governs the amount of damage dealt to vehicles that crash. Default=Normal
     -- 1 = Very Low
     -- 2 = Low
@@ -466,7 +466,7 @@ SandboxVars = {
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    DamageToPlayerFromHitByACar = 1,
+    DamageToPlayerFromHitByACar = 2,
     -- Enable or disable traffic jams that spawn on the main roads of the map.
     TrafficJam = true,
     -- How frequently cars will be discovered with an alarm. Default=Extremely Rare
@@ -475,11 +475,11 @@ SandboxVars = {
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    CarAlarm = 2,
+    CarAlarm = 4,
     -- Enable or disable player getting damage from being in a car accident.
     PlayerDamageFromCrash = true,
     -- How many in-game hours before a wailing siren shuts off. Minimum=0.00 Maximum=168.00 Default=0.00
-    SirenShutoffHours = 0.0,
+    SirenShutoffHours = 1.0,
     --  Governs whether player can discover a car that has been maintained and cared for after the infection struck. Default=Low
     -- 1 = None
     -- 2 = Low
@@ -497,6 +497,41 @@ SandboxVars = {
     MaggotSpawn = 1,
     -- The higher the value, the longer lightbulbs last before breaking. If 0, lightbulbs will never break. Does not affect vehicle headlights. Minimum=0.00 Maximum=1000.00 Default=1.00
     LightBulbLifespan = 0.0,
+    -- Reduces the spawning of vehicles A LOT. Recommended that the "Car Spawn Rate" is set to "Very Low".
+    VehicleSuperLowSpawn = false,
+    -- Chance of finding vehicles with their parts in poor condition. If you select "All", it is recommended that the "General Condition" option is set to "Very Low" Default=None
+    -- 1 = None
+    -- 2 = Low
+    -- 3 = Normal
+    -- 4 = High
+    VehicleConditionExtremelyLow = 1,
+    -- Chance of finding vehicles with a charged battery. This option only affects if the "Months since apocalypse" option is 12. Default=None
+    -- 1 = None
+    -- 2 = Very low
+    -- 3 = Low
+    -- 4 = Normal
+    -- 5 = High
+    VehicleBatteryChance = 1,
+    -- This option defines whether vehicles in the world may be missing parts.
+    VehicleMayBeIncomplete = false,
+    -- Only affects if the option "Vehicles may be incomplete" is activated. Default=Normal
+    -- 1 = Low
+    -- 2 = Normal
+    -- 3 = High
+    VehicleIncompleteProb = 2,
+    -- The number of parts that vehicles may be missing (in probability). Default=Normal
+    -- 1 = Low
+    -- 2 = Normal
+    -- 3 = High
+    VehicleMissingPartsQuantity = 2,
+    -- This option determines whether the amount of fuel in vehicles will be randomized. The maximum fuel amount is half of the fuel tank capacity. It does not affect vehicles of recent survivors.
+    VehicleRandomGasAmount = false,
+    -- Minimum=0 Maximum=100 Default=100
+    AT_Blood = 100,
+    AT_VehicleDamageenable = true,
+    ATY_safezone_protect = true,
+    ATY_nonpvp_protect = true,
+    ATY_damagedisplay = false,
     Map = {
         AllowMiniMap = true,
         AllowWorldMap = true,
@@ -507,7 +542,7 @@ SandboxVars = {
         -- 1 = Sprinters
         -- 2 = Fast Shamblers
         -- 3 = Shamblers
-        Speed = 3,
+        Speed = 2,
         -- Controls the damage zombies inflict per attack. Default=Normal
         -- 1 = Superhuman
         -- 2 = Normal
@@ -537,12 +572,12 @@ SandboxVars = {
         -- 3 = 0-1 Minutes
         -- 4 = 0-12 Hours
         -- 5 = 2-3 Days
-        Reanimate = 3,
+        Reanimate = 2,
         -- Controls zombie intelligence. Default=Basic Navigation
         -- 1 = Navigate + Use Doors
         -- 2 = Navigate
         -- 3 = Basic Navigation
-        Cognition = 4,
+        Cognition = 3,
         -- Controls which zombies can crawl under vehicles. Default=Often
         -- 1 = Crawlers Only
         -- 2 = Extremely Rare
@@ -550,7 +585,7 @@ SandboxVars = {
         -- 4 = Sometimes
         -- 5 = Often
         -- 6 = Very Often
-        CrawlUnderVehicle = 6,
+        CrawlUnderVehicle = 5,
         -- Controls how long zombies remember players after seeing or hearing. Default=Normal
         -- 1 = Long
         -- 2 = Normal
@@ -590,17 +625,17 @@ SandboxVars = {
         -- Set by the "Zombie Count" population option. 4.0 = Insane, Very High = 3.0, 2.0 = High, 1.0 = Normal, 0.35 = Low, 0.0 = None. Minimum=0.00 Maximum=4.00 Default=1.00
         PopulationMultiplier = 3.0,
         -- Adjusts the desired population at the start of the game. Minimum=0.00 Maximum=4.00 Default=1.00
-        PopulationStartMultiplier = 1.0,
+        PopulationStartMultiplier = 2.0,
         -- Adjusts the desired population on the peak day. Minimum=0.00 Maximum=4.00 Default=1.50
         PopulationPeakMultiplier = 4.0,
         -- The day when the population reaches it's peak. Minimum=1 Maximum=365 Default=28
         PopulationPeakDay = 365,
         -- The number of hours that must pass before zombies may respawn in a cell. If zero, spawning is disabled. Minimum=0.00 Maximum=8760.00 Default=72.00
-        RespawnHours = 2160.0,
+        RespawnHours = 1200.0,
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Minimum=0.00 Maximum=8760.00 Default=16.00
         RespawnUnseenHours = 168.0,
         -- The fraction of a cell's desired population that may respawn every RespawnHours. Minimum=0.00 Maximum=1.00 Default=0.10
-        RespawnMultiplier = 0.25,
+        RespawnMultiplier = 0.1,
         -- The number of hours that must pass before zombies migrate to empty parts of the same cell. If zero, migration is disabled. Minimum=0.00 Maximum=8760.00 Default=12.00
         RedistributeHours = 168.0,
         -- The distance a zombie will try to walk towards the last sound it heard. Minimum=10 Maximum=1000 Default=100
@@ -608,660 +643,310 @@ SandboxVars = {
         -- The size of groups real zombies form when idle. Zero means zombies don't form groups. Groups don't form inside buildings or forest zones. Minimum=0 Maximum=1000 Default=20
         RallyGroupSize = 0,
         -- The distance real zombies travel to form groups when idle. Minimum=5 Maximum=50 Default=20
-        RallyTravelDistance = 50,
+        RallyTravelDistance = 20,
         -- The distance between zombie groups. Minimum=5 Maximum=25 Default=15
-        RallyGroupSeparation = 25,
+        RallyGroupSeparation = 15,
         -- How close members of a group stay to the group's leader. Minimum=1 Maximum=10 Default=3
-        RallyGroupRadius = 10,
+        RallyGroupRadius = 3,
     },
-    ProxInv = {
-        -- Enable this if you want the Proximity Inventory to work only on zombies
-        ZombieOnly = true,
+    PlayerConnectionMessage = {
+        -- Set to 'true' to disable death messages including kills
+        disableDeathMessage = true,
+        -- Set to 'true' to disable kill messages only
+        disableKillMessage = true,
+        -- Set to 'true' to hide admin connection messages
+        hideAdmin = false,
+        -- Set to 'true' to hide moderator connection messages
+        hideModerator = false,
+        -- Set to 'true' to hide staff connection messages
+        hideStaff = false,
+        -- Set the Red value of the connection message from 0.0 to 1.0 Minimum=0.00 Maximum=1.00 Default=0.00
+        connectedMessageColorRed = 0.0,
+        -- Set the Green value of the connection message from 0.0 to 1.0 Minimum=0.00 Maximum=1.00 Default=0.70
+        connectedMessageColorGreen = 0.7,
+        -- Set the Blue value of the connection message from 0.0 to 1.0 Minimum=0.00 Maximum=1.00 Default=1.00
+        connectedMessageColorBlue = 1.0,
+        -- Set the Red value of the disconnection message from 0.0 to 1.0 Minimum=0.00 Maximum=1.00 Default=1.00
+        disconnectedMessageColorRed = 1.0,
+        -- Set the Green value of the disconnection message from 0.0 to 1.0 Minimum=0.00 Maximum=1.00 Default=0.30
+        disconnectedMessageColorGreen = 0.3,
+        -- Set the Blue value of the disconnection message from 0.0 to 1.0 Minimum=0.00 Maximum=1.00 Default=0.00
+        disconnectedMessageColorBlue = 0.0,
     },
-    RadioFrequencyManager = {
-        -- All players start with these channels in their RFM already defined
-        EnablePredefinedChannels = false,
-        -- Input format MUST BE: freq1;channel1|freq2|channel2
-        PredefinedChannels = "89.4;Hitz FM|93.2;LBMW - Kentucky Radio|98;NNR Radio|101.2;KnoxTalk Radio",
-        -- 1: Green, 2: Yellow, 3: Red, 4: Gray Minimum=1 Maximum=4 Default=1
-        DefaultColor = 1,
+    RandomSoundEvents = {
+        -- Disable random sound events from happening.
+        disabled = false,
+        -- Zombies do not hear the sounds and won't be following it.
+        deafZombies = false,
+        -- Set the minimum amount of in-game minutes before the next random sound event triggers. Minimum=1.00 Maximum=10000000.00 Default=60.00
+        minCooldownMinutes = 400.0,
+        -- Set the maximum amount of in-game minutes before the next random sound event triggers. Minimum=1.00 Maximum=10000000.00 Default=120.00
+        maxCooldownMinutes = 500.0,
     },
-    FirstAidOverhaul = {
-        -- From this level onward, the Player will be able to treat fractures.  Minimum=0 Maximum=10 Default=1
-        FractureTreatmentLevel = 1,
-        -- From this level onward, the Player will be able to stitch wounds.  Minimum=0 Maximum=10 Default=2
-        StitchingTreatmentLevel = 2,
-        -- From this level onward, the Player won't have a chance to fail wound treatments.  Minimum=0 Maximum=10 Default=4
-        FailureLevelThreshold = 4,
-        -- The chance of failure when treating wounds.  Minimum=0 Maximum=100 Default=30
-        FailureChance = 30,
-        -- How many in-game minutes before you can practice first aid on corpses again.  Minimum=1 Maximum=1440 Default=60
-        PracticeCooldown = 1,
-        -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=10
-        BandagePracticeXP = 10,
-        -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=25
-        SuturePracticeXP = 25,
-        -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=50
-        StudyPracticeXP = 50,
-        -- How much XP the Player receives when performing this practice in a corpse.  Minimum=1 Maximum=1000 Default=75
-        ScalpelPracticeXP = 75,
-        -- Makes wound treatment faster or slower.  Minimum=0.10 Maximum=5.00 Default=1.00
-        SpeedMultiplier = 2.0,
-        -- Display cheaty info of wounds when at Level 8 or higher. 
-        ShowDebugInfo = true,
+    RandomSoundEvents_RandomGuns = {
+        -- Disable RandomGuns completely.
+        disabled = false,
+        -- The amount of days before Gun fire starts. Minimum=0.00 Maximum=999999999.00 Default=7.00
+        daysSinceApocalypse = 1.0,
+        -- The amount of days before Gun fire stops. Minimum=0.00 Maximum=999999999.00 Default=30.00
+        daysSinceApocalypseEnd = 9.99999999E8,
+        -- Disable player getting stressed and panicked during Gun fire.
+        disableFear = false,
+        -- Disable player from waking up during Gun Shots.
+        disableWakingUp = false,
     },
-    WaterPipes = {
-        SmartPipes = true,
-        -- Minimum=3 Maximum=100 Default=20
-        SmartPipesFillMax = 50,
-        SmartPipesUpdateNotWatered = true,
+    RandomSoundEvents_DyingGunFire = {
+        -- Disable DyingGunFire completely.
+        disabled = false,
+        -- The amount of days before Screaming Gun fire starts. Minimum=0.00 Maximum=999999999.00 Default=7.00
+        daysSinceApocalypse = 1.0,
+        -- The amount of days before Screaming Gun fire stops. Minimum=0.00 Maximum=999999999.00 Default=30.00
+        daysSinceApocalypseEnd = 9.9999999E7,
+        -- Disable player getting stressed and panicked during Screaming Gun fire.
+        disableFear = false,
+        -- Disable player from waking up during Dying Gun fire.
+        disableWakingUp = false,
     },
-    DynamicMonolog = {
-        -- Chance that when your character can speak, will.
-        -- Certain actions will give speech 100% of the time. Minimum=1 Maximum=100 Default=85
-        ChanceToSpeak = 70,
-        -- If true, then your character will not say coded lines, for example: "UI_DM_SpottedZombieFirst_Veteran0"
-        -- Keep in mind, reporting bugs will be pretty much impossible, because you don't know if something went wrong.
-        -- It's recommended you turn this on if you're hosting a server or doing a youtube playthrough.
-        PreventErrorLine = true,
+    RandomSoundEvents_Sirens = {
+        -- Disable sirens completely.
+        disabled = false,
+        -- The amount of days before sirens start. Minimum=0.00 Maximum=999999999.00 Default=7.00
+        daysSinceApocalypse = 1.0,
+        -- The amount of days before sirens stop. Minimum=0.00 Maximum=999999999.00 Default=30.00
+        daysSinceApocalypseEnd = 15.0,
+        -- Disable player getting stressed and panicked during a siren.
+        disableFear = true,
+        -- Disable player getting waking up during a siren.
+        disableWakingUp = false,
     },
-    ExpandedHeli = {
-        -- The day the scheduler will start assigning events to. Minimum=0 Maximum=999 Default=0
-        StartDay = 0,
-        -- How long will the scheduler run from the start day.  The scheduler will adjust event progression to fit this duration. Minimum=1 Maximum=999 Default=90
-        SchedulerDuration = 168,
-        -- Toggle this on so that the scheduler will spawn events passed the duration limit. Events will still progress through stages according to the duration but events will never stop being scheduled.
-        ContinueScheduling = true,
-        -- When "Continue Scheduling Forever" is toggle on, this toggled on makes the scheduler only use late-game events.
-        ContinueSchedulingLateGameOnly = true,
-        -- Whether weather will prevent events, or cause their crash.
-        WeatherImpactsEvents = true,
-        -- How frequent jet events occur.  Jets fly by players causing horde movement. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_jet = 3,
-        -- How frequent Police events occur.  The police will take matters into their own hands and escort citizens around while firing on zombies. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_police = 5,
-        -- How frequent news events occur.  News choppers will hone in on any citizen they find and follow them around for a short time. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_news_chopper = 5,
-        -- How frequent military events occur.  The military will progress through stages: warn citizens, purge the undead, then ultimately purge anything that moves. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_military = 5,
-        -- How frequent FEMA aid drop events occur.  FEMA will conduct aid drops early on in the apocalypse. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_FEMA_drop = 4,
-        -- How frequent samaritan events occur.  Samaritans will drop off supplies to help survivors. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_samaritan_drop = 5,
-        -- How frequent survivor events occur.  Survivors will only flyby on scouting missions causing horde movement. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_survivor_heli = 3,
-        -- How frequent raider events occur.  Raiders will hone in on survivors to torment them for some entertainment. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_raiders = 4,
+    RandomSoundEvents_Disasters = {
+        -- Disable disasters completely.
+        disabled = false,
+        -- The amount of days before disasters start. Minimum=0.00 Maximum=999999999.00 Default=14.00
+        daysSinceApocalypse = 14.0,
+        -- The amount of days before disasters end. Minimum=0.00 Maximum=999999999.00 Default=999999999.00
+        daysSinceApocalypseEnd = 9.99999999E8,
+        -- Disable player auto speech when a disaster happen.
+        disableSpeech = false,
+        -- Disable player getting stressed and panicked during a disaster.
+        disableFear = false,
+        -- Disable player getting waking up during a disaster.
+        disableWakingUp = false,
     },
-    ExpandedHotwire = {
-        AllowHotwire = true,
-        AllowHotwireBurglar = true,
-        -- Minimum=0 Maximum=10 Default=1
-        HotwireElectricity = 1,
-        -- Minimum=0 Maximum=10 Default=2
-        HotwireMechanics = 2,
-        -- Minimum=0 Maximum=2147483647 Default=200
-        HotwireBaseDuration = 200,
-        -- Minimum=-2147483647 Maximum=2147483647 Default=3
-        HotwireElectricityScalar = 3,
-        -- Minimum=-2147483647 Maximum=2147483647 Default=0
-        HotwireMechanicsScalar = 0,
-        AllowUnHotwire = true,
-        -- Minimum=0 Maximum=10 Default=1
-        UnHotwireElectricity = 1,
-        -- Minimum=0 Maximum=10 Default=2
-        UnHotwireMechanics = 2,
-        -- Minimum=0 Maximum=2147483647 Default=200
-        UnHotwireBaseDuration = 200,
-        -- Minimum=-2147483647 Maximum=2147483647 Default=3
-        UnHotwireElectricityScalar = 3,
-        -- Minimum=-2147483647 Maximum=2147483647 Default=0
-        UnHotwireMechanicsScalar = 0,
-        AllowKeyCrafting = true,
-        -- Minimum=0 Maximum=10 Default=2
-        KeyCraftingElectricity = 2,
-        -- Minimum=0 Maximum=10 Default=4
-        KeyCraftingMechanics = 4,
-        -- Minimum=0 Maximum=10 Default=6
-        KeyCraftingMetalWelding = 6,
-        -- Minimum=0 Maximum=2147483647 Default=2000
-        KeyCraftingBaseDuration = 2000,
-        -- Minimum=-2147483647 Maximum=2147483647 Default=1
-        KeyCraftingElectricityScalar = 1,
-        -- Minimum=-2147483647 Maximum=2147483647 Default=2
-        KeyCraftingMechanicsScalar = 2,
-        -- Minimum=-2147483647 Maximum=2147483647 Default=3
-        KeyCraftingMetalWeldingScalar = 3,
-    },
-    Hydrocraft = {
-        SpawnHydrocraftGuns = true,
-        -- Give book covers when you remove the cover of a book? (Useless item)
-        SpawnBookCovers = true,
-        SpawnCigaretteButts = false,
-        ShowDamage = true,
-        LowConditionWeaponsOnZombies = false,
-        -- Changes the burn damage received when using the Kiln, Smelter, Blast Furnace and Industrial Furnace. Default=Full (default)
-        -- 1 = Full (default)
-        -- 2 = Half
-        BurnDamage = 3,
-        -- Can farm animals starve to death? Default=Yes (default)
-        -- 1 = Yes (default)
-        AnimalStarvation = 1,
-        -- Changes the amount of loot on dead zombies.  It does not impact on vanilla loot, just the 'extra' loot added by Hydrocraft (which includes some vanilla items). Default=Normal (default)
-        -- 1 = Normal (default)
-        -- 2 = Low
-        ZombieLoot = 1,
-    },
-    MIR = {
-        -- Will not add maintenance as a skill to repair recipes for these items. Uses item IDs, not their names. Separate them with ';' for example Axe; HandAxe
-        SkipItems = "",
-        -- Will not add maintenance as a skill to repair recipes that already have one of the specified skills. Uses skill names. Separate them with ';' for example Aiming: Mechanics
-        SkipSkills = "Mechanics;Aiming",
-        SkipFixers = "",
-    },
-    MoreBuildPluss = {
-        -- Set the permission level that more build can be used in the server. if setting, only players with the specified permission level can build. By default, there is no permission limit. Default=None
+    ISA = {
+        -- How often Battery Bank will charge Default=Every Ten Minutes
+        -- 1 = Every Ten Minutes
+        ChargeFreq = 1,
+        -- Regular Generator calculation has less performance impact Default=Regular Generator
+        -- 1 = "ISA"
+        DrainCalc = 2,
+        -- Solar panel power efficiency
+        -- 12% is realistic for 1993
+        -- 25% is modern solar
+        -- default is unrealistic Minimum=1 Maximum=100 Default=25
+        solarPanelEfficiency = 75,
+        -- Multiplier for the average degrade of batteries. Decreasing this will dramatically increase battery life. Minimum=0 Maximum=1000 Default=100
+        batteryDegradeChance = 5,
+        -- Crafted DIY battery capacity multiplier. Minimum=1 Maximum=10000 Default=100
+        DIYBatteryMultiplier = 100,
+        -- How likely pre-placed solar panels and crates are to spawn at a given spawn location.
+        -- Requires external API to work. Minimum=0 Maximum=100 Default=25
+        solarPanelWorldSpawns = 25,
+        -- Rarity of Battery Bank spawning on the map. Default=Rare
         -- 1 = None
-        -- 2 = Observer
-        -- 3 = GM
-        -- 4 = Overseer
-        -- 5 = Moderator
-        BuildingPermission = 1,
+        -- 2 = Very Rare
+        -- 3 = Rare
+        BatteryBankSpawn = 3,
+        -- Choose mode for Stash Houses.
+        -- Change only on new game. Default=Don't add
+        -- 1 = Don't add
+        -- 2 = Add map items
+        -- 3 = Add map items and random initial
+        StashMode = 2,
+        -- Solar panel spawns in random containers and pre-placed crates multiplier Minimum=0.00 Maximum=100.00 Default=1.00
+        LRMSolarPanels = 1.0,
+        -- Batteries spawns in random containers and pre-placed crates multiplier Minimum=0.00 Maximum=100.00 Default=1.00
+        LRMBatteries = 1.0,
+        -- Magazine and inverter spawns in random containers and pre-placed crates multiplier Minimum=0.00 Maximum=100.00 Default=1.00
+        LRMMisc = 1.0,
+        -- Base number of in-game minutes it takes to connect one panel Minimum=1 Maximum=1000 Default=120
+        ConnectPanelMin = 1,
+        -- Allows to craft solar panels and inverters
+        enableExpandedRecipes = true,
     },
-    MoreTraits = {
-        -- The amount of bandages given by the Prepare Medical trait. Minimum=1 Maximum=999 Default=4
-        PreparedMedicalBandageAmount = 4,
-        -- Players who choose the Prepared: Cars trait start with a gas can.
-        PreparedCarGasToggle = true,
-        -- Whether or not players who take the Injured trait can receive burns as a random injury.
-        -- Burns can be extremely debilitating especially if on the legs.
-        InjuredBurns = true,
-        -- Players who take the Alcoholic trait start with a free bottle of alcohol.
-        AlcoholicFreeDrink = true,
-        SmokerStart = true,
-        -- The percent degree to which Lucky and Unlucky traits affect traits from this mod.
-        -- 0% means lucky and unlucky have no effect on traits. Minimum=0 Maximum=200 Default=100
-        LuckImpact = 100,
-        -- How many hours (on average) should an alcoholic need to drink to sate their need?
-        -- Lower values mean Alcoholics need to drink frequently to avoid withdrawal. Minimum=1 Maximum=720 Default=24
-        AlcoholicFrequency = 24,
-        -- After how many hours without alcohol should an alcoholic start suffering withdrawal symptoms?
-        -- This value should be higher than Alcoholic Drink Frequency. Minimum=1 Maximum=720 Default=72
-        AlcoholicWithdrawal = 72,
-        -- The percent value that XP is reduced by for those who take a Specialization trait.
-        -- Set to 0% to disable XP reduction. Minimum=0 Maximum=90 Default=75
-        SpecializationXPPercent = 75,
-        -- The percent chance that a player who has the Bouncer trait will trigger its effect.
-        -- This is rolled every tick, so 60 times/second for as long as the player has at least two or more zombies near them.
-        -- Increasing this value by even a small amount can dramatically overpower Bouncer. Minimum=1 Maximum=100 Default=5
-        BouncerEffectiveness = 5,
-        -- How many ticks between Bouncer shoves.
-        -- 60 ticks = 1 second
-        -- Reducing this value can dramatically overpower Bouncer. Minimum=1 Maximum=240 Default=60
-        BouncerCooldown = 60,
-        -- The distance (in tile squares) from the player out to which Bouncer begins attempting to shove enemies away. 
-        -- Lower values means Bouncer will take effect only at closer ranges to the player. Minimum=0.25 Maximum=5.00 Default=1.75
-        BouncerDistance = 1.75,
-        -- The percent amount extra Fitness/Strength XP a player receives from working out if they have the Gym Goer trait.
-        -- Setting this to 100% means no extra XP is gained. Minimum=100 Maximum=1000 Default=200
-        GymGoerPercent = 200,
-        -- Should Gym Goer affect Exercise Fatigue?
-        -- If this option is un-checked, players with Gym Goer will suffer from exercise fatigue as normal.
-        GymGoerNoExerciseFatigue = true,
-        -- If true, Indefatigable trait can be used only once per character.
-        -- If false, it will recharge based on the option below.
-        -- Note: If false, it will cure zombification only once.
-        IndefatigableOneUse = true,
-        -- After how many in-game days should the indefatigable ability recharge?
-        -- Note: This option will only work if "Indefatigable One Use" option is disabled. Minimum=7 Maximum=30 Default=7
-        IndefatigableRecharge = 7,
-        -- A percent value representing how effective the Gordanite trait makes players with Crowbars.
-        -- Setting this to 200% will make Gordanite twice as powerful. Minimum=0 Maximum=1000 Default=100
-        GordaniteEffectiveness = 100,
-        -- A percent value representing how strong the scaling in damage for Martial Artist is.
-        -- Setting this to 50% would halve all damage. Minimum=25 Maximum=1000 Default=100
-        MartialScaling = 100,
-        -- If this is enabled, knocking down zombies with Battering Ram trait will damage them if you have Martial Artist trait.
-        BatteringRamMartialCombo = true,
-        -- The percent chance that a player with the Evasive trait will dodge an attack.
-        -- Setting this to 100% will make players with Evasive immune to zombies. Minimum=0 Maximum=100 Default=33
-        EvasiveChance = 33,
-        -- If enabled, Evasive has no "being hit" animation when it activates
-        EvasiveAnimation = true,
-        -- If true, Evasive can dodge attacks from other players.
-        EvasiveBlocksPVP = false,
-        -- The chance in X how frequently a player with Butterfingers will drop an item.
-        -- The base chance is 5, so by default this value would be a 5/2000 chance calculated every in-game minute.
-        -- Lowering this value could result in players constantly dropping their items. Minimum=100 Maximum=10000 Default=2000
-        ButterfingersChance = 2000,
-        -- The % chance that a player with the Grave Robber trait will find extra loot on a zombie corpse. Chance is rounded down to nearest 0.1% Minimum=0.10 Maximum=100.00 Default=1.00
-        GraveRobberChance = 1.0,
-        -- How much guaranteed extra loot will Grave Robber's find on zombie corpses?
-        -- By default, a random value is determined. Increasing this value guarantees extra loot whenever loot is rolled. Minimum=0 Maximum=10 Default=1
-        GraveRobberGuaranteedLoot = 1,
-        -- A percent value representing the chance that a player with the Scrounger trait will find extra loot in any container.
-        -- 100% would make every container have extra loot. Minimum=1 Maximum=100 Default=20
-        ScroungerChance = 20,
-        -- A percent value representing how likely any item in a container is to be duplicated by Scrounger.
-        -- For example: Scrounger Chance is the percent chance that any given container will potentially have extra loot in it.
-        -- Once a container passes this initial check, another series of checks is run - for every single item inside that container, a die is rolled to determine if that item is duplicated.
-        -- If for instance, this value is set to 100%, then whenever Scrounger is triggered, the entire contents of that container will be duplicated.
-        -- If Scrounger Chance, and Scrounger Item Chance are both 100%, then anyone with the Scrounger trait will find double the loot in every container. Minimum=1 Maximum=100 Default=10
-        ScroungerItemChance = 10,
-        -- A percent value representing how much extra loot players with the Scrounger trait will find when Scrounger triggers.
-        -- 100% would double the amount of extra loot players find.
-        -- This value always rounds up, so even a single item can potentially be doubled.
-        -- This effect is most noticed in stacks of items such as cigarettes or ammunition. Minimum=10 Maximum=1000 Default=30
-        ScroungerLootModifier = 30,
-        -- A percent value representing the chance that a player with the Incomprehensive trait will find fewer items in any container.
-        -- Setting this to 100% would make every container lose some items. Minimum=1 Maximum=100 Default=10
-        IncomprehensiveChance = 10,
-        -- A percent value representing the chance that a player with the Vagabond trait will find extra food in a garbage bin.
-        -- Setting this to 100% would make every trash bin contain extra food. Minimum=1 Maximum=100 Default=33
-        VagabondChance = 33,
-        -- How many extra food items is a player with the Vagabond trait guaranteed to find in a garbage bin?
-        -- By default, a random value between 0 and 2 is selected. This value adds to that range.
-        -- (eg; roll a random number between 0 and 2 and then add x, where x is this value.) Minimum=0 Maximum=10 Default=1
-        VagabondGuaranteedExtraLoot = 1,
-        -- Defines the base inventory carry capacity for those who take the Pack Mule trait.
-        -- This is the base value before applying bonuses from Strength. Minimum=1 Maximum=100 Default=10
-        WeightPackMule = 10,
-        -- Defines the base inventory carry capacity for those who take the Pack Mouse trait.
-        -- This is the base value before applying bonuses from Strength. Minimum=1 Maximum=100 Default=6
-        WeightPackMouse = 6,
-        -- Defines the base inventory carry capacity for players with neither Pack Mule nor Pack Mouse traits.
-        -- This is the base value before applying bonuses from Strength. Minimum=1 Maximum=100 Default=8
-        WeightDefault = 8,
-        -- Gives bonus inventory carry capacity to all players.
-        -- You can set a negative value to reduce all player inventory capacity globally as well. Minimum=-100 Maximum=100 Default=0
-        WeightGlobalMod = 0,
-        -- How much extra time is added to TimedActions being performed by players with the Quick Worker trait.
-        -- Higher values make TimedActions perform more rapidly.
-        -- This is a fine granular value with 100 translating to a 0.1 (10%) increase in speed. Minimum=1 Maximum=1000 Default=100
-        QuickWorkerScaler = 100,
-        -- How much longer it takes to perform TimedActions.
-        -- Higher values make TimedActions perform more slowly.
-        -- Setting this too high can make it excruciatingly slow to do any actions - especially reading books. Minimum=5 Maximum=50 Default=15
-        SlowWorkerScaler = 15,
-        -- Limit the amount of free recipes granted by Ingenuitive?
-        -- By default, all recipes are taught for players who have Ingenuitive.
-        -- Turning this on allows you to limit how much they learn instead.
-        IngenuitiveLimit = false,
-        -- What percent of unknown recipes should be learned by Ingenuitive?
-        -- This is randomly chosen out of all available recipes. Minimum=5 Maximum=95 Default=50
-        IngenuitiveLimitAmount = 50,
-        -- By default, Martial Artist will only deal damage if the player is unarmed.
-        -- If enabled, players' shoves will still deal damage even if they are wielding a weapon.
-        -- If this option is disabled, you can still benefit from Martial Artist with an item in your Secondary slot (Flashlight, Bag, etc). It only checks if the Primary slot is equipped.
-        MartialWeapons = false,
-        -- How rare Antique Collector items are.
-        -- This value is representative of a 1 in X roll.
-        -- Higher values mean drops happen less frequently. Minimum=100 Maximum=10000 Default=1500
-        AntiqueChance = 1500,
-        -- If true, Antique Collector trait will be able to find antique items anywhere, instead of only in crates and metal shelves.
-        AntiqueAnywhere = false,
-        -- Players who take the Deprived trait will still be allowed to keep a belt.
-        -- Belts are ordinarily difficult to obtain through normal play without killing other players or mods which add them to loot tables.
-        ForgivingDeprived = false,
-        -- Players who take the alcoholic trait can never die from alcohol poisoning, but will still suffer periodic withdrawal.
-        NonlethalAlcoholic = false,
-        -- After how much days should Second Wind recharge? Minimum=1 Maximum=30 Default=14
-        SecondWindCooldown = 14,
-        -- How much extra endurance should hardy give? Minimum=5 Maximum=50 Default=25
-        HardyEndurance = 25,
-        -- Minimum days that a Super Immune character takes to heal the sickness. Minimum=5 Maximum=60 Default=10
-        SuperImmuneMinDays = 10,
-        -- Maximum days that a Super Immune character takes to heal the sickness. Minimum=5 Maximum=60 Default=30
-        SuperImmuneMaxDays = 30,
-        -- If true, any infections after the first one was cured will only last half as long.
-        -- Note: If caught multiple infections, it can still reach maximum days.
-        SuperImmuneFirstInfectionBonus = true,
-        -- If this setting is on, Super Immune will not be able to defend your body if it caught several infections.
-        SuperImmuneWeakness = false,
-        -- If true, Super Immune is 6 times faster than normal.
-        -- Preferably used in multiplayer games where you can't fast forward time.
-        QuickSuperImmune = false,
-        -- Chance for a player with Immunocompromised to get infected by a zombie attack.
-        -- Setting this value to 100 will make every zombie attack infectious. Minimum=0 Maximum=100 Default=25
-        ImmunoChance = 25,
-        -- If true, Prowess: Guns will have a chance to not consume ammo. Not exactly lore-wise friendly, but fun.
-        ProwessGunsAmmoRestore = true,
-        -- If you run both More Traits and Expended Traits, they both have perks that update carry weight.
-        -- If this is checked on, Hoarder (from Expended Traits) and carry weight from this mod (Pack Mule/Mouse) will stack. Which means that whatever carry weight you get with Pack Mule/Pack Mouse will be multiplied by 1.25.
-        -- If this is checked off, and you have both perks (Hoarder and Pack Mule/Mouse) either Hoarder or Pack Mouse/Mule will run its code first meaing I honestly don't know if your max weight will be calculated by Hoarder code or Pack Mule code
-        HoarderCompatibility = true,
-        -- Distance at which Burn Ward Patient gets activated by fire.
-        -- Keep in mind, the higher this value is, the more panic and anxiety you will get from being close.
-        -- Warning: Higher values might lead to FPS issues Minimum=5 Maximum=50 Default=20
-        BurnedDistance = 20,
-        -- Panic you will get from Burn Ward Patient.<Br>Scaling works by repeatedly adding panic until max distance number is reached, starting from distance of closest fire.
-        -- What this means is, if fire is 1 tile away and max is 20, it will give 20x panic than this number. This happens every one minute in-game. Minimum=1 Maximum=10 Default=1
-        BurnedPanic = 1,
-        -- Stress you will get from Burn Ward Patient.<Br>Scaling works by repeatedly adding stress until max distance number is reached, starting from distance of closest fire.
-        -- What this means is, if fire is 1 tile away and max is 20, it will give 20x stress than this number. This happens every one minute in-game. Minimum=1 Maximum=10 Default=1
-        BurnedStress = 1,
+    VehicleRecycling = {
+        -- The following parts must be uninstalled before dismantling: hood, trunk lid, doors, windows, seats.
+        UninstallParts = false,
+        -- Minimum=1 Maximum=100 Default=1
+        ActionTimeMultiplier = 1,
     },
-    KillCount = {
-        -- May provoke stutters.
-        doExport = false,
-        -- Includes all kills into the final value in Post Death floating text.
-        includePostDeathUI = true,
-        -- Target time (in milliseconds) between two updates in multiplayer. Small value gives reactivity. High value reduces network use and server workload. Minimum=0 Maximum=10000000 Default=500
-        MaxUpdateDelay = 500,
-        -- Each client can see every character score. Deactivate on (very large) servers to reduce Global Mod Data transfer load.
-        shareOnServer = true,
-        -- Dead characters are kept and count toward server kills. Deactivate for server that never wipe.
-        keepTrackOfDead = true,
-    },
-    MoreTraitsDynamic = {
-        AntiGunActivistDynamic = true,
-        -- Minimum=0 Maximum=10 Default=6
-        AntiGunActivistDynamicSkill = 6,
-        -- Firearms Minimum=0 Maximum=100000 Default=600
-        AntiGunActivistDynamicKill = 600,
-        -- Requires scavenging skill mod, otherwise always static
-        AntiqueCollectorDynamic = false,
-        -- Minimum=0 Maximum=10 Default=10
-        AntiqueCollectorDynamicSkill = 10,
-        AsceticDynamic = true,
-        -- Minimum=0 Maximum=10 Default=5
-        AsceticDynamicSkill = 5,
-        BouncerDynamic = true,
-        -- Minimum=0 Maximum=10 Default=7
-        BouncerDynamicSmallBlunt = 7,
-        -- Minimum=0 Maximum=10 Default=7
-        BouncerDynamicStrength = 7,
-        EvasiveDynamic = true,
-        -- Fitness + Sprinting + Lightfoot + Nimble + Sneak Minimum=0 Maximum=50 Default=40
-        EvasiveDynamicSkill = 40,
-        FastDynamic = true,
-        -- Sprinting + Lightfoot + Nimble + Sneak Minimum=0 Maximum=40 Default=30
-        FastDynamicSkill = 30,
-        FastWorkerDynamic = true,
-        -- Carpentry + Cooking + Farming + First Aid + electrical + Metalworking + Mechanics + Tailoring Minimum=0 Maximum=80 Default=60
-        FastWorkerDynamicSkill = 60,
-        FlexibleDynamic = true,
-        -- Minimum=0 Maximum=10 Default=4
-        FlexibleDynamicSkill = 4,
-        GordaniteDynamic = false,
-        -- Minimum=0 Maximum=10 Default=6
-        GordaniteDynamicSkill = 6,
-        -- Long Blunt Minimum=0 Maximum=100000 Default=300
-        GordaniteDynamicKill = 300,
-        GourmandDynamic = false,
-        -- Minimum=0 Maximum=10 Default=9
-        GourmandDynamicSkill = 9,
-        -- Requires scavenging skill mod, otherwise always static
-        GraverobberDynamic = false,
-        -- Minimum=0 Maximum=10 Default=8
-        GraverobberDynamicSkill = 8,
-        -- Minimum=0 Maximum=100000 Default=1000
-        GraverobberDynamicKill = 1000,
-        GruntWorkerDynamic = true,
-        -- Minimum=0 Maximum=10 Default=4
-        GruntWorkerDynamicSmallBlunt = 4,
-        -- Minimum=0 Maximum=10 Default=5
-        GruntWorkerDynamicWoodwork = 5,
-        -- Short blunt Minimum=0 Maximum=100000 Default=200
-        GruntWorkerDynamicKill = 200,
-        GymGoerDynamic = true,
-        -- Strength + Fitness Minimum=0 Maximum=20 Default=14
-        GymGoerDynamicSkill = 14,
-        HardyDynamic = true,
-        -- Minimum=0 Maximum=10 Default=7
-        HardyDynamicSkill = 7,
-        IdealWeightDynamic = true,
-        -- How many days you have to keep your weight between 78 and 82 to earn the trait. Check is made every in-game hour. Minimum=0 Maximum=100000 Default=21
-        IdealWeightDynamicTargetDaysToObtain = 21,
-        -- How many hours you can be not between 78-82 weight while earning the trait and not reset your progress. Check is made every in-game hour. Minimum=0 Maximum=100000 Default=24
-        IdealWeightDynamicObtainGracePeriod = 24,
-        -- How fast you earn 'grace period' hours that later are used up before you lose the trait if you're not between 75-85 weight. Default multiplier of 1 earns you 1 grace period hour for every 12h of keeping weight 78-82 (Basically 0.0834 grace hours for each 1h). Higher multiplier = faster gain of grace hours. Lower multiplier = slower gain of grace hours. Minimum=0.00 Maximum=100.00 Default=1.00
-        IdealWeightDynamicLoseGracePeriodMultiplier = 1.0,
-        -- How many hours can you 'earn' on counter that later will be used before you lose your Ideal Weight trait if your weight is not between 75-85 Minimum=0 Maximum=100000 Default=18
-        IdealWeightDynamicLoseGracePeriodCap = 18,
-        ImmunocompromisedDynamic = true,
-        -- How many hours does wounds on your body need to be infected for to loose Immunocompromised. Each body part is counted separately so if you have 3 infected wounds, you'd earn +3 to the counter in 1h. Minimum=0 Maximum=100000 Default=2000
-        ImmunocompromisedDynamicInfectionTime = 2000,
-        -- Requires scavenging skill mod, otherwise always static
-        IncomprehensiveDynamic = true,
-        -- Minimum=0 Maximum=10 Default=4
-        IncomprehensiveDynamicSkill = 4,
-        IndefatigableDynamic = true,
-        -- Strength + Fitness + Sprinting + Lightfoot + Nimble + Sneak + Axe + Blunt + SmallBlunt + LongBlade + SmallBlade + Spear Minimum=0 Maximum=120 Default=110
-        IndefatigableDynamicSkill = 110,
-        LeadFootDynamic = true,
-        -- Finish zombies by stomping them. Only last hit needs to be stomp Minimum=0 Maximum=50000 Default=200
-        LeadFootDynamicKill = 200,
-        MartialArtistDynamic = true,
-        -- Minimum=0 Maximum=10 Default=6
-        MartialArtistDynamicSmallBlunt = 6,
-        -- Minimum=0 Maximum=10 Default=6
-        MartialArtistDynamicFitness = 6,
-        -- Requires driving skill mod, otherwise always static
-        MotionSickenssDynamic = true,
-        -- Minimum=0 Maximum=10 Default=5
-        MotionSickenssDynamicSkill = 5,
-        MundaneDynamic = true,
-        -- Amount of damage you need to deal to lose the trait. Zombies have between 0-2 hp. Minimum=0 Maximum=500000 Default=5000
-        MundaneDynamicDamage = 5000,
-        NaturalEaterDynamic = true,
-        -- Minimum=0 Maximum=10 Default=2
-        NaturalEaterDynamicCooking = 2,
-        -- Minimum=0 Maximum=10 Default=4
-        NaturalEaterDynamicForaging = 4,
-        NoodleLegsDynamic = true,
-        -- Fitness + Sprinting + Lightfoot + Nimble + Sneak Minimum=0 Maximum=50 Default=30
-        NoodleLegsDynamicSkill = 30,
-        OlympianDynamic = true,
-        -- Minimum=0 Maximum=10 Default=5
-        OlympianDynamicSkillSprinting = 5,
-        -- Minimum=0 Maximum=10 Default=6
-        OlympianDynamicSkillFitness = 6,
-        PackMouseDynamic = true,
-        -- Minimum=0 Maximum=10 Default=7
-        PackMouseDynamicSkill = 7,
-        PackMuleDynamic = true,
-        -- Minimum=0 Maximum=10 Default=9
-        PackMuleDynamicSkill = 9,
-        ParanoiaDynamic = true,
-        -- How many hours you need to be panicked and stressed (at same time) above average to get rid of trait Minimum=0 Maximum=100000 Default=200
-        ParanoiaDynamicHoursLose = 200,
-        PracticedSwordsmanDynamic = true,
-        -- Long Blade + Short Blade Minimum=0 Maximum=20 Default=10
-        PracticedSwordsmanDynamicSkill = 10,
-        -- Long Blade + Short Blade Minimum=0 Maximum=100000 Default=500
-        PracticedSwordsmanDynamicKill = 500,
-        ProwessBladeDynamic = true,
-        -- Axe + Short Blade + Long Blade Minimum=0 Maximum=30 Default=24
-        ProwessBladeDynamicSkill = 24,
-        -- Axe + Short Blade + Long Blade Minimum=0 Maximum=100000 Default=1200
-        ProwessBladeDynamicKill = 1200,
-        ProwessBluntDynamic = true,
-        -- Short Blunt + Long Blunt Minimum=0 Maximum=20 Default=16
-        ProwessBluntDynamicSkill = 16,
-        -- Short Blunt + Long Blunt Minimum=0 Maximum=100000 Default=800
-        ProwessBluntDynamicKill = 800,
-        ProwessGunsDynamic = true,
-        -- Minimum=0 Maximum=10 Default=8
-        ProwessGunsDynamicAiming = 8,
-        -- Aiming + Reloading Minimum=0 Maximum=20 Default=16
-        ProwessGunsDynamicSkill = 16,
-        -- Firearm Minimum=0 Maximum=100000 Default=800
-        ProwessGunsDynamicKill = 800,
-        ProwessSpearDynamic = true,
-        -- Spear Minimum=0 Maximum=10 Default=8
-        ProwessSpearDynamicSkill = 8,
-        -- Spear Minimum=0 Maximum=100000 Default=400
-        ProwessSpearDynamicKill = 400,
-        QuietDynamic = true,
-        -- Minimum=0 Maximum=10 Default=4
-        QuietDynamicSkill = 4,
-        ScrapperDynamic = true,
-        -- Minimum=0 Maximum=10 Default=5
-        ScrapperDynamicMaintenance = 5,
-        -- Minimum=0 Maximum=10 Default=5
-        ScrapperDynamicMetalWelding = 5,
-        -- Requires scavenging skill mod, otherwise always static
-        ScroungerDynamic = true,
-        -- Minimum=0 Maximum=10 Default=6
-        ScroungerDynamicSkill = 6,
-        SecondWindDynamic = true,
-        -- Strength + Fitness Minimum=0 Maximum=20 Default=18
-        SecondWindDynamicSkill = 18,
-        SlowWorkerDynamic = true,
-        -- Carpentry + Cooking + Farming + First Aid + Electricity + MetalWelding + Mechanics + Tailoring Minimum=0 Maximum=80 Default=30
-        SlowWorkerDynamicSkill = 30,
-        SlowpokeDynamic = true,
-        -- Sprinting + Lightfoot + Nimble + Sneak Minimum=0 Maximum=40 Default=20
-        SlowpokeDynamicSkill = 20,
-        SwiftDynamic = true,
-        -- Minimum=0 Maximum=10 Default=4
-        SwiftDynamicSkill = 4,
-        SuperImmuneDynamic = true,
-        -- How many hours does wounds on your body need to be infected for to earn Super-Immune. Each body part is counted separately so if you have 3 infected wounds, you'd earn +3 to the counter in 1h. Minimum=0 Maximum=100000 Default=5000
-        SuperImmuneDynamicInfectionTime = 5000,
-        TavernBrawlerDynamic = true,
-        -- Axe + Short Blunt + Long Blunt + Short Blade + Long Blade Minimum=0 Maximum=60 Default=12
-        TavernBrawlerDynamicSkill = 12,
-        TerminatorDynamic = true,
-        -- Aiming + Reloading + Nimble Minimum=0 Maximum=30 Default=28
-        TerminatorDynamicSkill = 28,
-        -- Firearms Minimum=0 Maximum=100000 Default=1400
-        TerminatorDynamicKill = 1400,
-        ThuggishDynamic = true,
-        -- Long Blunt + Short Blunt Minimum=0 Maximum=20 Default=10
-        ThuggishDynamicSkill = 10,
-        -- Short Blunt + Long Blunt Minimum=0 Maximum=100000 Default=500
-        ThuggishDynamicKill = 500,
-        TinkererDynamic = true,
-        -- Electricity + Mechanics + Tailoring Minimum=0 Maximum=30 Default=12
-        TinkererDynamicSkill = 12,
-        UnwaveringDynamic = true,
-        -- This is internal counter that needs to be reached before you get the trait. Each injury below belt adds to counter every 10 min. Deep Wound > Laceration > Burn/Fracture > Scratch > Bleeding. For example, having burns on 1 bodypart below belt would result in getting around +2.3 on counter in 24h. Having 1 fracture gives around +3 in 24h. Minimum=0 Maximum=100000 Default=500
-        UnwaveringDynamicCounter = 500,
-        -- Requires scavenging skill mod, otherwise always static
-        VagabondDynamic = true,
-        -- Minimum=0 Maximum=10 Default=5
-        VagabondDynamicSkill = 5,
-        WellFittedDynamic = true,
-        -- Minimum=0 Maximum=10 Default=8
-        WellFittedDynamicSkill = 8,
-        WildsmanDynamic = true,
-        -- Foraging + Fishing + Trapping Minimum=0 Maximum=30 Default=8
-        WildsmanDynamicSkill = 8,
-        -- Minimum=0 Maximum=100000 Default=200
-        WildsmanDynamicKill = 200,
-    },
-    RewardingNightCombat = {
-        enableIndicator = true,
-        draggableIndicator = false,
-        indicatorColor = 6,
-        enableTriggerSound = true,
-        -- Minimum=0 Maximum=100 Default=100
-        triggerProbability = 100,
-        -- Minimum=0 Maximum=365 Default=0
-        startAfterXDays = 0,
-        startTimeSummer = 23,
-        endTimeSummer = 7,
-        startTimeAutumn = 23,
-        endTimeAutumn = 7,
-        startTimeWinter = 23,
-        endTimeWinter = 7,
-        startTimeSpring = 23,
-        endTimeSpring = 7,
-        axeBonusMultiplier = 10,
-        longBluntBonusMultiplier = 10,
-        shortBluntBonusMultiplier = 12,
-        longBladeBonusMultiplier = 10,
-        shortBladeBonusMultiplier = 12,
-        spearBonusMultiplier = 10,
-        ignoreAimingXPNerf = true,
-        aimingBonusMultiplier = 10,
+    Firearms = {
+        -- With this activated improvised will not break no matter what the break chance is.
+        SuppressorBreak = true,
+        -- Whether or not a screwdriver is required to put attachments on firearms.
+        ScrewdriverReq = false,
+        -- Overall chance of an improvised suppressor breaking, even on low there is still a chance that it breaks on the first use. Default=One Use
+        -- 1 = One Use
+        -- 2 = High
+        -- 3 = Medium
+        BottleSuppressorBreakChance = 2,
+        -- Overall chance of an improvised suppressor breaking, even on low there is still a chance that it breaks on the first use. Default=High
+        -- 1 = One Use
+        -- 2 = High
+        -- 3 = Medium
+        FlashlightSuppressorBreakChance = 2,
+        -- How effective a suppressor is on a firearm that uses .22 LR rounds. Default=80%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
+        SuppressorEffectiveness22 = 3,
+        -- How effective a suppressor is on a firearm that uses 9mm rounds. Default=70%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
+        SuppressorEffectiveness9mm = 4,
+        -- How effective a suppressor is on a firearm that uses .45 ACP rounds. Default=70%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
+        SuppressorEffectiveness45 = 4,
+        -- How effective a suppressor is on a firearm that uses .44 Magnum rounds. Default=70%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
+        SuppressorEffectiveness44 = 4,
+        -- How effective a suppressor is on a firearm that uses .38 Special rounds. Default=80%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
+        SuppressorEffectiveness38 = 3,
+        -- How effective a suppressor is on a firearm that uses .223 and 5.56x45mm rounds. Default=60%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
+        SuppressorEffectiveness223 = 5,
+        -- How effective a suppressor is on a firearm that uses .308 and 7.62x51mm rounds. Default=50%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
+        SuppressorEffectiveness308 = 6,
+        -- How effective a suppressor is on shotgun. Default=30%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
+        SuppressorEffectivenessShotgunShells = 8,
+        -- How effective improvised suppressors are, on top of the effectiveness based on caliber. Default=20%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
+        SuppressorEffectivenessImprovised = 9,
+        -- How effective suppressors are on revolvers are, on top of the effectiveness based on caliber. Default=60%
+        -- 1 = 100%
+        -- 2 = 90%
+        -- 3 = 80%
+        -- 4 = 70%
+        -- 5 = 60%
+        -- 6 = 50%
+        -- 7 = 40%
+        -- 8 = 30%
+        -- 9 = 20%
+        SuppressorEffectivenessRevolver = 5,
+        -- Whether or not any suppressors can be found in the world.
+        SpawnSuppressors = true,
+        -- Whether or not handgun suppressors(9mm, .45 ACP) can be found in the world.
+        SpawnHandgunSuppressors = true,
+        -- Whether or not rifle suppressors(.22 LR, .223/5.56x45mm, and .308/7.62x51mm) can be found in the world.
+        SpawnRifleSuppressors = true,
+        -- Whether or not shotgun suppressors can be found in the world.
+        SpawnShotgunSuppressors = true,
+        -- Whether or not .38 Special & .357 caliber suppressors can be found in the world.
+        SpawnRevolverSuppressors = false,
+        -- Whether or not Ammo Cases can be found in containers.
+        SpawnAmmoCans = true,
+        -- Default=Insanely Rare
+        -- 1 = None (not recommended)
+        -- 2 = Insanely Rare
+        -- 3 = Extremely Rare
+        -- 4 = Rare
+        LootSuppressor = 2,
     },
     BLTAnnotations = {
         -- If enabled, player corpses will include a fully annotated map containing every symbols from their main map
         DropMapOnDeath = true,
     },
-    SkillRecoveryJournal = {
-        -- The amount of experienced recovered from reading bound journals. Minimum=1 Maximum=100 Default=100
-        RecoveryPercentage = 100,
-        -- A multiplier on the speed of transcribing journals. Minimum=0.00 Maximum=1000.00 Default=1.00
-        TranscribeSpeed = 15.0,
-        -- A multiplier on the speed of reading bound journals. Minimum=0.00 Maximum=1000.00 Default=1.00
-        ReadTimeSpeed = 12.0,
-        -- Starting with more than 1 point in a skill generally nets you bonus XP - with this toggled off that XP is not recorded. All XP recorded is that of a character with no starting skills. This does NOT recover starting levels - only the bonus XP earned.
-        RecoverProfessionAndTraitsBonuses = true,
-        -- Toggling this on will allow people to transcribe XP earned from watching TV/VHS. Note: This means players can carry over watched XP between characters cumulatively.
-        TranscribeTVXP = true,
-        -- Toggle on to record passive skills.
-        RecoverPassiveSkills = true,
-        -- Toggle on to record combat skills.
-        RecoverCombatSkills = true,
-        -- Toggle on to record firearm skills.
-        RecoverFirearmSkills = true,
-        -- Toggle on to record crafting skills.
-        RecoverCraftingSkills = true,
-        -- Toggle on to record survivalist skills.
-        RecoverSurvivalistSkills = true,
-        -- Toggle on to record agility skills.
-        RecoverAgilitySkills = true,
-        -- Toggle off to prevent journals from recovering/transcribing recipes.
-        RecoverRecipes = true,
-        -- Normally you can reread the journal as many times as you like - with this toggled on each individual XP point can only be recovered once. You can still add onto the journal, but each point can only be recovered once on each journal. Note: the tooltip for the journal will now display a fraction for unused points.
-        RecoveryJournalUsed = true,
-        Craftable = true,
-    },
-    SleepWithFriends = {
-        -- Choose if Sleep Length is being set to real-time minutes or in-game hours. Default=Real-Time Minutes
-        -- 1 = Real-Time Minutes
-        RTorIG = 1,
-        -- Average time spent sleeping when fully fatigued.
-        SleepLength = "2.0",
-        -- Determines how fast endurance is recovered while sleeping. 1 is the same rate as fatigue, 1.5 is one and a half times as fast, 2 is twice as fast, etc.
-        EndurMulti = "2.0",
-        -- Set if the AutoWake feature is enabled. Default=True
-        -- 1 = True
-        AutoWake = 1,
+    ScentOfBlood = {
+        -- Minimum=0 Maximum=100 Default=2
+        scratchModifier = 2,
+        -- Minimum=0 Maximum=100 Default=2
+        sbleedModifier = 2,
+        -- Minimum=0 Maximum=100 Default=5
+        cutModifier = 5,
+        -- Minimum=0 Maximum=100 Default=8
+        cbleedModifier = 8,
+        -- Minimum=0 Maximum=100 Default=5
+        biteModifier = 5,
+        -- Minimum=0 Maximum=100 Default=10
+        bbleedModifier = 10,
+        -- Minimum=0 Maximum=100 Default=15
+        dwoundModifier = 15,
+        -- Minimum=0 Maximum=100 Default=20
+        dbleedModifier = 20,
+        -- Minimum=0 Maximum=100 Default=50
+        dirtModifier = 50,
     },
     StandardisedExperience = {
         -- Disables the vanilla aiming xp dropoff after level 4.
@@ -1272,7 +957,7 @@ SandboxVars = {
         -- 3 = 2x
         -- 4 = 3x
         -- 5 = 5x
-        AimingMultiplier = 5,
+        AimingMultiplier = 1,
         -- Optional XP multiplier for reloading. Default=Vanilla
         -- 1 = 0.25x
         -- 2 = 0.5x
@@ -1282,7 +967,7 @@ SandboxVars = {
         -- 6 = 2x
         -- 7 = 3x
         -- 8 = 5x
-        ReloadMult = 6,
+        ReloadMult = 4,
         -- When you reload, you only have a chance to gain XP. Default=Always
         -- 1 = Always
         -- 2 = Vanilla (50%)
@@ -1304,7 +989,7 @@ SandboxVars = {
         -- 3 = 5x
         -- 4 = 10x
         -- 5 = 20x
-        NimbleMult = 1,
+        NimbleMult = 2,
         -- How often you gain XP while in combat stance. Increase this to dampen the XP multiplier. Default=10 seconds (Default)
         -- 1 = 2.5 seconds
         -- 2 = 5 seconds
@@ -1342,13 +1027,13 @@ SandboxVars = {
         -- 7 = 15x
         -- 8 = 25x
         -- 9 = 50x
-        FitnessBoost = 3,
+        FitnessBoost = 1,
         -- Increases the chance to gain fitness XP from all activities other than exercise. Default=Vanilla
         -- 1 = 3.5x
         -- 2 = 2.3x
         -- 3 = 1.4x
         -- 4 = Vanilla
-        FitnessChance = 3,
+        FitnessChance = 4,
         -- Increases the strength XP you gain from all activities other than exercise. Default=Vanilla
         -- 1 = 0.5x
         -- 2 = Vanilla
@@ -1359,695 +1044,320 @@ SandboxVars = {
         -- 7 = 7.5x
         -- 8 = 12.5x
         -- 9 = 25x
-        StrengthBoost = 5,
+        StrengthBoost = 2,
         -- Increases the chance to gain strength XP from all activities other than exercise. Default=Vanilla
         -- 1 = 3.5x
         -- 2 = 2.3x
         -- 3 = 1.4x
         -- 4 = Vanilla
-        StrengthChance = 3,
+        StrengthChance = 4,
     },
-    DecreasingLoot = {
-        -- The day the chance to remove items will start increasing proportionally every day, from the starting chance setting to the peak chance setting. Minimum=0 Maximum=1000 Default=2
-        StartDay = 2,
-        -- The day the loot will stop decreasing and after which the peak chance to remove items is always applied.
-        -- Must be higher than the start day option! Minimum=0 Maximum=1000 Default=30
-        PeakDay = 1000,
-        -- Applied before and on start day.
-        -- Must be lower than the peak chance option! Minimum=0 Maximum=100 Default=0
-        OriginalChance = 0,
-        -- Applied after and on peak day.
-        -- Must be higher than the starting chance option! Minimum=0 Maximum=100 Default=75
-        MaxChance = 75,
-        -- The number that will be added to the chance to remove items, for food items.
-        -- Can be negative.
-        -- Will make the actual chance go above the peak chance even after peak day, or below the original chance even before start day. Minimum=-100 Maximum=100 Default=20
-        FoodChanceModifier = 20,
-        -- The number that will be added to the chance to remove items, for Literature items.
-        -- Can be negative.
-        -- Will make the actual chance go above the peak chance even after peak day, or below the original chance even before start day. Minimum=-100 Maximum=100 Default=0
-        LiteratureChanceModifier = 0,
-        -- The number that will be added to the chance to remove items, for melee weapons.
-        -- Can be negative.
-        -- Will make the actual chance go above the peak chance even after peak day, or below the original chance even before start day. Minimum=-100 Maximum=100 Default=0
-        MeleeWeaponsChanceModifier = 0,
-        -- The number that will be added to the chance to remove items, for ranged weapons.
-        -- Can be negative.
-        -- Will make the actual chance go above the peak chance even after peak day, or below the original chance even before start day. Minimum=-100 Maximum=100 Default=0
-        RangedWeaponsChanceModifier = 0,
-        -- The number that will be added to the chance to remove items, for ammunition.
-        -- Can be negative.
-        -- Will make the actual chance go above the peak chance even after peak day, or below the original chance even before start day. Minimum=-100 Maximum=100 Default=0
-        AmmoChanceModifier = 0,
-        -- When enabled, the chance of removing item becomes an average of randoms instead of strict chance.
-        -- This means the difference between the loot of different containers can be much higher, but with the average chance of removing items still staying the same.
-        -- Example: 20% chance becomes a random chance between 0% and 40%, once per container. 50% becomes 0%-100%. 65% becomes 30%-100%. 95% becomes 90%-100%
-        -- Not recommended if the time between start day and peak day is low.
-        EnhancedVariance = true,
-        -- Check this if you want vehicle loot to be affected by the Item Remover.
-        -- Affects gloveboxes, seats, trunks, and any other vehicle part that can contain items.
-        TriggerOnVehicleParts = true,
-        -- Check this if you want zombie loot to be affected by the Item Remover.
-        -- This won't affect attached/lodged weapons and worn clothes and accessories.
-        -- WARNING: This should also affect dead bodies of players and NPCs !
-        TriggerOnDeadBodies = false,
-        -- When enabled, the Item Remover will trigger when the player comes close to containers, INSTEAD of when the map cells load.
-        -- Pro: does not trigger all the containers of the map before you explore them.
-        -- Con: Some containers will appear to have items (shelves with books on them) but when you get close will have their items removed and could actually become empty.
-        TriggerOnProximity = false,
-        -- Check this if you want the items spawned by Randomized House Stories to be affected by the Item Remover.
-        -- This affects the items that spawn ON THE FLOOR (or other surfaces), not in containers.
-        TriggerOnHouseStories = false,
+    aSleepOffline = {
+        -- 0 = disabled, the higher the number, the more penalty will be applied to the following player's stats:
+        -- 
+        -- - Support for sleeping: bed/chair/floor etc...
+        -- - objects related to sleep: pillow/sheet/tarp
+        -- - location: if you are outside/inside/tent/vehicle
+        -- 
+        -- The player can never die from it.
+        -- 
+        -- If set to 0, then no penalties will be applied, only bonuses if there are.
+        -- 
+        -- (Note that if Hardcore mode is 0, this will never apply negativity to the player's stats.)
+        --  Minimum=0 Maximum=5 Default=0
+        HardcoreMultiplyer = 0,
+        -- You can increase the number of IG hours needed to complete a full sleep, when the player is offline, the total sleep time is 10 hours.
+        -- 
+        -- The higher this number, the more it will be necessary of IG hour to achieve complete sleep while disconnected (to visualize, a complete cycle is virtulized at 10 a.m.). 
+        -- 
+        -- Setting 2 for example, corresponds to 2 times 10 hours of play, 20 hours of play will be necessary for total sleep, and thus maximum recovery/deduction of stats depending on the player's location.
+        --  Minimum=1 Maximum=50 Default=1
+        HourMaxForTotalSleep = 1,
+        -- If TRUE and you have the Avatar Offline mod activated, this option will apply a sleep penalty if you are too close to a player's avatar (outside a vehicle), this rule applies if you are near a bed,a chair, an armchair, a sofa, a tent or other support for sleeping other than a simple floor covering. 
+        -- 
+        -- (Note, if Hardcore mode is at 0, this will not apply any negativity to the player's stats, just they will be less rested, less stat gain.)
+        nearAvatarPenality = false,
+        -- If TRUE and you have the Avatar Offline mod activated, this option will apply a penalty to sleep if you find yourself with too many characters in a vehicle, the number of player avatars positioned in a vehicle will affect the quality of sleep depending on the space in the total inventory of the vehicle, the larger the vehicle, the more room there will be for several people, this rule only applies to avatars present in your vehicle and not around the vehicle. 
+        -- 
+        -- (Note, if Hardcore mode is at 0, this will not apply any negativity to the player's stats, just they will be less rested, less stat gain.)
+        vehicleAvatarPenality = false,
     },
-    UndeadSurvivor = {
-        -- Its percentual, but it does share its chance with other outfits, so at 100 you will never get only zombies with this outfits Minimum=0.00 Maximum=100.00 Default=0.04
-        StalkerChance = 0.04,
-        -- Its percentual, but it does share its chance with other outfits, so at 100 you will never get only zombies with this outfits Minimum=0.00 Maximum=100.00 Default=0.04
-        NomadChance = 0.04,
-        -- Minimum=0.00 Maximum=100.00 Default=0.04
-        PrepperChance = 0.04,
-        -- Minimum=0.00 Maximum=100.00 Default=0.04
-        HeadhunterChance = 0.04,
-        -- Minimum=0.00 Maximum=100.00 Default=0.08
-        AmazonaChance = 0.08,
+    ReduceActionTime = {
+        -- Minimum=0 Maximum=100 Default=0
+        DecreasingRate = 0,
+        -- Saw Logs/Dismantle Digital Watch This excludes log cutting and digital clock disassembly.
+        ExcludedRecipes = "",
+        -- Minimum=0 Maximum=100 Default=0
+        Crafting = 40,
+        -- Minimum=0 Maximum=100 Default=0
+        Building = 40,
+        -- Minimum=0 Maximum=100 Default=0
+        ItemTransfer = 30,
+        -- Minimum=0 Maximum=100 Default=0
+        Equip = 20,
+        -- Minimum=0 Maximum=100 Default=0
+        Eat = 40,
+        -- Minimum=0 Maximum=100 Default=0
+        Cigarettes = 20,
+        -- Minimum=0 Maximum=100 Default=0
+        Wash = 20,
+        -- Minimum=0 Maximum=100 Default=0
+        ReadBook = 20,
     },
-    WeaponModifiers = {
-        -- Minimum=0 Maximum=1000 Default=1
-        StartDay = 1,
-        -- Minimum=1 Maximum=1000 Default=60
-        PeakDay = 1000,
-        -- Minimum=0.00 Maximum=100.00 Default=30.00
-        OriginalModifierChance = 30.0,
-        -- Minimum=0.00 Maximum=100.00 Default=70.00
-        MaxModifierChance = 70.0,
-        -- lower = higher chance of better modifiers and lower chance of bad modifiers
-        -- higher = lower chance of better modifiers and higher chance of bad modifiers
-        -- 
-        -- WARNING: 0 = ALL modifiers are LEGENDARY rarity
-        --  Minimum=0.00 Maximum=10.00 Default=1.10
-        StartRarityTweaker = 1.1,
-        -- lower = higher chance of better modifiers and lower chance of bad modifiers
-        -- higher = lower chance of better modifiers and higher chance of bad modifiers
-        -- 
-        -- WARNING: 0 = ALL modifiers are LEGENDARY rarity
-        --  Minimum=0.00 Maximum=10.00 Default=0.90
-        PeakRarityTweaker = 0.9,
-        -- For weapons stuck / attached to zombies.
-        -- 
-        -- Higher = Bigger chance of applying a random modifier to weapons attached to zombies.
-        -- Lower = lower chance of applying a random modifier to weapons ATTACHED to zombies.
-        --  Minimum=0.00 Maximum=3.00 Default=0.50
-        AttachedWeaponsChanceMultiplier = 0.5,
-        -- For ALL ranged weapons.
-        -- 
-        -- Does nothing if you're using the Realistic list.
-        -- 
-        -- Higher = Bigger chance of applying a random modifier to all RANGED weapons.
-        -- Lower = lower chance of applying a random modifier to all RANGED weapons. Minimum=0.00 Maximum=3.00 Default=0.50
-        RangedWeaponsChanceMultiplier = 0.5,
-        -- For CRAFTED Ranged Weapons only.
-        -- 
-        -- Does nothing if you're using the Realistic list.
-        -- 
-        -- Does nothing if you are playing VANILLA or aren't using mods that add ranged weapons.
-        -- 
-        -- LEAVE THIS AT ZERO IF YOU ARE USING BRITA
-        -- or similar mods that add different forms to ranged weapons.
-        -- (folding/unfolding stock for example...)
-        -- 
-        -- Higher = Bigger chance of applying a random modifier to CRAFTED RANGED weapons.
-        -- Lower = lower chance of applying a random modifier to CRAFTED RANGED weapons.
-        --  Minimum=0.00 Maximum=3.00 Default=0.00
-        ChanceMultiplierForCraftedRangedWeapons = 0.0,
-        -- For CRAFTED Melee Weapons only.
-        -- 
-        -- Set this to zero if you're using mods that add different forms to melee weapons.
-        -- (switch between axe/spear mode for example...)
-        -- 
-        -- Higher = Bigger chance of applying a random modifier to CRAFTED MELEE weapons.
-        -- Lower = lower chance of applying a random modifier to CRAFTED MELEE weapons.
-        --  Minimum=0.00 Maximum=3.00 Default=0.75
-        ChanceMultiplierForCraftedMeleeWeapons = 0.75,
-        -- Modifiers won't be applied to irrelevant weapons.
-        -- (pens, spoons, forks, fishing rods, cooking pans, as well as construction materials like planks, metal bars, metal pipes.)
-        -- 
-        IgnoreIrrelevantWeapons = true,
+    RewardingNightCombat = {
+        enableIndicator = true,
+        draggableIndicator = false,
+        indicatorColor = 3,
+        enableTriggerSound = true,
+        -- Minimum=0 Maximum=100 Default=100
+        triggerProbability = 100,
+        -- Minimum=0 Maximum=365 Default=0
+        startAfterXDays = 0,
+        startTimeSummer = 24,
+        endTimeSummer = 7,
+        startTimeAutumn = 24,
+        endTimeAutumn = 7,
+        startTimeWinter = 24,
+        endTimeWinter = 7,
+        startTimeSpring = 24,
+        endTimeSpring = 7,
+        axeBonusMultiplier = 5,
+        longBluntBonusMultiplier = 5,
+        shortBluntBonusMultiplier = 6,
+        longBladeBonusMultiplier = 5,
+        shortBladeBonusMultiplier = 6,
+        spearBonusMultiplier = 5,
+        ignoreAimingXPNerf = false,
+        aimingBonusMultiplier = 5,
     },
-    bikinitools = {
-        EnableGetKeyContext = false,
-        EnableOpenSesame = false,
-        EnableVehicleRemover = false,
-        EnableCellVehicleRemover = false,
-        EnableRepairContext = false,
-        EnableSkinSwitcher = false,
-        EnableVehicleSpawner = false,
-        EnableTrunkUnlocker = false,
-        EnableGravelBuddy = true,
-        EnableGardener = true,
-        AllowTYLPlantRemoval = true,
-        EnableLumberjack = true,
-        EnableFarmer = true,
-        EnableContainerUnloader = true,
-        EnableHomeWrecker = false,
-        EnableCorpseStacker = true,
-        EnableVehicleItemHide = true,
+    TrueCrawl = {
+        -- Use this option only if you're hosting an Local or Dedicated server. (To avoid issues). [Default is False]. 
+        StealhModeServer = true,
+        -- Toggles the Stealth Mode ON or OFF. If OFF, only the vanilla Sneaking system will be used. [Default is True].
+        StealhModeEnable = true,
+        -- Toggles the Moodle Stealth Indicator. (Works ONLY if Stealth Mode is ON!) [Default is True]. 
+        MoodleEnable = true,
+        -- Toggles the ability to Crawl under Vehicles. (YOU MUST BE CRAWLING!) [Default is True, Default Key is Shift]. 
+        CrawlUnderVehiclesEnable = true,
+        -- Toggles the Realistic Endurance mode. This mode improves the game immersion by limiting how much you can crawl. [Default is True]. 
+        RealisticEndurance = true,
+        -- Auto disable the Crawling Pose when spotted by zombies. [Default is False]. 
+        CancelCrawlWhenSpotted = false,
+        -- This value controls the zombie sight radius when player is crawling. It goes from 1(Extremely Small) to 20(Extremely Far). Default is 5 (Medium Radius). My recommendation is to keep between 5 - 10 to have a more immersive gameplay. Minimum=1 Maximum=20 Default=5
+        ZombieRadius = 5,
     },
-    FC4WorkingTreadmill = {
+    Advanced_trajectory = {
+        -- Show or hide crosshair.
+        aimpoint = true,
+        Enablerange = true,
+        Enablethrow = true,
+        hideTracer = false,
+        playerdamage = false,
+        -- Multiplier of gun's max dmg added as recoil to crosshair (adds bloom when shooting). Minimum=0.00 Maximum=20.00 Default=10.00
+        recoilModifier = 10.0,
+        -- Multiplier on base damage for headshot Minimum=0.00 Maximum=100.00 Default=20.00
+        headShotDmgMultiplier = 20.0,
+        -- Multiplier on base damage for bodyshot Minimum=0.00 Maximum=100.00 Default=5.00
+        bodyShotDmgMultiplier = 5.0,
+        -- Multiplier on base damage for footshot Minimum=0.00 Maximum=100.00 Default=1.00
+        footShotDmgMultiplier = 1.0,
+        -- Multiplier on base stat (range) of shotgun. Default value is 0.75 which means 75% of vanilla's range. Minimum=0.00 Maximum=5.00 Default=0.75
+        shotgunDistanceModifier = 0.75,
+        -- Linked to color when there is zero bloom on crosshair. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=0.00
+        crosshairRed = 0.0,
+        -- Linked to color when there is zero bloom on crosshair. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairGreen = 1.0,
+        -- Linked to color when there is zero bloom on crosshair. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=0.98
+        crosshairBlue = 0.98,
+        -- Linked to crosshair color. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairRedMain = 1.0,
+        -- Linked to crosshair color. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairGreenMain = 1.0,
+        -- Linked to crosshair color. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairBlueMain = 1.0,
+        -- Value that limits how much bloom is added to crosshair. Higher means larger possible bloom. Minimum=-100.00 Maximum=100.00 Default=-9.00
+        maxaimnum = -9.0,
+        -- Value that adds bloom when moving. Minimum=0.00 Maximum=100.00 Default=1.30
+        moveeffect = 1.3,
+        -- Value that adds bloom when physically turning your feet, not hips. Minimum=0.00 Maximum=100.00 Default=0.70
+        turningeffect = 0.7,
+        -- Value that affects how fast your crosshair tightens. Higher means faster. Minimum=0.00 Maximum=100.00 Default=1.10
+        reducespeed = 1.1,
+        -- Minimum=0.00 Maximum=2.40 Default=1.70
+        bulletspeed = 1.7,
         -- Minimum=0.00 Maximum=100.00 Default=1.00
-        FitnessXPMultiply = 5.0,
-        -- Minimum=0.00 Maximum=100.00 Default=1.00
-        StrengthXPMultiply = 5.0,
-        -- Minimum=0.00 Maximum=100.00 Default=1.00
-        SprintingXPMultiply = 5.0,
+        bulletdistance = 1.0,
+        -- Amount of pellots shot Minimum=0 Maximum=100 Default=5
+        shotgunnum = 5,
+        -- Value affects shotgun spread. The lower the value, the more narrow the spread. Minimum=0.00 Maximum=1.00 Default=0.10
+        shotgundivision = 0.1,
+        -- For debugging, character says what body part was shot.
+        callshot = false,
+        -- Multiplies base damage of bullet. Minimum=0.00 Maximum=100.00 Default=1.00
+        ATY_damage = 1.0,
+        -- Value that affects crosshair's minimum bloom. Characters with low aiming level (0-2) will never be accurate (always has bloom). Set to 0 if you want to be OP or unlock focus mechanic at level 3. Minimum=0.00 Maximum=100.00 Default=5.00
+        minaimnumModifier = 5.0,
+        -- Value affects how much bloom is added when reloading and racking firearm. Minimum=0.00 Maximum=10.00 Default=0.10
+        reloadEffectModifier = 0.1,
+        -- Driving part of the focus mechanic. Determines how fast it takes for the crosshair to begin its process of reducing aimnum to 0 (max accuracy). Set to 0 to disable if you want to remove ability to gain max accuracy. Minimum=0.00 Maximum=10.00 Default=2.00
+        focusCounterSpeed = 2.0,
+        -- Part of the focus mechanic. Determines speed of crosshair reducing aimnum to 0 once process has begun. Minimum=0.00 Maximum=1.00 Default=1.00
+        maxFocusSpeed = 1.0,
+        -- When proning, you gain max accuracy faster (applies when focus mechanic is unlocked). Minimum=0.00 Maximum=10.00 Default=1.50
+        proneFocusCounterSpeedBuff = 1.5,
+        -- When proning, your crosshair reduces bloom faster. Helpful after intense cardio. Minimum=0.00 Maximum=2.00 Default=0.40
+        proneReduceSpeedBuff = 0.4,
+        -- When crouching, your crosshair reduces bloom faster. Helpful after intense cardio. Minimum=0.00 Maximum=2.00 Default=0.20
+        crouchReduceSpeedBuff = 0.2,
+        -- Part of the focus mechanic. Weapon's recoil delay affects how long it takes for character to recover from recoil and this is a multiplier of that. Set to 0 to ignore weapon's recoil delay stat. Minimum=0.00 Maximum=1.00 Default=0.01
+        recoilDelayModifier = 0.01,
+        -- Bloom affects crit chance. This is a multiplier to that. Set to 0 for better chances of crit. Minimum=0.00 Maximum=100.00 Default=1.00
+        critChanceModifier = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=10.00
+        critChanceModifierShotgunsOnly = 10.0,
+        -- This value must be very small as it affects how slow your crosshair reduces bloom. This is a multiplier of the total pain value from arms and hands, which can go up to 200. Minimum=0.00 Maximum=1.00 Default=0.01
+        painModifier = 0.005,
+        -- This value amplifies move and turning effect, which means more bloom when performing those actions. Set to 0 to disable. Minimum=0.00 Maximum=100.00 Default=0.50
+        drunkActionEffectModifier = 0.5,
+        -- Multiplier that increases your maxaimnum or max bloom. Set to 0 to disable. Minimum=0.00 Maximum=100.00 Default=6.00
+        drunkModifier = 6.0,
+        -- Multiplier that affects how slow your crosshair reduces bloom. Minimum=0.00 Maximum=100.00 Default=1.00
+        hyperHypoModifier = 1.0,
+        -- Multiplier that affects how slow your crosshair reduces bloom. Minimum=0.00 Maximum=100.00 Default=1.00
+        tiredModifier = 1.0,
+        -- Multiplier that affects how much is added to minaimnum or minimum bloom. Minimum=0.00 Maximum=100.00 Default=4.00
+        stressBloomModifier = 4.0,
+        -- Affects how intense the crosshair shaking affect is. Set to 0 to disable. Minimum=0.00 Maximum=100.00 Default=3.00
+        stressVisualModifier = 3.0,
+        -- Value affects how much bloom is added when coughing. Minimum=0.00 Maximum=100.00 Default=2.00
+        coughModifier = 2.0,
+        -- Value affects the rate of bloom added when inhaling. Set to 0 to disable the whole endurance mechanic. Minimum=0.00 Maximum=100.00 Default=1.00
+        enduranceBreathModifier = 1.0,
+        -- Value determines how long the characters inhales (adds bloom). Links to exhaleModifier1. Inhale value must be greater than linked exhale value. Minimum=0.00 Maximum=100.00 Default=2.50
+        inhaleModifier1 = 2.5,
+        -- Value determines how long the characters exhales (reduces bloom). Links to exhaleModifier1. Exhale value must be less than linked inhale value. Minimum=0.00 Maximum=100.00 Default=0.80
+        exhaleModifier1 = 0.8,
+        -- Minimum=0.00 Maximum=100.00 Default=2.75
+        inhaleModifier2 = 2.75,
+        -- Minimum=0.00 Maximum=100.00 Default=1.50
+        exhaleModifier2 = 1.5,
+        -- Minimum=0.00 Maximum=100.00 Default=2.85
+        inhaleModifier3 = 2.85,
+        -- Minimum=0.00 Maximum=100.00 Default=3.00
+        exhaleModifier3 = 3.0,
+        -- Minimum=0.00 Maximum=100.00 Default=3.25
+        inhaleModifier4 = 3.25,
+        -- Minimum=0.00 Maximum=100.00 Default=4.00
+        exhaleModifier4 = 4.0,
     },
-    PassiveSkillsFix = {
-        -- Additional multiplier for passive skills Minimum=1.00 Maximum=999.00 Default=2.00
-        PassiveBaseModifier = 3.0,
+    SleepWithFriends = {
+        -- Choose if Sleep Length is being set to real-time minutes or in-game hours. Default=Real-Time Minutes
+        -- 1 = Real-Time Minutes
+        RTorIG = 1,
+        -- Average time spent sleeping when fully fatigued.
+        SleepLength = "2.0",
+        -- Determines how fast endurance is recovered while sleeping. 1 is the same rate as fatigue, 1.5 is one and a half times as fast, 2 is twice as fast, etc.
+        EndurMulti = "2.0",
+        -- Set if the AutoWake feature is enabled. Default=True
+        -- 1 = True
+        AutoWake = 1,
     },
-    Greenfire = {
-        -- Less are longer, more are faster Minimum=1 Maximum=100 Default=3
-        Division = 3,
-        -- This will check Fresh/Uncured every set hours (in game), from 1 to 48 hours Minimum=1 Maximum=48 Default=2
-        CheckEvery = 2,
-        -- Enabling tooltip to be shown. enable this and below TickBox to show which individual data to be shown
-        EnableTooltip = true,
-        -- Show/Hide Life ModData Tooltip
-        LifeTT = false,
-        -- Show/Hide TurnInto ModData Tooltip
-        TurnIntoTT = false,
-        -- Show/Hide StartTime ModData Tooltip
-        StartTimeTT = false,
-        -- Show/Hide DryTime ModData Tooltip
-        DryTimeTT = false,
-        -- Show/Hide Remaining ModData Tooltip
-        RemainingTT = true,
-        -- Show/Hide ShouldDry ModData Tooltip
-        ShouldDryTT = false,
+    SkillRecoveryJournal = {
+        -- The amount of experienced recovered from reading bound journals. Minimum=1 Maximum=100 Default=100
+        RecoveryPercentage = 80,
+        -- A multiplier on the speed of transcribing journals. Minimum=0.00 Maximum=1000.00 Default=1.00
+        TranscribeSpeed = 4.0,
+        -- A multiplier on the speed of reading bound journals. Minimum=0.00 Maximum=1000.00 Default=1.00
+        ReadTimeSpeed = 2.0,
+        -- Starting with more than 1 point in a skill generally nets you bonus XP - with this toggled off that XP is not recorded. All XP recorded is that of a character with no starting skills. This does NOT recover starting levels - only the bonus XP earned.
+        RecoverProfessionAndTraitsBonuses = false,
+        -- Toggling this on will allow people to transcribe XP earned from watching TV/VHS. Note: This means players can carry over watched XP between characters cumulatively.
+        TranscribeTVXP = false,
+        -- Toggle on to record passive skills.
+        RecoverPassiveSkills = true,
+        -- Toggle on to record combat skills.
+        RecoverCombatSkills = true,
+        -- Toggle on to record firearm skills.
+        RecoverFirearmSkills = true,
+        -- Toggle on to record crafting skills.
+        RecoverCraftingSkills = true,
+        -- Toggle on to record survivalist skills.
+        RecoverSurvivalistSkills = true,
+        -- Toggle on to record agility skills.
+        RecoverAgilitySkills = true,
+        -- Toggle off to prevent journals from recovering/transcribing recipes.
+        RecoverRecipes = true,
+        -- Normally you can reread the journal as many times as you like - with this toggled on each individual XP point can only be recovered once. You can still add onto the journal, but each point can only be recovered once on each journal. Note: the tooltip for the journal will now display a fraction for unused points.
+        RecoveryJournalUsed = true,
+        Craftable = true,
     },
-    DynamicBackpacks = {
-        -- Allows items with the SharpKnife tag to remove upgrades.
-        KnivesCanRemove = false,
-        -- Base amount of upgrades every Inventory Container item will have Minimum=0 Maximum=10 Default=1
-        BaseUpgradeSlots = 1,
-        -- Extra/Less Upgrade slots for containers that can go on the back Minimum=-20 Maximum=10 Default=1
-        BackSlotModifier = 1,
-        -- Extra/Less upgrade slots for containers that go on the front/back spots Minimum=-20 Maximum=10 Default=0
-        FannySlotModifier = 0,
-        -- Extra/Less upgrade slots for containers that are either not equipped or equipped in other locations. Minimum=-20 Maximum=10 Default=0
-        OtherSlotModifier = 0,
-        -- Every X levels of tailoring will give all containers another upgrade slot. 
-        -- (0 to disable) Minimum=0 Maximum=10 Default=10
-        TailoringModifier = 10,
-        -- Percentage bonus of the containers original capacity. Minimum=0.00 Maximum=1.00 Default=0.10
-        ClothCapacityPercentage = 0.1,
-        -- Additive bonus to container capacity. Minimum=-100 Maximum=100 Default=1
-        ClothCapacityBonus = 1,
-        -- Weight Efficiency bonus, applies to missing weight reduction of bag 
-        -- (50% bonus on an 80% bag results in 90% total reduction)
-        -- (30% bonus on a 70% bag results in 79% total reduction) Minimum=0.01 Maximum=1.00 Default=0.15
-        ClothReductionPercentage = 0.15,
-        -- Multiplier applied to loot spawns for all Cloth upgrades. Minimum=0.00 Maximum=100.00 Default=1.00
-        ClothLootSpawns = 1.0,
-        -- Percentage bonus of the containers original capacity. Minimum=0.00 Maximum=1.00 Default=0.20
-        JeanCapacityPercentage = 0.2,
-        -- Additive bonus to container capacity. Minimum=-100 Maximum=100 Default=1
-        JeanCapacityBonus = 1,
-        -- Weight Efficiency bonus, applies to missing weight reduction of bag 
-        -- (50% bonus on an 80% bag results in 90% total reduction)
-        -- (30% bonus on a 70% bag results in 79% total reduction) Minimum=0.01 Maximum=1.00 Default=0.25
-        JeanReductionPercentage = 0.25,
-        -- Multiplier applied to loot spawns for all Denim upgrades. Minimum=0.00 Maximum=100.00 Default=1.00
-        JeanLootSpawns = 1.0,
-        -- Percentage bonus of the containers original capacity. Minimum=0.00 Maximum=1.00 Default=0.25
-        LeatherCapacityPercentage = 0.25,
-        -- Additive bonus to container capacity. Minimum=-100 Maximum=100 Default=2
-        LeatherCapacityBonus = 2,
-        -- Weight Efficiency bonus, applies to missing weight reduction of bag 
-        -- (50% bonus on an 80% bag results in 90% total reduction)
-        -- (30% bonus on a 70% bag results in 79% total reduction) Minimum=0.01 Maximum=1.00 Default=0.35
-        LeatherReductionPercentage = 0.35,
-        -- Multiplier applied to loot spawns for all Leather upgrades. Minimum=0.00 Maximum=100.00 Default=1.00
-        LeatherLootSpawns = 1.0,
-        -- Percentage bonus of the containers original capacity. Minimum=0.00 Maximum=1.00 Default=0.35
-        MilitaryCapacityPercentage = 0.35,
-        -- Additive bonus to container capacity. Minimum=-100 Maximum=100 Default=2
-        MilitaryCapacityBonus = 2,
-        -- Weight Efficiency bonus, applies to missing weight reduction of bag 
-        -- (50% bonus on an 80% bag results in 90% total reduction)
-        -- (30% bonus on a 70% bag results in 79% total reduction) Minimum=0.01 Maximum=1.00 Default=0.50
-        MilitaryReductionPercentage = 0.5,
-        -- Multiplier applied to loot spawns for all Military upgrades. Minimum=0.00 Maximum=100.00 Default=1.00
-        MilitaryLootSpawns = 1.0,
-    },
-    CustomizableRecipes = {
-        -- Adds Tiered Containers. All Options will Include Previous Tiers. The "Up to" Options indicate the Capacity which Containers Will have. Disabled Will Remove All Container Recipes. Default=Up to 100
-        -- 1 = Disabled
-        -- 2 = Up to 100
-        -- 3 = Up to 250
-        -- 4 = Up to 500
-        -- 5 = Up to 750
-        -- 6 = Up to 1000
-        -- 7 = Up to 2000
-        -- 8 = Up to 5000
-        CContainers = 2,
-        -- If Enabled You'll be Able to Craft Fanny Packs
-        CraftableFannyPack = true,
-    },
-    CustomizableBackpacks = {
-        -- Affects the WeightReduction of Backpacks. Normal sets the Values to Vanilla Values. For Well Balanced/Balanced Values(Including Randomized), Check out "The Options Guide". 75 through Weightless sets a Static Value for WeightReduction. Custom Values Allow You to Set them Yourself Under "Advanced Customizable Characteristics". Default=Well Balanced
-        -- 1 = -25%
-        -- 2 = Normal
-        -- 3 = Well Balanced
-        -- 4 = Balanced
-        -- 5 = Randomized - Well Balanced
-        -- 6 = Randomized - Balanced
-        -- 7 = 75
-        -- 8 = 80
-        -- 9 = 85
-        -- 10 = 90
-        -- 11 = 95
-        -- 12 = 99
-        -- 13 = Weightless
-        -- 14 = Custom - Static
-        -- 15 = Custom - Randomized
-        WeightReduction = 3,
-        -- Affects How Much Capacity Backpacks Have. Normal sets the Values to Vanilla Values. For Well Balanced/Balanced Values(Including Randomized), Check out "The Options Guide". The +X% Sets the Values by the set Percentage. 75 through Weightless sets a Static Value for Capacity. Custom Values Allow You to Set them Yourself Under "Advanced Customizable Characteristics". Default=Well Balanced
-        -- 1 = -25%
-        -- 2 = Normal
-        -- 3 = Well Balanced
-        -- 4 = Balanced
-        -- 5 = Randomized - Well Balanced
-        -- 6 = Randomized - Balanced
-        -- 7 = +25%
-        -- 8 = +50%
-        -- 9 = +75%
-        -- 10 = +100%
-        -- 11 = +200%
-        -- 12 = +400%
-        -- 13 = +650%
-        -- 14 = +900%
-        -- 15 = 20
-        -- 16 = 25
-        -- 17 = 30
-        -- 18 = 40
-        -- 19 = 50
-        -- 20 = 75
-        -- 21 = Custom - Static
-        -- 22 = Custom - Randomized
-        Capacity = 3,
-        -- Affects the Weight of Backpacks. Normal Sets the Values to Vanilla Values. -X% Decreases the Weight by the set Percentage. Default=Normal
-        -- 1 = Normal
-        -- 2 = -25%
-        -- 3 = -50%
-        -- 4 = -75%
-        Weight = 1,
-        -- RunSpeedModifier isn't Currently Functioning in the Game, so this does Nothing. If Enabled Removes the RunSpeedModifier from All Supported Containers i.e Sets it to = 1.0.
-        RemoveRunSpeedModifier = false,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Static". This Option will Set a Static WeightReduction Value for Backpacks. Minimum=0 Maximum=100 Default=0
-        WeightReductionStatic = 0,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Static". This Option will Set a Static Capacity Value for Backpacks. Minimum=0 Maximum=1000 Default=1
-        CapacityStatic = 1,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Percentage". This Option will Set a Percentage Value as a "double" value(i.e 1 = 100% 0.5 = 50% 0.01 = 1%) for Backpacks. Minimum=0.01 Maximum=200.00 Default=1.00
-        WeightReductionPercentage = 1.0,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Percentage". This Option will Set a Percentage Value as a "double" value(i.e 1 = 100% 0.5 = 50% 0.01 = 1%) for Backpacks. Minimum=0.01 Maximum=200.00 Default=1.00
-        CapacityPercentage = 1.0,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Randomized". Sets the Minimum Value a Backpack can Have. Minimum=0 Maximum=100 Default=0
-        WeightReductionRandomizedMin = 0,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Randomized". Sets the Maximum Value a Backpack can Have. Minimum=0 Maximum=100 Default=0
-        WeightReductionRandomizedMax = 0,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Randomized". Sets the Minimum Value a Backpack can Have. Minimum=1 Maximum=1000 Default=1
-        CapacityRandomizedMin = 1,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Randomized". Sets the Maximum Value a Backpack can Have. Minimum=1 Maximum=1000 Default=1
-        CapacityRandomizedMax = 1,
-    },
-    CustomizableBags = {
-        -- Affects the WeightReduction of Bags e.g. Plastic Bags, Lunchboxes, Gun Cases etc. Default=Well Balanced
-        -- 1 = -25%
-        -- 2 = Normal
-        -- 3 = Well Balanced
-        -- 4 = Balanced
-        -- 5 = Randomized - Well Balanced
-        -- 6 = Randomized - Balanced
-        -- 7 = 75
-        -- 8 = 80
-        -- 9 = 85
-        -- 10 = 90
-        -- 11 = 95
-        -- 12 = 99
-        -- 13 = Weightless
-        -- 14 = Custom - Static
-        -- 15 = Custom - Randomized
-        WeightReduction = 3,
-        -- Affects How Much Capacity Bags e.g. Plastic Bags, Lunchboxes, Gun Cases etc. Have Default=Well Balanced
-        -- 1 = -25%
-        -- 2 = Normal
-        -- 3 = Well Balanced
-        -- 4 = Balanced
-        -- 5 = Randomized - Well Balanced
-        -- 6 = Randomized - Balanced
-        -- 7 = +25%
-        -- 8 = +50%
-        -- 9 = +75%
-        -- 10 = +100%
-        -- 11 = +200%
-        -- 12 = +400%
-        -- 13 = +650%
-        -- 14 = +900%
-        -- 15 = 20
-        -- 16 = 25
-        -- 17 = 30
-        -- 18 = 40
-        -- 19 = 50
-        -- 20 = 75
-        -- 21 = Custom - Static
-        -- 22 = Custom - Randomized
-        Capacity = 3,
-        -- Affects the Weight of Bags e.g. Plastic Bags, Lunchboxes, Gun Cases etc. Default=Normal
-        -- 1 = Normal
-        -- 2 = -25%
-        -- 3 = -50%
-        -- 4 = -75%
-        Weight = 1,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Static". This Option will Set a Static WeightReduction Value for Bags. Minimum=0 Maximum=100 Default=0
-        WeightReductionStatic = 0,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Static". This Option will Set a Static Capacity Value for Bags. Minimum=0 Maximum=1000 Default=1
-        CapacityStatic = 1,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Percentage". This Option will Set a Percentage Value as a "double" value(i.e 1 = 100% 0.5 = 50% 0.01 = 1%) for Bags. Minimum=0.01 Maximum=200.00 Default=1.00
-        WeightReductionPercentage = 1.0,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Percentage". This Option will Set a Percentage Value as a "double" value(i.e 1 = 100% 0.5 = 50% 0.01 = 1%) for Bags. Minimum=0.01 Maximum=200.00 Default=1.00
-        CapacityPercentage = 1.0,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Randomized". Sets the Minimum Value a Bag can Have. Minimum=0 Maximum=100 Default=0
-        WeightReductionRandomizedMin = 0,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Randomized". Sets the Maximum Value a Bag can Have. Minimum=0 Maximum=100 Default=0
-        WeightReductionRandomizedMax = 0,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Randomized". Sets the Minimum Value a Bag can Have. Minimum=1 Maximum=1000 Default=1
-        CapacityRandomizedMin = 1,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Randomized". Sets the Maximum Value a Bag can Have. Minimum=1 Maximum=1000 Default=1
-        CapacityRandomizedMax = 1,
-    },
-    CustomizableChestRigs = {
-        -- Affects the WeightReduction of Chest Rigs, Vests & Webbing with Capacity Properties.  Default=Well Balanced
-        -- 1 = -25%
-        -- 2 = Normal
-        -- 3 = Well Balanced
-        -- 4 = Balanced
-        -- 5 = Randomized - Well Balanced
-        -- 6 = Randomized - Balanced
-        -- 7 = 75
-        -- 8 = 80
-        -- 9 = 85
-        -- 10 = 90
-        -- 11 = 95
-        -- 12 = 99
-        -- 13 = Weightless
-        -- 14 = Custom - Static
-        -- 15 = Custom - Randomized
-        WeightReduction = 3,
-        -- Affects How Much Capacity of Chest Rigs & Vests Have Default=Well Balanced
-        -- 1 = -25%
-        -- 2 = Normal
-        -- 3 = Well Balanced
-        -- 4 = Balanced
-        -- 5 = Randomized - Well Balanced
-        -- 6 = Randomized - Balanced
-        -- 7 = +25%
-        -- 8 = +50%
-        -- 9 = +75%
-        -- 10 = +100%
-        -- 11 = +200%
-        -- 12 = +400%
-        -- 13 = +650%
-        -- 14 = +900%
-        -- 15 = 20
-        -- 16 = 25
-        -- 17 = 30
-        -- 18 = 40
-        -- 19 = 50
-        -- 20 = 75
-        -- 21 = Custom - Static
-        -- 22 = Custom - Randomized
-        Capacity = 3,
-        -- Affects the Weight of Chest Rigs & Vests with Capacity Properties Default=Normal
-        -- 1 = Normal
-        -- 2 = -25%
-        -- 3 = -50%
-        -- 4 = -75%
-        Weight = 1,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Static". This Option will Set a Static WeightReduction Value for Chest Rigs. Minimum=0 Maximum=100 Default=0
-        WeightReductionStatic = 0,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Static". This Option will Set a Static Capacity Value for Chest Rigs. Minimum=0 Maximum=1000 Default=1
-        CapacityStatic = 1,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Percentage". This Option will Set a Percentage Value as a "double" value(i.e 1 = 100% 0.5 = 50% 0.01 = 1%) for Chest Rigs. Minimum=0.01 Maximum=200.00 Default=1.00
-        WeightReductionPercentage = 1.0,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Percentage". This Option will Set a Percentage Value as a "double" value(i.e 1 = 100% 0.5 = 50% 0.01 = 1%) for Chest Rigs. Minimum=0.01 Maximum=200.00 Default=1.00
-        CapacityPercentage = 1.0,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Randomized". Sets the Minimum Value a Chest Rig can Have. Minimum=0 Maximum=100 Default=0
-        WeightReductionRandomizedMin = 0,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Randomized". Sets the Maximum Value a Chest Rig can Have. Minimum=0 Maximum=100 Default=0
-        WeightReductionRandomizedMax = 0,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Randomized". Sets the Minimum Value a Chest Rig can Have. Minimum=1 Maximum=1000 Default=1
-        CapacityRandomizedMin = 1,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Randomized". Sets the Maximum Value a Chest Rig can Have. Minimum=1 Maximum=1000 Default=1
-        CapacityRandomizedMax = 1,
-    },
-    CustomizableFannyPacks = {
-        -- Affects the WeightReduction of Fanny Packs, Pouches, Belts etc. Default=Well Balanced
-        -- 1 = -25%
-        -- 2 = Normal
-        -- 3 = Well Balanced
-        -- 4 = Balanced
-        -- 5 = Randomized - Well Balanced
-        -- 6 = Randomized - Balanced
-        -- 7 = 75
-        -- 8 = 80
-        -- 9 = 85
-        -- 10 = 90
-        -- 11 = 95
-        -- 12 = 99
-        -- 13 = Weightless
-        -- 14 = Custom - Static
-        -- 15 = Custom - Randomized
-        WeightReduction = 3,
-        -- Affects How Much Capacity Fanny Packs, Pouches, Belts etc. Have Default=Well Balanced
-        -- 1 = -25%
-        -- 2 = Normal
-        -- 3 = Well Balanced
-        -- 4 = Balanced
-        -- 5 = Randomized - Well Balanced
-        -- 6 = Randomized - Balanced
-        -- 7 = +25%
-        -- 8 = +50%
-        -- 9 = +75%
-        -- 10 = +100%
-        -- 11 = +200%
-        -- 12 = +400%
-        -- 13 = +650%
-        -- 14 = +900%
-        -- 15 = 20
-        -- 16 = 25
-        -- 17 = 30
-        -- 18 = 40
-        -- 19 = 50
-        -- 20 = 75
-        -- 21 = Custom - Static
-        -- 22 = Custom - Randomized
-        Capacity = 3,
-        -- Affects the Weight of Fanny Packs, Pouches, Belts etc. Default=Normal
-        -- 1 = Normal
-        -- 2 = -25%
-        -- 3 = -50%
-        -- 4 = -75%
-        Weight = 1,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Static". This Option will Set a Static WeightReduction Value for Fanny Packs. Minimum=0 Maximum=100 Default=0
-        WeightReductionStatic = 0,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Static". This Option will Set a Static Capacity Value for Fanny Packs. Minimum=0 Maximum=1000 Default=1
-        CapacityStatic = 1,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Percentage". This Option will Set a Percentage Value as a "double" value(i.e 1 = 100% 0.5 = 50% 0.01 = 1%) for Fanny Packs. Minimum=0.01 Maximum=200.00 Default=1.00
-        WeightReductionPercentage = 1.0,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Percentage". This Option will Set a Percentage Value as a "double" value(i.e 1 = 100% 0.5 = 50% 0.01 = 1%) for Fanny Packs. Minimum=0.01 Maximum=200.00 Default=1.00
-        CapacityPercentage = 1.0,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Randomized". Sets the Minimum Value a Fanny Pack can Have. Minimum=0 Maximum=100 Default=0
-        WeightReductionRandomizedMin = 0,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Randomized". Sets the Maximum Value a Fanny Pack can Have. Minimum=0 Maximum=100 Default=0
-        WeightReductionRandomizedMax = 0,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Randomized". Sets the Minimum Value a Fanny Pack can Have. Minimum=1 Maximum=1000 Default=1
-        CapacityRandomizedMin = 1,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Randomized". Sets the Maximum Value a Fanny Pack can Have. Minimum=1 Maximum=1000 Default=1
-        CapacityRandomizedMax = 1,
-    },
-    CustomizableSatchels = {
-        -- Affects the WeightReduction of Satchels Default=Well Balanced
-        -- 1 = -25%
-        -- 2 = Normal
-        -- 3 = Well Balanced
-        -- 4 = Balanced
-        -- 5 = Randomized - Well Balanced
-        -- 6 = Randomized - Balanced
-        -- 7 = 75
-        -- 8 = 80
-        -- 9 = 85
-        -- 10 = 90
-        -- 11 = 95
-        -- 12 = 99
-        -- 13 = Weightless
-        -- 14 = Custom - Static
-        -- 15 = Custom - Randomized
-        WeightReduction = 3,
-        -- Affects How Much Capacity Satchels Have Default=Well Balanced
-        -- 1 = -25%
-        -- 2 = Normal
-        -- 3 = Well Balanced
-        -- 4 = Balanced
-        -- 5 = Randomized - Well Balanced
-        -- 6 = Randomized - Balanced
-        -- 7 = +25%
-        -- 8 = +50%
-        -- 9 = +75%
-        -- 10 = +100%
-        -- 11 = +200%
-        -- 12 = +400%
-        -- 13 = +650%
-        -- 14 = +900%
-        -- 15 = 20
-        -- 16 = 25
-        -- 17 = 30
-        -- 18 = 40
-        -- 19 = 50
-        -- 20 = 75
-        -- 21 = Custom - Static
-        -- 22 = Custom - Randomized
-        Capacity = 3,
-        -- Affects the Weight of Satchels Default=Normal
-        -- 1 = Normal
-        -- 2 = -25%
-        -- 3 = -50%
-        -- 4 = -75%
-        Weight = 1,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Static". This Option will Set a Static WeightReduction Value for Satchels. Minimum=0 Maximum=100 Default=0
-        WeightReductionStatic = 0,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Static". This Option will Set a Static Capacity Value for Satchels. Minimum=0 Maximum=1000 Default=1
-        CapacityStatic = 1,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Percentage". This Option will Set a Percentage Value as a "double" value(i.e 1 = 100% 0.5 = 50% 0.01 = 1%) for Satchels. Minimum=0.01 Maximum=200.00 Default=1.00
-        WeightReductionPercentage = 1.0,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Percentage". This Option will Set a Percentage Value as a "double" value(i.e 1 = 100% 0.5 = 50% 0.01 = 1%) for Satchels. Minimum=0.01 Maximum=200.00 Default=1.00
-        CapacityPercentage = 1.0,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Randomized". Sets the Minimum Value a Satchel can Have. Minimum=0 Maximum=100 Default=0
-        WeightReductionRandomizedMin = 0,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Randomized". Sets the Maximum Value a Satchel can Have. Minimum=0 Maximum=100 Default=0
-        WeightReductionRandomizedMax = 0,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Randomized". Sets the Minimum Value a Satchel can Have. Minimum=1 Maximum=1000 Default=1
-        CapacityRandomizedMin = 1,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Randomized". Sets the Maximum Value a Satchel can Have. Minimum=1 Maximum=1000 Default=1
-        CapacityRandomizedMax = 1,
-    },
-    CustomizableContainers = {
-        -- Affects the WeightReduction of Miscellaneous Containers e.g. Wardrobes, Baskets, Plastic Bins etc. Currently ONLY Affects Hydrocraft & FOOL's Containers. Default=Well Balanced
-        -- 1 = -25%
-        -- 2 = Normal
-        -- 3 = Well Balanced
-        -- 4 = Balanced
-        -- 5 = Randomized - Well Balanced
-        -- 6 = Randomized - Balanced
-        -- 7 = 75
-        -- 8 = 80
-        -- 9 = 85
-        -- 10 = 90
-        -- 11 = 95
-        -- 12 = 99
-        -- 13 = Weightless
-        -- 14 = Custom - Static
-        -- 15 = Custom - Randomized
-        WeightReduction = 3,
-        -- Affects the Capacity of Miscellaneous Containers e.g. Wardrobes, Baskets, Plastic Bins etc. Currently ONLY Affects Hydrocraft & FOOL's Containers. Default=Well Balanced
-        -- 1 = -25%
-        -- 2 = Normal
-        -- 3 = Well Balanced
-        -- 4 = Balanced
-        -- 5 = Randomized - Well Balanced
-        -- 6 = Randomized - Balanced
-        -- 7 = +25%
-        -- 8 = +50%
-        -- 9 = +75%
-        -- 10 = +100%
-        -- 11 = +200%
-        -- 12 = +400%
-        -- 13 = +650%
-        -- 14 = +900%
-        -- 15 = 20
-        -- 16 = 25
-        -- 17 = 30
-        -- 18 = 40
-        -- 19 = 50
-        -- 20 = 75
-        -- 21 = Custom - Static
-        -- 22 = Custom - Randomized
-        Capacity = 3,
-        -- Affects the Weight of Miscellaneous Containers e.g. Wardrobes, Baskets, Plastic Bins etc. Currently ONLY Affects Hydrocraft & FOOL's Containers. Default=Normal
-        -- 1 = Normal
-        -- 2 = -25%
-        -- 3 = -50%
-        -- 4 = -75%
-        Weight = 1,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Static". This Option will Set a Static WeightReduction Value for Misc Containers. Minimum=0 Maximum=100 Default=0
-        WeightReductionStatic = 0,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Static". This Option will Set a Static Capacity Value for Misc Containers. Minimum=0 Maximum=1000 Default=1
-        CapacityStatic = 1,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Percentage". This Option will Set a Percentage Value as a "double" value(i.e 1 = 100% 0.5 = 50% 0.01 = 1%) for Misc Containers. Minimum=0.01 Maximum=200.00 Default=1.00
-        WeightReductionPercentage = 1.0,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Percentage". This Option will Set a Percentage Value as a "double" value(i.e 1 = 100% 0.5 = 50% 0.01 = 1%) for Misc Containers. Minimum=0.01 Maximum=200.00 Default=1.00
-        CapacityPercentage = 1.0,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Randomized". Sets the Minimum Value a Misc Container can Have. Minimum=0 Maximum=100 Default=0
-        WeightReductionRandomizedMin = 0,
-        -- To Enable this Setting, Set the WeightReduction Option to "Custom - Randomized". Sets the Maximum Value a Misc Container can Have. Minimum=0 Maximum=100 Default=0
-        WeightReductionRandomizedMax = 0,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Randomized". Sets the Minimum Value a Misc Container can Have. Minimum=1 Maximum=1000 Default=1
-        CapacityRandomizedMin = 1,
-        -- To Enable this Setting, Set the Capacity Option to "Custom - Randomized". Sets the Maximum Value a Misc Container can Have. Minimum=1 Maximum=1000 Default=1
-        CapacityRandomizedMax = 1,
-    },
-    CustomizableVehicles = {
-        -- USE WITH CAUTION. Increased Trunk Capacity is Known to DESPAWN Items, Check Options Guide for More Information. Default=Normal
-        -- 1 = Normal
-        -- 2 = Well Balanced
-        -- 3 = Balanced
-        -- 4 = Boosted
-        Capacity = 1,
-        -- Affects How Much Vehicle Parts Weigh e.g. Tires, Trunks, Tools Default=Normal
-        -- 1 = Normal
-        -- 2 = -25%
-        -- 3 = -50%
-        -- 4 = -75%
-        Weight = 1,
-    },
-    CustomizableClothing = {
-        -- Fanny Pack Slot: Allows Equpping 1 Fanny Pack with a Satchel & Backpack, Ammo Strap Slot: Allows Equpping 2 Fanny Packs with a Sathel & Backpack Default=Fanny Pack Slot
-        -- 1 = Disabled
-        -- 2 = Fanny Pack Slot
-        SatchelWearable = 2,
-        -- If Enabled Durability Will be Removed from All Clothing Equipped by the Player
-        Durability = false,
-        -- If Enabled All Characteristics of Clothing e.g. Holes, Blood, Wetness etc. Will be Disabled/Removed
-        Degradation = false,
-    },
-    CustomizableRandomizer = {
-        -- How Frequently Randomized Options Re-Randomize. Does Nothing if No Randomized Options are Enabled. Default=Disabled
-        -- 1 = Disabled
-        -- 2 = Every Ten Minutes
-        -- 3 = Every Hour
-        -- 4 = Every Day
-        Frequency = 1,
-    },
-    CustomizableExercise = {
-        -- If Enabled You'll be Able to Exercise with Gear Equipped
-        Exercise = false,
-    },
-    CustomizablePickUp = {
-        -- Allows You to Equip Insanely Heavy Backpacks, but ONLY Backpacks. Other Container Types use Different Functions to Equip.
-        Limit = false,
-    },
-    CustomizableRespawn = {
-        -- This Setting is for Respawning Items with Unwanted Values. Once Enabled, just Right Click a Container in Your Inventory and Select "Respawn". Doesn't Need to be Enabled All the Time
-        Respawnable = false,
+    ExpandedHeli = {
+        -- The day the scheduler will start assigning events to. Minimum=0 Maximum=999 Default=0
+        StartDay = 0,
+        -- How long will the scheduler run from the start day.  The scheduler will adjust event progression to fit this duration. Minimum=1 Maximum=999 Default=90
+        SchedulerDuration = 90,
+        -- Toggle this on so that the scheduler will spawn events passed the duration limit. Events will still progress through stages according to the duration but events will never stop being scheduled.
+        ContinueScheduling = true,
+        -- When "Continue Scheduling Forever" is toggle on, this toggled on makes the scheduler only use late-game events.
+        ContinueSchedulingLateGameOnly = true,
+        -- Whether weather will prevent events, or cause their crash.
+        WeatherImpactsEvents = true,
+        -- How frequent jet events occur.  Jets fly by players causing horde movement. Default=Uncommon
+        -- 1 = Never
+        -- 2 = Rare
+        -- 3 = Uncommon
+        -- 4 = Common
+        -- 5 = Frequent
+        Frequency_jet = 5,
+        -- How frequent Police events occur.  The police will take matters into their own hands and escort citizens around while firing on zombies. Default=Uncommon
+        -- 1 = Never
+        -- 2 = Rare
+        -- 3 = Uncommon
+        -- 4 = Common
+        -- 5 = Frequent
+        Frequency_police = 3,
+        -- How frequent news events occur.  News choppers will hone in on any citizen they find and follow them around for a short time. Default=Uncommon
+        -- 1 = Never
+        -- 2 = Rare
+        -- 3 = Uncommon
+        -- 4 = Common
+        -- 5 = Frequent
+        Frequency_news_chopper = 4,
+        -- How frequent military events occur.  The military will progress through stages: warn citizens, purge the undead, then ultimately purge anything that moves. Default=Uncommon
+        -- 1 = Never
+        -- 2 = Rare
+        -- 3 = Uncommon
+        -- 4 = Common
+        -- 5 = Frequent
+        Frequency_military = 5,
+        -- How frequent FEMA aid drop events occur.  FEMA will conduct aid drops early on in the apocalypse. Default=Uncommon
+        -- 1 = Never
+        -- 2 = Rare
+        -- 3 = Uncommon
+        -- 4 = Common
+        -- 5 = Frequent
+        Frequency_FEMA_drop = 4,
+        -- How frequent samaritan events occur.  Samaritans will drop off supplies to help survivors. Default=Uncommon
+        -- 1 = Never
+        -- 2 = Rare
+        -- 3 = Uncommon
+        -- 4 = Common
+        -- 5 = Frequent
+        Frequency_samaritan_drop = 5,
+        -- How frequent survivor events occur.  Survivors will only flyby on scouting missions causing horde movement. Default=Uncommon
+        -- 1 = Never
+        -- 2 = Rare
+        -- 3 = Uncommon
+        -- 4 = Common
+        -- 5 = Frequent
+        Frequency_survivor_heli = 5,
+        -- How frequent raider events occur.  Raiders will hone in on survivors to torment them for some entertainment. Default=Uncommon
+        -- 1 = Never
+        -- 2 = Rare
+        -- 3 = Uncommon
+        -- 4 = Common
+        -- 5 = Frequent
+        Frequency_raiders = 5,
     },
     FancyHandwork = {
         -- Player Firearm Level to change to Tactical Aiming animation. <LINE> Set to 0 to always use this.  Set to 11 to never. Minimum=0 Maximum=11 Default=3
@@ -2075,16 +1385,324 @@ SandboxVars = {
         -- When a player is unarmed, always raise their fists when aiming for unarmed attacks.  Disable to require the Modifier to be held when aiming.
         AlwaysUnarmed = true,
     },
-    DAMN = {
-        AllowPowerChadSpawns = true,
+    BLTRandomZombies = {
+        -- Percentage of Crawlers present in the world. Crawler%, Shambler%, FastShambler% and Sprinter% must add up to 100. Minimum=0.00 Maximum=100.00 Default=2.00
+        Crawler = 20.0,
+        -- Percentage of Shamblers present in the world. Crawler%, Shambler%, FastShambler% and Sprinter% must add up to 100. Minimum=0.00 Maximum=100.00 Default=15.00
+        Shambler = 40.0,
+        -- Percentage of Fast Shamblers present in the world. Crawler%, Shambler%, FastShambler% and Sprinter% must add up to 100. Minimum=0.00 Maximum=100.00 Default=78.00
+        FastShambler = 38.0,
+        -- Percentage of Sprinters present in the world. Crawler%, Shambler%, FastShambler% and Sprinter% must add up to 100. Minimum=0.00 Maximum=100.00 Default=5.00
+        Sprinter = 2.0,
+        -- Percentage of Fragile zombies present in the world. Fragile%, Normal% and Tough% must add up to 100. Minimum=0.00 Maximum=100.00 Default=0.00
+        Fragile = 50.0,
+        -- Percentage of zombies with normal toughness present in the world. Fragile%, Normal% and Tough% must add up to 100. Minimum=0.00 Maximum=100.00 Default=100.00
+        NormalTough = 30.0,
+        -- Percentage of Tough zombies present in the world. Fragile%, Normal% and Tough% must add up to 100. Minimum=0.00 Maximum=100.00 Default=0.00
+        Tough = 20.0,
+        -- Percentage of Smart zombies present in the world. These zombies can open doors and more. Minimum=0.00 Maximum=100.00 Default=0.00
+        Smart = 1.0,
+        -- [ADVANCED OPTION] The interval in milliseconds between two updates. Higher number means less CPU usage, lower number means less correctness issues Minimum=1000 Maximum=60000 Default=7500
+        Frequency = 7500,
     },
-    VehicleRepairOverhaul = {
-        DisableVehicleSalvage = false,
+    KillCount = {
+        -- May provoke stutters.
+        doExport = false,
+        -- Includes all kills into the final value in Post Death floating text.
+        includePostDeathUI = true,
+        -- Target time (in milliseconds) between two updates in multiplayer. Small value gives reactivity. High value reduces network use and server workload. Minimum=0 Maximum=10000000 Default=500
+        MaxUpdateDelay = 500,
+        -- Each client can see every character score. Deactivate on (very large) servers to reduce Global Mod Data transfer load.
+        shareOnServer = true,
+        -- Dead characters are kept and count toward server kills. Deactivate for server that never wipe.
+        keepTrackOfDead = true,
     },
-    FitnessIsALifestyle = {
-        Hardcore = true,
-        -- Minimum=1.00 Maximum=100.00 Default=3.00
-        XPMultiplier = 3.0,
+    EvolvingTraitsWorld = {
+        -- Defines if Affinity System is enabled for some traits tied to systems and some complex ones (for example, weight Fear of Locations system, Herbalist, or Sleep System. Check which Systems and Traits are a subject to Affinity system in Google sheets).
+        -- Affinity system makes it easier to hold onto traits you picked on character creation, both negative and positive. With it enabled, you halve (modifiable) the speed at which you lose these traits, and double (also modifiable) the speed at which you earn these traits.
+        AffinitySystem = true,
+        -- How much harder it is to lose perks that have Affinity System functionality (only affects perks you started with!). Setting it to 1, would mean that it doesn't make it harder to lose. Setting it to 2 means you'll be twice as slow to lose them. Setting to 1.5 would make it 50% slower, and so on. So if you start with positive trait that you can lose, it'll be much harder to lose it. But it also affects negative traits! Minimum=1.00 Maximum=100.00 Default=2.00
+        AffinitySystemLoseDivider = 2.0,
+        -- How much easier it is to gain perks that have Affinity System functionality (only affects perks you started with!). Setting it to 1, would mean that it doesn't make it easier to gain. Setting it to 2 means it'll take twice as fast to gain them. Setting to 1.5 would make it 50% faster, and so on. So if you start with positive dynamic trait and later lose it, you'll get it back much faster. But it also affects negative traits! Minimum=1.00 Maximum=100.00 Default=2.00
+        AffinitySystemGainMultiplier = 2.0,
+        BraverySystem = true,
+        -- Here you set up how many kills you need to get to MAX your bravery system. Melee kills count twice for progress. Progression is as follows: Cowardly -> Fear of Blood -> Pacifist -> Adrenaline Junkie -> Brave -> Desensitized
+        --  Amounts ot reach each stage are as follows:
+        -- Cowardly: 10% of max kills
+        -- Fear of blood: 20% of max Kills
+        -- Pacifist: 30% of max Kills
+        -- Adrenaline Junkie: 40% of max Kills
+        -- Brave: 60% of max Kills
+        -- Desensitized: 100% of max Kills
+        -- Example: Max kills is set to 1000. You start with Cowardly. You need 100 kills to remove it. If you get 50 melee kills, it'll be removed. Same is true if you'd get 40 melee kills (x2 = 80 kills for counter) and 20 firearms kills Minimum=0 Maximum=500000 Default=20000
+        BraverySystemKills = 20000,
+        -- If enabled, getting desensitized through Bravery system will also remove other fear perks like Pluviophile, Homichlophobia, Agoraphobic, Claustrophobic and prevent you from gaining them.
+        BraverySystemRemovesOtherFearPerks = false,
+        ColdIllnessSystem = true,
+        -- How many instances of moderate to heavy colds you have to weather to lose/get related traits (Prone to Illness and Resilient). Prone to illness is lost when hitting 50% of counter, Resilient when hitting 100% Minimum=0 Maximum=5000 Default=100
+        ColdIllnessSystemColdsWeathered = 100,
+        -- This system allows you to gain/lose trait in more random and not in so meta-game way. How it works is that when you qualify for adding/removing a trait (list of traits that are affected by this system can be found on google sheets, link in workshop description) you don't get/lose it instantly. Instead, it's added to a table with amount of hours it can take to get it (based on sandbox settings below). Then, every hour, game is rolling for you to get/lose every trait in this table (each trait is rolled separately). So you get 1 in X chance to get your trait every hour. If roll fails, X is reduced by 1. So longer you go, higher chances of trait that you earned to catch up with you.
+        -- IMPORTANT: traits that rely on skill levels will be unlocked as described above. However, traits that rely on internal counters added by this mod (example: Prone To Illness, Weak Stomach, Outdoorsman, Cat Eyes, etc) will unlock next time that they have to increase those internal counters. It'll be this way because coding separate unlock mechanism for those specific traits is a pain and a lot of extra unneeded work. Example: You qualify for Cat Eyes, and it's added to Delayed Traits Table. Let's say some time later you roll success in gaining it in the middle of the day. You won't get it straight away, but you'll get it as soon as Cat Eyes counter increases next time (the closest evening/night). All these specific cases are noted on google sheets.
+        DelayedTraitsSystem = true,
+        -- Default delay (in hours), how many hours it can take the trait to appear/disappear. So, for example, if you set it to 240, and qualify for new trait, you'll get 1 in 240 chance to get it in 1st hour. If it fails, next hour it's 1 in 239. Next hour it's 1 in 238, and so on. Minimum=1 Maximum=5000 Default=336
+        DelayedTraitsSystemDefaultDelay = 336,
+        -- Additional delay (in hours) that is stacked on top of default delay for 'free' traits that you get at the start of the game. Example: Starting with 9 Strength would usually give you Hoarder for free. If Delayed Traits system is enabled and let's say Default Delay is 240 and Additional Delay for Starting Traits is 480, you won't get Hoarder at the start of the game, instead it'll go into the table with Max hours being 720. So you'll have 1 in 720 to get it in 1st hour, and so on. Minimum=1 Maximum=5000 Default=504
+        DelayedTraitsSystemDefaultStartingDelay = 504,
+        FearOfLocationsSystem = true,
+        -- Counter = amount of minutes you need to spend outside/inside to lose respective trait, Agoraphobic or Claustrophobic. Being outside/inside when stressed or unhappy will decrease counter. Reaching -counter value will GAIN you appropriate trait. Reaching +counter value will get rid of appropriate trait, being in between -counter and +counter will get you nothing. Lower boundary is -2x of counter, upper boundary is 2x of set value here. Minimum=0 Maximum=500000 Default=12000
+        FearOfLocationsSystemCounter = 12000,
+        -- How fast you decrease counter when you either unhappy (50%+) or stressed (50%+). Considering you're more often normal than unhappy or stressed, I'd recommend not setting this too low. Formula for how much counter decreases every minute is 1 * (1 + unhappiness(0-1)) + (1 * stress(0-1)) * multiplier, so at minimum you lose 0 * multiplier, at maximum you lose 4 * multiplier. Minimum=0.00 Maximum=100.00 Default=1.00
+        FearOfLocationsSystemCounterLoseMultiplier = 1.0,
+        FogSystem = true,
+        -- You get fogIntensity * FogSystemCounterIncreaseMultiplier every minute you spend in fog. You also lose fogIntensity * panic * 0.9 * FogSystemCounterDecreaseMultiplier at same time. Counter max and min boundaries are -2*counter and 2*counter. When being under -counter, you gain Homichlophobia, when reaching counter, you gain Homichlophile. When in between, you get nothing. Minimum=0 Maximum=500000 Default=30000
+        FogSystemCounter = 30000,
+        -- Adjusts how fast your counter increases, details in tooltip of Fog System Counter Minimum=0.00 Maximum=100.00 Default=1.00
+        FogSystemCounterIncreaseMultiplier = 1.0,
+        -- Adjusts how fast your counter decreases, details in tooltip of Fog System Counter Minimum=0.00 Maximum=100.00 Default=1.00
+        FogSystemCounterDecreaseMultiplier = 1.0,
+        FoodSicknessSystem = true,
+        -- How much food sickness you have to accumulate to lose/gain Food Sickness related traits, Weak Stomach and Iron Gut. Sickness can be between 0 and 1, where at one you can actually die. Each minute, your current sickness is added to counter, simple as that. Minimum=0 Maximum=500000 Default=40000
+        FoodSicknessSystemCounter = 40000,
+        HearingSystem = true,
+        -- How many levels in Agility + Combat (without Maintenance) you have to get to lose/get hearing perks (Hard Of Hearing and Keen Hearing). You lose Hard of Hearing when passing half of required levels, and obtain Keen Hearing when hitting the set number. Minimum=0 Maximum=100 Default=80
+        HearingSystemSkill = 80,
+        InventoryTransferSystem = true,
+        -- How many items (and weight) you have to transfer to earn/lose traits related to item transfer: Disorganized, Organized, All Thumbs, Dexterous, Butterfingers (More Traits)
+        -- Disorganized: 60% of Weight counter and 30% of Items counter
+        -- Organized: 100% of Weight counter and 60% of Items counter
+        -- All Thumbs: 30% of Weight counter and 60% of Items counter
+        -- Dexterous: 60% of Weight counter and 100% of Items counter.
+        -- Butterfingers (More Traits): 150% of Weight counter and 150% of Items counter. Minimum=0 Maximum=2500000 Default=500000
+        InventoryTransferSystemItems = 500000,
+        -- How many weight (and items) you have to transfer to earn/lose traits related to item transfer: Disorganized, Organized, All Thumbs, Dexterous, Butterfingers (More Traits)
+        -- Disorganized: 60% of Weight counter and 30% of Items counter
+        -- Organized: 100% of Weight counter and 60% of Items counter
+        -- All Thumbs: 30% of Weight counter and 60% of Items counter
+        -- Dexterous: 60% of Weight counter and 100% of Items counter.
+        -- Butterfingers (More Traits): 150% of Weight counter and 150% of Items counter. Minimum=0 Maximum=2500000 Default=50000
+        InventoryTransferSystemWeight = 50000,
+        LuckSystem = true,
+        -- Code will count ALL your skill levels (including any added by mods and passives), and check if you have % of skill levels required to lose/gain Unlucky/Lucky. You lose Unlucky when you reach half of % you set. Meaning on default settings, you'll lose Unlucky when sum of your skill levels is 33% or higher (from max) and you'll get lucky when you hit 66%. Minimum=0.00 Maximum=100.00 Default=66.00
+        LuckSystemSkill = 66.0,
+        RainSystem = true,
+        -- You get 1 * rainIntensity every minute you spend in rain. If you have above 25% panic, instead you lose 1 * rainIntensity * panicPercentage * RainSystemDecreaseMultiplier. Counter max and min boundaries are -2*counter and 2*counter. When being under -counter, you gain Pluviophobia, when reaching counter, you gain Pluviophile. When in between, you get nothing. Minimum=0 Maximum=500000 Default=50000
+        RainSystemCounter = 50000,
+        -- Defines how fast or slow you decrease your Rain System Counter, explained in Rain System Counter tooltip Minimum=0.00 Maximum=100.00 Default=1.00
+        RainSystemCounterMultiplier = 1.0,
+        -- Enables obtaining/losing sleep related traits, Wakeful and Sleepyhead. 
+        -- ---General description---
+        -- Mod tracks at which hours you like to sleep, and as long as you sleep within around those hours, you reinforce your healthy sleep schedule. If you sleep outside of it, you lose some schedule integrity. Not sleeping for more than 24h also starts to damage your sleep schedule. Mod tracks at which hours you like to sleep by checking midpoint of your last sleep, so it's possible to shift your schedule to different hours.
+        -- ---Technical description, don't read this if you don't want to meta-game much---
+        -- Every time you sleep, mod tracks midpoint of your sleep, so if u sleep between 23:00 and 05:30, midpoint would be 03:45, and it would be your optimal sleeping hour. If you sleep within +-6h you get progress to your SleepHealthiness bar. Goes from -200 to 200. Check is made every 10 min, you get + 0.167 to said bar, so essentially 1h of sleeping in correct schedule gives +1 to bar. Sleeping outside of it removes 0.167 from bar every 10 min. After not sleeping for more than 24h you start getting -0.167 every ten minutes. If your bar below -100, you get Sleepyhead. If it's above 100, you get Wakeful. Starting with either trait will set starting value of the bar to max/min point, so for Wakeful +200 and for Sleepyhead -200.
+        SleepSystem = true,
+        -- How fast you increase/decrease SleepHealthiness counter, which dictates if you get/lose Wakeful and Sleepyhead. Higher values = faster gain but also faster lose. Same goes other way, lower multiplier = slower gain but also harder to lose them. Minimum=0.00 Maximum=100.00 Default=1.00
+        SleepSystemMultiplier = 1.0,
+        -- Describing conditions on which you lose/gain traits in here would take a lot of text, so just check goolge sheets for details (link in mod workshop page description). Affected traits that can be gained/lost dynamically: High/Low Thirst, Light Eater/Hearty Appetite, Thick/Thin Skinned, Slow/Fast Healer.
+        -- IMPORTANT: if you pick any of these traits in character creation they will be permanent on your character, both negative and positive.
+        WeightSystem = true,
+        -- How many levels in Strength + Fitness you need to have to gain Thick Skinned and Fast Healer (this is not only condition, once again check google sheets) Minimum=0 Maximum=20 Default=16
+        WeightSystemSkill = 16,
+        -- If this option is disabled, moodle won't show up. For single-player leave this on and change moodles you see with Mod Options. If it's a server setting, players won't be able to enable moodle client-sided.
+        BloodlustMoodle = true,
+        -- For how many hours bloodlust moodle is visible after a nearby kill on zombie Minimum=1 Maximum=480 Default=6
+        BloodlustMoodleVisibilityHours = 6,
+        -- If this option is disabled, moodle won't show up. For single-player leave this on and change moodles you see with Mod Options. If it's a server setting, players won't be able to enable moodle client-sided.
+        SleepMoodle = true,
+        -- If this option is disabled, moodle won't show up. For single-player leave this on and change moodles you see with Mod Options. If it's a server setting, players won't be able to enable moodle client-sided.
+        SmokerMoodle = true,
+        -- This controls when moodle shows up. Setting this to 20%, for example, will make moodle show up when you're 20% away from earning or loosing Smoker. Setting to 100 will leave smoker moodle up always. For single-player It's recommended to set this to 100, and then change % in Mod Options. For servers, this setting controls what's maximum % that clients can set up for themselves. So if this value in server settings is at 10%, players can't set their value to 30%. Well, they can, but it'll still only show up when it hits 10%. But if you set this value to 50%, players can then change it client-sided to 20%, for example. Minimum=0.00 Maximum=100.00 Default=100.00
+        SmokerMoodlePercentage = 100.0,
+        -- Multiplies effect of bloodlust by this value. By default, unhappiness, stress and panic each reduced by 4% for each kill. This multiplier is applied to those 4%. So setting this to 0.5 would make those stats being reduced by 2% instead. Minimum=0.00 Maximum=100.00 Default=1.00
+        BloodlustMultiplier = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=0.50
+        HoarderWeight = 0.5,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        HomichlophileMultiplier = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        HomichlophobiaMultiplier = 1.0,
+        -- All effects (Unhappiness, Stress and Boredom decrease) are multiplied by this value. Minimum=0.00 Maximum=100.00 Default=1.00
+        PluviophileMultiplier = 1.0,
+        -- All effects (Unhappiness, Stress and Boredom decrease) are multiplied by this value. Minimum=0.00 Maximum=100.00 Default=1.00
+        PluviophobiaMultiplier = 1.0,
+        -- % to not increase amount of times item was repaired after repair. Minimum=1 Maximum=100 Default=75
+        RestorationExpertChance = 75,
+        Asthmatic = true,
+        -- What value on counter you should reach to gain asthmatic trait. Minimum=0 Maximum=500000 Default=20000
+        AsthmaticCounter = 20000,
+        -- ---General understanding---
+        -- This perk allows you to gain a benefit by filling and maintaining a bloodlust meter. The bloodlust meter is soft-capped at 36 hours and can be filled by killing zombies within a certain distance. The closer the zombies are, the more quickly the meter will fill. When you're above half of the meter, every hour it will give you progress towards the bloodlust perk, when it's below, it'll remove progress. The bloodlust meter is naturally decaying by 1 every hour.
+        -- ---Technical description, don't read this if you don't want to meta-game much---
+        -- To fill the bloodlust meter, you must kill zombies within a certain distance from you. The exact amount the meter fills is determined by a formula that takes into account the distance of the zombies and a multiplier. The precise formula is: math.min(1 / distance, 1) * multiplier. Every hour, the meter is reduced by one hour. If your bloodlust meter is above half, every hour you will gain 10% of it as progress towards gaining the bloodlust perk. If it's below 50%, you'll lose 3.6-0.1*BloodlustBar, so if you slightly below 50% you lose around 1.8 but if you're at 0%, you'll lose 3.6 from your progress. Progress is capped at 2x of Bloodlust Progress value
+        Bloodlust = true,
+        -- How fast do you fill your bloodlust meter Minimum=0.00 Maximum=100.00 Default=0.50
+        BloodlustMeterFillMultiplier = 0.5,
+        -- How much total bloodlust progress you need to get trait. Keeping your bloodlust meter full would earn you 3.6 points in 1h. Be aware, that you also loose bloodlust if this meter ever falls below 50%. So if you set it low, it's going to be easy to earn but also easy to lose the perk. Progress is capped at 2x of Bloodlust Progress value. Minimum=1 Maximum=500000 Default=1000
+        BloodlustProgress = 1000,
+        CatEyes = true,
+        -- ---General understanding---
+        -- This perk allows you to gain points by seeing and observing squares within a certain radius of your character. The number of points you earn is influenced by factors such as the time of day, the darkness of the square, and whether you and the square are inside or outside. The more squares you see and the darker they are, the more points you will earn.
+        -- ---Technical description, don't read this if you don't want to meta-game much---
+        -- To earn points for this perk, you must see and observe squares within a 30 radius of your character. The exact number of points you earn for each square is determined by a formula that takes into account the darkness of the square, the time of day, and whether you and the square are inside or outside. The detailed formula for calculating points for each square is: 0.01 * darkness of square * 2 (if both player and square are inside) * time of day. On average, spending a full night outside will net you approximately 1.1k points. Minimum=0 Maximum=2500000 Default=250000
+        CatEyesCounter = 250000,
+        EagleEyed = true,
+        -- At what distance must a zombie be to count this as a kill to Eagle-Eyed kill counter. For vanilla would recommend leaving at 20, for mods that add good firearms (Gunfighter + Brita for example), would recommend setting to 25 or so Minimum=0 Maximum=50 Default=20
+        EagleEyedDistance = 20,
+        -- Minimum=0 Maximum=500000 Default=200
+        EagleEyedKills = 200,
+        Herbalist = true,
+        -- How many herbs you have to pick up (from foraging) to gain the trait Minimum=0 Maximum=500000 Default=1000
+        HerbalistHerbsPicked = 1000,
+        -- How many herbs are removed from the counter each day. Dropping down to half a counter will remove the trait, so you'll have to earn it again. Minimum=0 Maximum=500000 Default=1
+        HerbalistHerbsDecay = 1,
+        Outdoorsman = true,
+        -- ---General understanding---
+        -- This allows you to gain a trait by spending time outside and being exposed to various weather conditions. The more adverse the weather conditions are, the more quickly you will gain the trait. Being inside slowly loses progress. Reaching counter will gain the trait, dropping down to half will lose it.
+        -- ---Technical details---
+        -- Every minute you spend outside will add 1 point to a counter. The rate at which the counter increases is further multiplied by certain weather conditions, such as rain, snow, and wind. When the counter reaches specified threshold, you will gain the trait. From testing, it has been determined that spending 24 hours in clear weather with one foggy morning will result in approximately 1.7k points, while spending 24 hours in weather with two foggy mornings and a storm at midday will result in approximately 5k points. If you're inside, you lose 10% of what you'd gain if you'd be outside. This has liner scaling to 100% over the course of 900 minutes of being inside. You can reset current % at which you lose point by being outside. You decrease % by 0.3 for each minute being outside (You can go from 100% to 10% in 300 minutes). When reaching half of the counter you set up, you lose the trait. Counter has upper boundary of 10x the counter value and lower boundary of 0 Minimum=0 Maximum=2500000 Default=500000
+        OutdoorsmanCounter = 500000,
+        -- Defines how fast or slow you decrease your outdoorsman counter, multiplier of 1 is described in previous tooltip Minimum=0.00 Maximum=100.00 Default=1.00
+        OutdoorsmanCounterLoseMultiplier = 1.0,
+        Smoker = true,
+        -- Upon reaching this value on the counter, you'll get Smoker trait. When dropping to half of it, you'll lose it. Counter boundaries are 0 to 2x counter Minimum=0 Maximum=500000 Default=1000
+        SmokerCounter = 1000,
+        -- How fast your addiction decaying Minimum=0.00 Maximum=1000.00 Default=8.00
+        SmokingAddictionDecay = 8.0,
+        -- How fast your addiction is increasing Minimum=0.00 Maximum=100.00 Default=1.00
+        SmokingAddictionMultiplier = 1.0,
+        Mechanics = true,
+        -- Minimum=0 Maximum=10 Default=4
+        MechanicsSkill = 4,
+        -- How much % of car condition you have to repair to qualify for perk. Works on every part of a car, saved between all cars. Minimum=0 Maximum=500000 Default=1000
+        MechanicsRepairs = 1000,
+        Fishing = true,
+        -- Minimum=0 Maximum=10 Default=4
+        FishingSkill = 4,
+        AVClub = true,
+        -- Minimum=0 Maximum=10 Default=4
+        AVClubSkill = 4,
+        Axeman = true,
+        -- How many trees you have to cut down to get Axeman. Minimum=0 Maximum=500000 Default=500
+        AxemanTrees = 500,
+        AxeThrower = true,
+        -- Minimum=0 Maximum=10 Default=4
+        AxeThrowerSkill = 4,
+        -- Minimum=0 Maximum=500000 Default=200
+        AxeThrowerKills = 200,
+        BaseballPlayer = true,
+        -- Minimum=0 Maximum=10 Default=4
+        BaseballPlayerSkill = 4,
+        -- Minimum=0 Maximum=500000 Default=200
+        BaseballPlayerKills = 200,
+        BodyworkEnthusiast = true,
+        -- Metalworking + Mechanics Minimum=0 Maximum=20 Default=12
+        BodyworkEnthusiastSkill = 12,
+        -- How much % of car condition you have to repair to qualify for perk. Works on every part of a car, saved between all cars. Minimum=0 Maximum=500000 Default=6000
+        BodyworkEnthusiastRepairs = 6000,
+        Brawler = true,
+        -- Axe + Long Blunt Minimum=0 Maximum=20 Default=12
+        BrawlerSkill = 12,
+        -- Axe + Long Blunt Minimum=0 Maximum=500000 Default=600
+        BrawlerKills = 600,
+        Burglar = true,
+        -- Mechanics + Electrical + Nimble. Please note that You need to have at least 2 levels in each of Mechanics and Electrical Minimum=4 Maximum=30 Default=7
+        BurglarSkill = 7,
+        Clumsy = true,
+        -- Sneak + Lightfooted Minimum=0 Maximum=20 Default=12
+        ClumsySkill = 12,
+        Conspicuous = true,
+        -- Minimum=0 Maximum=10 Default=4
+        ConspicuousSkill = 4,
+        Cook = true,
+        -- Minimum=0 Maximum=10 Default=8
+        CookSkill = 8,
+        FastLearner = true,
+        -- Maintenance + Carpentry + Cooking + Farming + First Aid + Electrical + Metalworking + Mechanics + Tailoring Minimum=0 Maximum=90 Default=60
+        FastLearnerSkill = 60,
+        FirstAid = true,
+        -- Minimum=0 Maximum=10 Default=4
+        FirstAidSkill = 4,
+        FurnitureAssembler = true,
+        -- Minimum=0 Maximum=10 Default=4
+        FurnitureAssemblerSkill = 4,
+        Gardener = true,
+        -- Minimum=0 Maximum=10 Default=4
+        GardenerSkill = 4,
+        Graceful = true,
+        -- Nimble + Sneaking + Lightfooted Minimum=0 Maximum=30 Default=9
+        GracefulSkill = 9,
+        GunEnthusiast = true,
+        -- Aiming + Reloading Minimum=0 Maximum=20 Default=12
+        GunEnthusiastSkill = 12,
+        -- Minimum=0 Maximum=500000 Default=600
+        GunEnthusiastKills = 600,
+        Gymnast = true,
+        -- Lightfooted + Nimble Minimum=0 Maximum=20 Default=15
+        GymnastSkill = 15,
+        GymRat = true,
+        -- Strength + Fitness Minimum=0 Maximum=20 Default=14
+        GymRatSkill = 14,
+        Handy = true,
+        -- Maintenance + Carpentry Minimum=0 Maximum=20 Default=13
+        HandySkill = 13,
+        Hiker = true,
+        -- Foraging + Trapping Minimum=0 Maximum=20 Default=10
+        HikerSkill = 10,
+        Hoarder = true,
+        -- Minimum=0 Maximum=10 Default=8
+        HoarderSkill = 8,
+        HomeCook = true,
+        -- Minimum=0 Maximum=10 Default=4
+        HomeCookSkill = 4,
+        Hunter = true,
+        -- Sneaking + Aiming + Small Blade + Trapping Minimum=8 Maximum=40 Default=24
+        HunterSkill = 24,
+        -- Firearm + Small Blade Minimum=0 Maximum=500000 Default=200
+        HunterKills = 200,
+        Inconspicuous = true,
+        -- Minimum=0 Maximum=10 Default=7
+        InconspicuousSkill = 7,
+        Kenshi = true,
+        -- Minimum=0 Maximum=10 Default=5
+        KenshiSkill = 5,
+        -- Minimum=0 Maximum=500000 Default=250
+        KenshiKills = 250,
+        KnifeFighter = true,
+        -- Minimum=0 Maximum=10 Default=4
+        KnifeFighterSkill = 4,
+        -- Minimum=0 Maximum=500000 Default=200
+        KnifeFighterKills = 200,
+        LightStep = true,
+        -- Minimum=0 Maximum=10 Default=4
+        LightStepSkill = 4,
+        LowProfile = true,
+        -- Minimum=0 Maximum=10 Default=4
+        LowProfileSkill = 4,
+        RestorationExpert = true,
+        -- Minimum=0 Maximum=10 Default=9
+        RestorationExpertSkill = 9,
+        Runner = true,
+        -- Minimum=0 Maximum=10 Default=4
+        RunnerSkill = 4,
+        Sewer = true,
+        -- Minimum=0 Maximum=10 Default=4
+        SewerSkill = 4,
+        SlowLearner = true,
+        -- Maintenance + Carpentry + Cooking + Farming + First Aid + Electrical + Metalworking + Mechanics + Tailoring Minimum=0 Maximum=90 Default=30
+        SlowLearnerSkill = 30,
+        Sojutsu = true,
+        -- Minimum=0 Maximum=10 Default=4
+        SojutsuSkill = 4,
+        -- Minimum=0 Maximum=500000 Default=200
+        SojutsuKills = 200,
+        StickFighter = true,
+        -- Minimum=0 Maximum=10 Default=4
+        StickFighterSkill = 4,
+        -- Minimum=0 Maximum=500000 Default=200
+        StickFighterKills = 200,
+    },
+    ProxInv = {
+        -- Enable this if you want the Proximity Inventory to work only on zombies
+        ZombieOnly = false,
     },
     FBforageSystem = {
         -- Warning: Too much spawn could cause performance issues Minimum=1 Maximum=5 Default=2
@@ -2093,6 +1711,17 @@ SandboxVars = {
         DeepForestDensity = 2,
         -- 1.5 for vanilla Minimum=1.50 Maximum=10.00 Default=4.00
         MinimalSpottingRange = 4.0,
+    },
+    TheyKnewExtended = {
+        ImmunityChanceEnabled = false,
+        -- Minimum=0 Maximum=100 Default=50
+        ImmunityChance = 50,
+    },
+    WaterPipes = {
+        SmartPipes = true,
+        -- Minimum=3 Maximum=100 Default=20
+        SmartPipesFillMax = 20,
+        SmartPipesUpdateNotWatered = false,
     },
     MoreBuilds = {
         -- Set max water storage capacity for well in more builds <LINE> note: set it to 9999 will display the capacity as unlimited Minimum=1 Maximum=10000 Default=1200
@@ -2104,5 +1733,52 @@ SandboxVars = {
         -- 4 = Overseer
         -- 5 = Moderator
         BuildingPermission = 1,
+    },
+    TheyKnew = {
+        -- Minimum=1 Maximum=1000000 Default=500
+        SpawnChance = 500,
+        -- Minimum=0 Maximum=100 Default=100
+        LootChance = 100,
+        -- Minimum=0 Maximum=100 Default=0
+        LootChanceZomboxycycline = 0,
+    },
+    bikinitools = {
+        EnableGetKeyContext = false,
+        EnableOpenSesame = false,
+        EnableVehicleRemover = false,
+        EnableCellVehicleRemover = false,
+        EnableRepairContext = false,
+        EnableSkinSwitcher = false,
+        EnableVehicleSpawner = false,
+        EnableTrunkUnlocker = false,
+        EnableGravelBuddy = true,
+        EnableGardener = true,
+        AllowTYLPlantRemoval = true,
+        EnableLumberjack = true,
+        EnableFarmer = true,
+        EnableContainerUnloader = true,
+        EnableHomeWrecker = false,
+        EnableCorpseStacker = true,
+        EnableVehicleItemHide = true,
+    },
+    HordeNightMain = {
+        -- At which hour would the HordeNight start. Minimum=0 Maximum=23 Default=22
+        HordeNightHour = 22,
+        -- At which day would the first HordeNight start. 0 means the spawn day, 1 means the day after the spawn day. Minimum=0 Maximum=365 Default=10
+        FirstHordeNightDay = 10,
+        -- How many days would a HordeNight start after one another. 1 means HordeNight every day. Minimum=1 Maximum=365 Default=5
+        HordeNightFrequency = 15,
+        -- How many zombies would spawn at the first HordeNight. Warnning: too much spawn will cause performance issues. Minimum=1 Maximum=7200 Default=100
+        FirstHordeNightZombiesCount = 100,
+        -- How many more zombies would spawn in the next HordeNight after you survived one. Warnning: too much spawn will cause performance issues. Minimum=0 Maximum=1000 Default=50
+        HordeNightZombieIncrement = 50,
+        -- The maximal amount of zombies could spawn in a HordeNight. Warnning: too much spawn will cause performance issues. Minimum=0 Maximum=7200 Default=800
+        HordeNightZombieCountMax = 800,
+        -- The random chance to start a HordeNight, outside of the regular frequency. It will only happen after the first HordeNight. 0.0 means no random HordeNight, 1.0 means HordeNight everyday. Minimum=0.00 Maximum=1.00 Default=0.00
+        RandomHordeNightChance = 0.0,
+        -- The maximal distance for a HordeNight zombie to spawn around players.  Turn down the value if you don't see zombies spawn in the HordeNight. Minimum=10 Maximum=90 Default=75
+        HordeNightZombieSpawnDistance = 75,
+        -- When it's on, there will be an icon on the top right if it's currently the HordeNight day.This will not indicates the random HordeNight.
+        HordeNightIndicator = true,
     },
 }
