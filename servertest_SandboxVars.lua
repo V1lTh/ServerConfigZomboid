@@ -52,7 +52,7 @@ SandboxVars = {
     -- 11 = November
     StartMonth = 3,
     StartDay = 1,
-    -- Default=7 AM
+    -- Default=9 AM
     -- 1 = 7 AM
     -- 2 = 9 AM
     -- 3 = 12 PM
@@ -1437,24 +1437,5 @@ SandboxVars = {
         EnableHomeWrecker = false,
         EnableCorpseStacker = true,
         EnableVehicleItemHide = true,
-    },
-    HordeNightMain = {
-        -- Minimum=0 Maximum=23 Default=22
-        HordeNightHour = 22,
-        -- Minimum=0 Maximum=365 Default=10
-        FirstHordeNightDay = 10,
-        -- Minimum=1 Maximum=365 Default=5
-        HordeNightFrequency = 15,
-        -- Minimum=1 Maximum=7200 Default=100
-        FirstHordeNightZombiesCount = 100,
-        -- Minimum=0 Maximum=1000 Default=50
-        HordeNightZombieIncrement = 50,
-        -- Minimum=0 Maximum=7200 Default=800
-        HordeNightZombieCountMax = 800,
-        -- Minimum=0.00 Maximum=1.00 Default=0.00
-        RandomHordeNightChance = 0.0,
-        -- Minimum=10 Maximum=90 Default=75
-        HordeNightZombieSpawnDistance = 75,
-        HordeNightIndicator = true,
     },
 }
