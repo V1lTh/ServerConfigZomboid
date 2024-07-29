@@ -50,8 +50,8 @@ SandboxVars = {
     -- 9 = September
     -- 10 = October
     -- 11 = November
-    StartMonth = 3,
-    StartDay = 1,
+    StartMonth = 7,
+    StartDay = 9,
     -- Default=9 AM
     -- 1 = 7 AM
     -- 2 = 9 AM
@@ -61,7 +61,7 @@ SandboxVars = {
     -- 6 = 9 PM
     -- 7 = 12 AM
     -- 8 = 2 AM
-    StartTime = 1,
+    StartTime = 2,
     -- Default=0-30 Days
     -- 1 = Instant
     -- 2 = 0-30 Days
@@ -70,7 +70,7 @@ SandboxVars = {
     -- 5 = 0-1 Year
     -- 6 = 0-5 Years
     -- 7 = 2-6 Months
-    WaterShut = 1,
+    WaterShut = 2,
     -- Default=0-30 Days
     -- 1 = Instant
     -- 2 = 0-30 Days
@@ -79,7 +79,7 @@ SandboxVars = {
     -- 5 = 0-1 Year
     -- 6 = 0-5 Years
     -- 7 = 2-6 Months
-    ElecShut = 1,
+    ElecShut = 2,
     -- Minimum=-1 Maximum=2147483647 Default=14
     WaterShutModifier = 14,
     -- Minimum=-1 Maximum=2147483647 Default=14
@@ -91,7 +91,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    FoodLoot = 2,
+    FoodLoot = 4,
     -- Default=Rare
     -- 1 = None (not recommended)
     -- 2 = Insanely Rare
@@ -99,7 +99,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    CannedFoodLoot = 2,
+    CannedFoodLoot = 4,
     -- Default=Rare
     -- 1 = None (not recommended)
     -- 2 = Insanely Rare
@@ -107,7 +107,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    LiteratureLoot = 3,
+    LiteratureLoot = 4,
     -- Seeds, Nails, Saws, Fishing Rods, various tools, etc... Default=Rare
     -- 1 = None (not recommended)
     -- 2 = Insanely Rare
@@ -115,7 +115,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    SurvivalGearsLoot = 3,
+    SurvivalGearsLoot = 4,
     -- Default=Rare
     -- 1 = None (not recommended)
     -- 2 = Insanely Rare
@@ -123,7 +123,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    MedicalLoot = 2,
+    MedicalLoot = 4,
     -- Default=Rare
     -- 1 = None (not recommended)
     -- 2 = Insanely Rare
@@ -131,7 +131,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    WeaponLoot = 2,
+    WeaponLoot = 4,
     -- Default=Rare
     -- 1 = None (not recommended)
     -- 2 = Insanely Rare
@@ -139,7 +139,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    RangedWeaponLoot = 2,
+    RangedWeaponLoot = 4,
     -- Default=Rare
     -- 1 = None (not recommended)
     -- 2 = Insanely Rare
@@ -147,7 +147,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    AmmoLoot = 3,
+    AmmoLoot = 4,
     -- Default=Rare
     -- 1 = None (not recommended)
     -- 2 = Insanely Rare
@@ -155,7 +155,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    MechanicsLoot = 3,
+    MechanicsLoot = 4,
     -- Everything else. Also affects foraging for all items in Town/Road zones. Default=Rare
     -- 1 = None (not recommended)
     -- 2 = Insanely Rare
@@ -163,7 +163,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    OtherLoot = 3,
+    OtherLoot = 4,
     -- Controls the global temperature. Default=Normal
     -- 1 = Very Cold
     -- 2 = Cold
@@ -185,7 +185,7 @@ SandboxVars = {
     -- Number of days until 100% growth. -1 means no growth. Zero means use the Erosion Speed option. Maximum 36,500 (100 years). Minimum=-1 Maximum=36500 Default=0
     ErosionDays = 0,
     -- Modifies the base XP gain from actions by this number. Minimum=0.00 Maximum=1000.00 Default=1.00
-    XpMultiplier = 0.3,
+    XpMultiplier = 1.0,
     -- Determines if the XP multiplier affects passively levelled skills eg. Fitness and Strength.
     XpMultiplierAffectsPassive = false,
     -- Use this to multiply or reduce engine general loudness. Minimum=0.00 Maximum=100.00 Default=1.00
@@ -212,20 +212,20 @@ SandboxVars = {
     -- 2 = Fast
     -- 3 = Normal
     -- 4 = Slow
-    StatsDecrease = 4,
+    StatsDecrease = 3,
     -- Controls the abundance of fish and general forage. Default=Normal
     -- 1 = Very Poor
     -- 2 = Poor
     -- 3 = Normal
     -- 4 = Abundant
-    NatureAbundance = 2,
+    NatureAbundance = 3,
     -- Default=Sometimes
     -- 1 = Never
     -- 2 = Extremely Rare
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    Alarm = 5,
+    Alarm = 4,
     -- How frequently homes and buildings will be discovered locked Default=Very Often
     -- 1 = Never
     -- 2 = Extremely Rare
@@ -242,13 +242,13 @@ SandboxVars = {
     -- 2 = Fast
     -- 3 = Normal
     -- 4 = Slow
-    FoodRotSpeed = 4,
+    FoodRotSpeed = 3,
     -- Define how much a fridge will be effective. Default=Normal
     -- 1 = Very Low
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    FridgeFactor = 4,
+    FridgeFactor = 3,
     -- Items will respawn in already-looted containers in towns and trailer parks. Items will not respawn in player-made containers. Default=None
     -- 1 = None
     -- 2 = Every Day
@@ -256,9 +256,9 @@ SandboxVars = {
     -- 4 = Every Month
     LootRespawn = 1,
     -- When > 0, loot will not respawn in zones that have been visited within this number of in-game hours. Minimum=0 Maximum=2147483647 Default=0
-    SeenHoursPreventLootRespawn = 1780,
+    SeenHoursPreventLootRespawn = 0,
     -- A comma-separated list of item types that will be removed after HoursForWorldItemRemoval hours.
-    WorldItemRemovalList = "Base.Hat,Base.Glasses,Base.Maggots,EHE.EvacuationFlyer,EHE.EmergencyFlyer,EHE.QuarantineFlyer,EHE.PreventionFlyer,EHE.NoticeFlyer",
+    WorldItemRemovalList = "Base.Hat,Base.Glasses,Base.Maggots",
     -- Number of hours since an item was dropped on the ground before it is removed.  Items are removed the next time that part of the map is loaded.  Zero means items are not removed. Minimum=0.00 Maximum=2147483647.00 Default=24.00
     HoursForWorldItemRemoval = 24.0,
     -- If true, any items *not* in WorldItemRemovalList will be removed.
@@ -282,68 +282,68 @@ SandboxVars = {
     -- 2 = High
     -- 3 = Normal
     -- 4 = Low
-    PlantResilience = 2,
+    PlantResilience = 3,
     -- Controls the yield of plants when harvested. Default=Normal
     -- 1 = Very Poor
     -- 2 = Poor
     -- 3 = Normal
     -- 4 = Abundant
-    PlantAbundance = 1,
+    PlantAbundance = 3,
     -- Recovery from being tired from performing actions Default=Normal
     -- 1 = Very Fast
     -- 2 = Fast
     -- 3 = Normal
     -- 4 = Slow
-    EndRegen = 2,
+    EndRegen = 3,
     -- How regularly helicopters pass over the event zone. Default=Once
     -- 1 = Never
     -- 2 = Once
     -- 3 = Sometimes
-    Helicopter = 4,
+    Helicopter = 2,
     -- How often zombie attracting metagame events like distant gunshots will occur. Default=Sometimes
     -- 1 = Never
     -- 2 = Sometimes
-    MetaEvent = 3,
+    MetaEvent = 2,
     -- Governs night-time metagame events during the player's sleep. Default=Never
     -- 1 = Never
     -- 2 = Sometimes
-    SleepingEvent = 3,
+    SleepingEvent = 1,
     -- Increase/decrease the chance of electrical generators spawning on the map. Default=Sometimes
     -- 1 = Extremely Rare
     -- 2 = Rare
     -- 3 = Sometimes
     -- 4 = Often
-    GeneratorSpawning = 2,
+    GeneratorSpawning = 3,
     -- How much fuel is consumed per in-game hour. Minimum=0.00 Maximum=100.00 Default=1.00
-    GeneratorFuelConsumption = 0.2,
+    GeneratorFuelConsumption = 1.0,
     -- Increase/decrease probability of discovering randomized safe houses on the map: either burnt out, containing loot stashes, dead survivor bodies etc. Default=Rare
     -- 1 = Never
     -- 2 = Extremely Rare
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    SurvivorHouseChance = 2,
+    SurvivorHouseChance = 3,
     -- Default=Rare
     -- 1 = Never
     -- 2 = Extremely Rare
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    VehicleStoryChance = 2,
+    VehicleStoryChance = 3,
     -- Default=Rare
     -- 1 = Never
     -- 2 = Extremely Rare
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    ZoneStoryChance = 2,
+    ZoneStoryChance = 3,
     -- Impacts on how often a looted map will have annotations marked on it by a deceased survivor. Default=Sometimes
     -- 1 = Never
     -- 2 = Extremely Rare
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    AnnotatedMapChance = 2,
+    AnnotatedMapChance = 4,
     -- Adds free points during character creation. Minimum=-100 Maximum=100 Default=0
     CharacterFreePoints = 0,
     -- Gives player-built constructions extra hit points so they are more resistant to zombie damage. Default=Normal
@@ -418,7 +418,7 @@ SandboxVars = {
     -- 2 = Very Low
     -- 3 = Low
     -- 4 = Normal
-    CarSpawnRate = 2,
+    CarSpawnRate = 3,
     -- Governs the chances of finding vehicles with gas in the tank. Default=Low
     -- 1 = Low
     -- 2 = Normal
@@ -439,7 +439,7 @@ SandboxVars = {
     -- 6 = High
     -- 7 = Very High
     -- 8 = Full
-    FuelStationGas = 3,
+    FuelStationGas = 5,
     -- How gas-hungry vehicles on the map are. Minimum=0.00 Maximum=100.00 Default=1.00
     CarGasConsumption = 1.0,
     -- Default=Rare
@@ -448,13 +448,13 @@ SandboxVars = {
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    LockedCar = 5,
+    LockedCar = 3,
     -- General condition of vehicles discovered on the map Default=Low
     -- 1 = Very Low
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    CarGeneralCondition = 1,
+    CarGeneralCondition = 2,
     -- Governs the amount of damage dealt to vehicles that crash. Default=Normal
     -- 1 = Very Low
     -- 2 = Low
@@ -466,7 +466,7 @@ SandboxVars = {
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    DamageToPlayerFromHitByACar = 2,
+    DamageToPlayerFromHitByACar = 1,
     -- Enable or disable traffic jams that spawn on the main roads of the map.
     TrafficJam = true,
     -- How frequently cars will be discovered with an alarm. Default=Extremely Rare
@@ -475,11 +475,11 @@ SandboxVars = {
     -- 3 = Rare
     -- 4 = Sometimes
     -- 5 = Often
-    CarAlarm = 4,
+    CarAlarm = 2,
     -- Enable or disable player getting damage from being in a car accident.
     PlayerDamageFromCrash = true,
     -- How many in-game hours before a wailing siren shuts off. Minimum=0.00 Maximum=168.00 Default=0.00
-    SirenShutoffHours = 1.0,
+    SirenShutoffHours = 0.0,
     --  Governs whether player can discover a car that has been maintained and cared for after the infection struck. Default=Low
     -- 1 = None
     -- 2 = Low
@@ -496,44 +496,24 @@ SandboxVars = {
     -- 2 = In bodies only
     MaggotSpawn = 1,
     -- The higher the value, the longer lightbulbs last before breaking. If 0, lightbulbs will never break. Does not affect vehicle headlights. Minimum=0.00 Maximum=1000.00 Default=1.00
-    LightBulbLifespan = 0.0,
-    -- Reduces the spawning of vehicles A LOT. Recommended that the "Car Spawn Rate" is set to "Very Low".
-    VehicleSuperLowSpawn = false,
-    -- Chance of finding vehicles with their parts in poor condition. If you select "All", it is recommended that the "General Condition" option is set to "Very Low" Default=None
-    -- 1 = None
-    -- 2 = Low
-    -- 3 = Normal
-    -- 4 = High
-    VehicleConditionExtremelyLow = 1,
-    -- Chance of finding vehicles with a charged battery. This option only affects if the "Months since apocalypse" option is 12. Default=None
-    -- 1 = None
-    -- 2 = Very low
-    -- 3 = Low
-    -- 4 = Normal
-    -- 5 = High
-    VehicleBatteryChance = 1,
-    -- This option defines whether vehicles in the world may be missing parts.
-    VehicleMayBeIncomplete = false,
-    -- Only affects if the option "Vehicles may be incomplete" is activated. Default=Normal
-    -- 1 = Low
-    -- 2 = Normal
-    -- 3 = High
-    VehicleIncompleteProb = 2,
-    -- The number of parts that vehicles may be missing (in probability). Default=Normal
-    -- 1 = Low
-    -- 2 = Normal
-    -- 3 = High
-    VehicleMissingPartsQuantity = 2,
-    -- This option determines whether the amount of fuel in vehicles will be randomized. The maximum fuel amount is half of the fuel tank capacity. It does not affect vehicles of recent survivors.
-    VehicleRandomGasAmount = false,
-    -- Minimum=0 Maximum=100 Default=100
-    AT_Blood = 100,
+    LightBulbLifespan = 1.0,
     AT_VehicleDamageenable = true,
     ATY_safezone_protect = true,
     ATY_nonpvp_protect = true,
     ATY_damagedisplay = false,
+    -- Minimum=0 Maximum=100 Default=100
+    AT_Blood = 100,
+    NavigationVoice = true,
+    -- Minimum=0.00 Maximum=10.00 Default=1.00
+    NavigationVolume = 1.0,
+    NavigationGTA4Voice = false,
+    NavigationSymbol = true,
+    -- Minimum=0 Maximum=10000 Default=0
+    NavigationX = 0,
+    -- Minimum=0 Maximum=10000 Default=0
+    NavigationY = 0,
     Map = {
-        AllowMiniMap = true,
+        AllowMiniMap = false,
         AllowWorldMap = true,
         MapAllKnown = false,
     },
@@ -547,12 +527,12 @@ SandboxVars = {
         -- 1 = Superhuman
         -- 2 = Normal
         -- 3 = Weak
-        Strength = 4,
+        Strength = 2,
         -- Controls the difficulty to kill zombies. Default=Normal
         -- 1 = Tough
         -- 2 = Normal
         -- 3 = Fragile
-        Toughness = 4,
+        Toughness = 2,
         -- Controls how the zombie virus spreads. Default=Blood + Saliva
         -- 1 = Blood + Saliva
         -- 2 = Saliva Only
@@ -572,7 +552,7 @@ SandboxVars = {
         -- 3 = 0-1 Minutes
         -- 4 = 0-12 Hours
         -- 5 = 2-3 Days
-        Reanimate = 2,
+        Reanimate = 3,
         -- Controls zombie intelligence. Default=Basic Navigation
         -- 1 = Navigate + Use Doors
         -- 2 = Navigate
@@ -591,17 +571,17 @@ SandboxVars = {
         -- 2 = Normal
         -- 3 = Short
         -- 4 = None
-        Memory = 5,
+        Memory = 2,
         -- Controls zombie vision radius. Default=Normal
         -- 1 = Eagle
         -- 2 = Normal
         -- 3 = Poor
-        Sight = 4,
+        Sight = 2,
         -- Controls zombie hearing radius. Default=Normal
         -- 1 = Pinpoint
         -- 2 = Normal
         -- 3 = Poor
-        Hearing = 4,
+        Hearing = 2,
         -- Zombies that have not seen/heard player can attack doors and constructions while roaming.
         ThumpNoChasing = false,
         -- Governs whether or not zombies can destroy player constructions and defences.
@@ -619,29 +599,29 @@ SandboxVars = {
         -- Default=Some zombies in the world will pretend to be dead
         -- 1 = Some zombies in the world will pretend to be dead
         -- 2 = Some zombies in the world, as well as some you 'kill', can pretend to be dead
-        DisableFakeDead = 2,
+        DisableFakeDead = 1,
     },
     ZombieConfig = {
         -- Set by the "Zombie Count" population option. 4.0 = Insane, Very High = 3.0, 2.0 = High, 1.0 = Normal, 0.35 = Low, 0.0 = None. Minimum=0.00 Maximum=4.00 Default=1.00
-        PopulationMultiplier = 3.0,
+        PopulationMultiplier = 1.0,
         -- Adjusts the desired population at the start of the game. Minimum=0.00 Maximum=4.00 Default=1.00
-        PopulationStartMultiplier = 2.0,
+        PopulationStartMultiplier = 1.0,
         -- Adjusts the desired population on the peak day. Minimum=0.00 Maximum=4.00 Default=1.50
-        PopulationPeakMultiplier = 4.0,
+        PopulationPeakMultiplier = 1.5,
         -- The day when the population reaches it's peak. Minimum=1 Maximum=365 Default=28
-        PopulationPeakDay = 365,
+        PopulationPeakDay = 28,
         -- The number of hours that must pass before zombies may respawn in a cell. If zero, spawning is disabled. Minimum=0.00 Maximum=8760.00 Default=72.00
-        RespawnHours = 1200.0,
+        RespawnHours = 72.0,
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Minimum=0.00 Maximum=8760.00 Default=16.00
-        RespawnUnseenHours = 168.0,
+        RespawnUnseenHours = 16.0,
         -- The fraction of a cell's desired population that may respawn every RespawnHours. Minimum=0.00 Maximum=1.00 Default=0.10
         RespawnMultiplier = 0.1,
         -- The number of hours that must pass before zombies migrate to empty parts of the same cell. If zero, migration is disabled. Minimum=0.00 Maximum=8760.00 Default=12.00
-        RedistributeHours = 168.0,
+        RedistributeHours = 12.0,
         -- The distance a zombie will try to walk towards the last sound it heard. Minimum=10 Maximum=1000 Default=100
         FollowSoundDistance = 100,
         -- The size of groups real zombies form when idle. Zero means zombies don't form groups. Groups don't form inside buildings or forest zones. Minimum=0 Maximum=1000 Default=20
-        RallyGroupSize = 0,
+        RallyGroupSize = 20,
         -- The distance real zombies travel to form groups when idle. Minimum=5 Maximum=50 Default=20
         RallyTravelDistance = 20,
         -- The distance between zombie groups. Minimum=5 Maximum=25 Default=15
@@ -649,870 +629,1156 @@ SandboxVars = {
         -- How close members of a group stay to the group's leader. Minimum=1 Maximum=10 Default=3
         RallyGroupRadius = 3,
     },
-    PlayerConnectionMessage = {
-        -- Set to 'true' to disable death messages including kills
-        disableDeathMessage = true,
-        -- Set to 'true' to disable kill messages only
-        disableKillMessage = true,
-        -- Set to 'true' to hide admin connection messages
-        hideAdmin = false,
-        -- Set to 'true' to hide moderator connection messages
-        hideModerator = false,
-        -- Set to 'true' to hide staff connection messages
-        hideStaff = false,
-        -- Set the Red value of the connection message from 0.0 to 1.0 Minimum=0.00 Maximum=1.00 Default=0.00
-        connectedMessageColorRed = 0.0,
-        -- Set the Green value of the connection message from 0.0 to 1.0 Minimum=0.00 Maximum=1.00 Default=0.70
-        connectedMessageColorGreen = 0.7,
-        -- Set the Blue value of the connection message from 0.0 to 1.0 Minimum=0.00 Maximum=1.00 Default=1.00
-        connectedMessageColorBlue = 1.0,
-        -- Set the Red value of the disconnection message from 0.0 to 1.0 Minimum=0.00 Maximum=1.00 Default=1.00
-        disconnectedMessageColorRed = 1.0,
-        -- Set the Green value of the disconnection message from 0.0 to 1.0 Minimum=0.00 Maximum=1.00 Default=0.30
-        disconnectedMessageColorGreen = 0.3,
-        -- Set the Blue value of the disconnection message from 0.0 to 1.0 Minimum=0.00 Maximum=1.00 Default=0.00
-        disconnectedMessageColorBlue = 0.0,
-    },
-    RandomSoundEvents = {
-        -- Disable random sound events from happening.
-        disabled = false,
-        -- Zombies do not hear the sounds and won't be following it.
-        deafZombies = false,
-        -- Set the minimum amount of in-game minutes before the next random sound event triggers. Minimum=1.00 Maximum=10000000.00 Default=60.00
-        minCooldownMinutes = 400.0,
-        -- Set the maximum amount of in-game minutes before the next random sound event triggers. Minimum=1.00 Maximum=10000000.00 Default=120.00
-        maxCooldownMinutes = 500.0,
-    },
-    RandomSoundEvents_RandomGuns = {
-        -- Disable RandomGuns completely.
-        disabled = false,
-        -- The amount of days before Gun fire starts. Minimum=0.00 Maximum=999999999.00 Default=7.00
-        daysSinceApocalypse = 1.0,
-        -- The amount of days before Gun fire stops. Minimum=0.00 Maximum=999999999.00 Default=30.00
-        daysSinceApocalypseEnd = 9.99999999E8,
-        -- Disable player getting stressed and panicked during Gun fire.
-        disableFear = false,
-        -- Disable player from waking up during Gun Shots.
-        disableWakingUp = false,
-    },
-    RandomSoundEvents_DyingGunFire = {
-        -- Disable DyingGunFire completely.
-        disabled = false,
-        -- The amount of days before Screaming Gun fire starts. Minimum=0.00 Maximum=999999999.00 Default=7.00
-        daysSinceApocalypse = 1.0,
-        -- The amount of days before Screaming Gun fire stops. Minimum=0.00 Maximum=999999999.00 Default=30.00
-        daysSinceApocalypseEnd = 9.9999999E7,
-        -- Disable player getting stressed and panicked during Screaming Gun fire.
-        disableFear = false,
-        -- Disable player from waking up during Dying Gun fire.
-        disableWakingUp = false,
-    },
-    RandomSoundEvents_Sirens = {
-        -- Disable sirens completely.
-        disabled = false,
-        -- The amount of days before sirens start. Minimum=0.00 Maximum=999999999.00 Default=7.00
-        daysSinceApocalypse = 1.0,
-        -- The amount of days before sirens stop. Minimum=0.00 Maximum=999999999.00 Default=30.00
-        daysSinceApocalypseEnd = 15.0,
-        -- Disable player getting stressed and panicked during a siren.
-        disableFear = true,
-        -- Disable player getting waking up during a siren.
-        disableWakingUp = false,
-    },
-    RandomSoundEvents_Disasters = {
-        -- Disable disasters completely.
-        disabled = false,
-        -- The amount of days before disasters start. Minimum=0.00 Maximum=999999999.00 Default=14.00
-        daysSinceApocalypse = 14.0,
-        -- The amount of days before disasters end. Minimum=0.00 Maximum=999999999.00 Default=999999999.00
-        daysSinceApocalypseEnd = 9.99999999E8,
-        -- Disable player auto speech when a disaster happen.
-        disableSpeech = false,
-        -- Disable player getting stressed and panicked during a disaster.
-        disableFear = false,
-        -- Disable player getting waking up during a disaster.
-        disableWakingUp = false,
-    },
-    ISA = {
-        -- How often Battery Bank will charge Default=Every Ten Minutes
-        -- 1 = Every Ten Minutes
-        ChargeFreq = 1,
-        -- Regular Generator calculation has less performance impact Default=Regular Generator
-        -- 1 = "ISA"
-        DrainCalc = 2,
-        -- Solar panel power efficiency
-        -- 12% is realistic for 1993
-        -- 25% is modern solar
-        -- default is unrealistic Minimum=1 Maximum=100 Default=25
-        solarPanelEfficiency = 75,
-        -- Multiplier for the average degrade of batteries. Decreasing this will dramatically increase battery life. Minimum=0 Maximum=1000 Default=100
-        batteryDegradeChance = 5,
-        -- Crafted DIY battery capacity multiplier. Minimum=1 Maximum=10000 Default=100
-        DIYBatteryMultiplier = 100,
-        -- How likely pre-placed solar panels and crates are to spawn at a given spawn location.
-        -- Requires external API to work. Minimum=0 Maximum=100 Default=25
-        solarPanelWorldSpawns = 25,
-        -- Rarity of Battery Bank spawning on the map. Default=Rare
-        -- 1 = None
-        -- 2 = Very Rare
-        -- 3 = Rare
-        BatteryBankSpawn = 3,
-        -- Choose mode for Stash Houses.
-        -- Change only on new game. Default=Don't add
-        -- 1 = Don't add
-        -- 2 = Add map items
-        -- 3 = Add map items and random initial
-        StashMode = 2,
-        -- Solar panel spawns in random containers and pre-placed crates multiplier Minimum=0.00 Maximum=100.00 Default=1.00
-        LRMSolarPanels = 1.0,
-        -- Batteries spawns in random containers and pre-placed crates multiplier Minimum=0.00 Maximum=100.00 Default=1.00
-        LRMBatteries = 1.0,
-        -- Magazine and inverter spawns in random containers and pre-placed crates multiplier Minimum=0.00 Maximum=100.00 Default=1.00
-        LRMMisc = 1.0,
-        -- Base number of in-game minutes it takes to connect one panel Minimum=1 Maximum=1000 Default=120
-        ConnectPanelMin = 1,
-        -- Allows to craft solar panels and inverters
-        enableExpandedRecipes = true,
-    },
-    VehicleRecycling = {
-        -- The following parts must be uninstalled before dismantling: hood, trunk lid, doors, windows, seats.
-        UninstallParts = false,
-        -- Minimum=1 Maximum=100 Default=1
-        ActionTimeMultiplier = 1,
-    },
-    Firearms = {
-        -- With this activated improvised will not break no matter what the break chance is.
-        SuppressorBreak = true,
-        -- Whether or not a screwdriver is required to put attachments on firearms.
-        ScrewdriverReq = false,
-        -- Overall chance of an improvised suppressor breaking, even on low there is still a chance that it breaks on the first use. Default=One Use
-        -- 1 = One Use
-        -- 2 = High
-        -- 3 = Medium
-        BottleSuppressorBreakChance = 2,
-        -- Overall chance of an improvised suppressor breaking, even on low there is still a chance that it breaks on the first use. Default=High
-        -- 1 = One Use
-        -- 2 = High
-        -- 3 = Medium
-        FlashlightSuppressorBreakChance = 2,
-        -- How effective a suppressor is on a firearm that uses .22 LR rounds. Default=80%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectiveness22 = 3,
-        -- How effective a suppressor is on a firearm that uses 9mm rounds. Default=70%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectiveness9mm = 4,
-        -- How effective a suppressor is on a firearm that uses .45 ACP rounds. Default=70%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectiveness45 = 4,
-        -- How effective a suppressor is on a firearm that uses .44 Magnum rounds. Default=70%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectiveness44 = 4,
-        -- How effective a suppressor is on a firearm that uses .38 Special rounds. Default=80%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectiveness38 = 3,
-        -- How effective a suppressor is on a firearm that uses .223 and 5.56x45mm rounds. Default=60%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectiveness223 = 5,
-        -- How effective a suppressor is on a firearm that uses .308 and 7.62x51mm rounds. Default=50%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectiveness308 = 6,
-        -- How effective a suppressor is on shotgun. Default=30%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectivenessShotgunShells = 8,
-        -- How effective improvised suppressors are, on top of the effectiveness based on caliber. Default=20%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectivenessImprovised = 9,
-        -- How effective suppressors are on revolvers are, on top of the effectiveness based on caliber. Default=60%
-        -- 1 = 100%
-        -- 2 = 90%
-        -- 3 = 80%
-        -- 4 = 70%
-        -- 5 = 60%
-        -- 6 = 50%
-        -- 7 = 40%
-        -- 8 = 30%
-        -- 9 = 20%
-        SuppressorEffectivenessRevolver = 5,
-        -- Whether or not any suppressors can be found in the world.
-        SpawnSuppressors = true,
-        -- Whether or not handgun suppressors(9mm, .45 ACP) can be found in the world.
-        SpawnHandgunSuppressors = true,
-        -- Whether or not rifle suppressors(.22 LR, .223/5.56x45mm, and .308/7.62x51mm) can be found in the world.
-        SpawnRifleSuppressors = true,
-        -- Whether or not shotgun suppressors can be found in the world.
-        SpawnShotgunSuppressors = true,
-        -- Whether or not .38 Special & .357 caliber suppressors can be found in the world.
-        SpawnRevolverSuppressors = false,
-        -- Whether or not Ammo Cases can be found in containers.
-        SpawnAmmoCans = true,
-        -- Default=Insanely Rare
-        -- 1 = None (not recommended)
-        -- 2 = Insanely Rare
-        -- 3 = Extremely Rare
-        -- 4 = Rare
-        LootSuppressor = 2,
-    },
-    BLTAnnotations = {
-        -- If enabled, player corpses will include a fully annotated map containing every symbols from their main map
-        DropMapOnDeath = true,
-    },
-    ScentOfBlood = {
-        -- Minimum=0 Maximum=100 Default=2
-        scratchModifier = 2,
-        -- Minimum=0 Maximum=100 Default=2
-        sbleedModifier = 2,
-        -- Minimum=0 Maximum=100 Default=5
-        cutModifier = 5,
-        -- Minimum=0 Maximum=100 Default=8
-        cbleedModifier = 8,
-        -- Minimum=0 Maximum=100 Default=5
-        biteModifier = 5,
-        -- Minimum=0 Maximum=100 Default=10
-        bbleedModifier = 10,
-        -- Minimum=0 Maximum=100 Default=15
-        dwoundModifier = 15,
-        -- Minimum=0 Maximum=100 Default=20
-        dbleedModifier = 20,
-        -- Minimum=0 Maximum=100 Default=50
-        dirtModifier = 50,
-    },
-    StandardisedExperience = {
-        -- Disables the vanilla aiming xp dropoff after level 4.
-        WantSTAiming = true,
-        -- Optional XP multiplier for aiming. Default=Vanilla
-        -- 1 = Vanilla
-        -- 2 = 1.5x
-        -- 3 = 2x
-        -- 4 = 3x
-        -- 5 = 5x
-        AimingMultiplier = 1,
-        -- Optional XP multiplier for reloading. Default=Vanilla
-        -- 1 = 0.25x
-        -- 2 = 0.5x
-        -- 3 = 0.75x
-        -- 4 = Vanilla
-        -- 5 = 1.5x
-        -- 6 = 2x
-        -- 7 = 3x
-        -- 8 = 5x
-        ReloadMult = 4,
-        -- When you reload, you only have a chance to gain XP. Default=Always
-        -- 1 = Always
-        -- 2 = Vanilla (50%)
-        -- 3 = 33%
-        -- 4 = 25%
-        -- 5 = 20%
-        -- 6 = 17%
-        -- 7 = 14%
-        -- 8 = 12.5%
-        -- 9 = 11%
-        ReloadChance = 1,
-        -- In vanilla, XP gains are lowered and chance is decreased after level 4, making leveling much slower. Enable to restore this.
-        ReloadNerf = false,
-        -- As you walk in combat stance, you will reliably gain nimble XP over time.
-        WantSTNimble = true,
-        -- Increases the XP you gain in combat stance. This mod already causes you to gain XP much faster than in vanilla, so try it out before tweaking this setting! Default=Default
-        -- 1 = Default
-        -- 2 = 2x
-        -- 3 = 5x
-        -- 4 = 10x
-        -- 5 = 20x
-        NimbleMult = 2,
-        -- How often you gain XP while in combat stance. Increase this to dampen the XP multiplier. Default=10 seconds (Default)
-        -- 1 = 2.5 seconds
-        -- 2 = 5 seconds
-        -- 3 = 10 seconds (Default)
-        -- 4 = 25 seconds
-        NimbleDelay = 3,
-        -- As you run, you will reliably gain sprinting XP over time.
-        WantSTSprinting = true,
-        -- Increases the XP you gain while sprinting. This mod already causes you to gain XP much faster than in vanilla, so try it out before tweaking this setting! Default=Default
-        -- 1 = 0.2x
-        -- 2 = Default
-        -- 3 = 2x
-        -- 4 = 5x
-        -- 5 = 10x
-        -- 6 = 20x
-        SprintMult = 2,
-        -- How often you gain XP while sprinting. Increase this to dampen the XP multiplier. Default=15 seconds (Default)
-        -- 1 = 4 seconds
-        -- 2 = 8 seconds
-        -- 3 = 15 seconds (Default)
-        -- 4 = 23 seconds
-        -- 5 = 30 seconds
-        -- 6 = 45 seconds
-        -- 7 = 75 seconds
-        SprintDelay = 3,
-        -- Standardises all sources of passive XP, except from exercise.
-        WantSTPassive = true,
-        -- Increases the fitness XP you gain from all activities other than exercise. Default=Vanilla
-        -- 1 = Vanilla
-        -- 2 = 2x
-        -- 3 = 3x
-        -- 4 = 4x
-        -- 5 = 5x
-        -- 6 = 10x
-        -- 7 = 15x
-        -- 8 = 25x
-        -- 9 = 50x
-        FitnessBoost = 1,
-        -- Increases the chance to gain fitness XP from all activities other than exercise. Default=Vanilla
-        -- 1 = 3.5x
-        -- 2 = 2.3x
-        -- 3 = 1.4x
-        -- 4 = Vanilla
-        FitnessChance = 4,
-        -- Increases the strength XP you gain from all activities other than exercise. Default=Vanilla
-        -- 1 = 0.5x
-        -- 2 = Vanilla
-        -- 3 = 1.5x
-        -- 4 = 2x
-        -- 5 = 2.5x
-        -- 6 = 5x
-        -- 7 = 7.5x
-        -- 8 = 12.5x
-        -- 9 = 25x
-        StrengthBoost = 2,
-        -- Increases the chance to gain strength XP from all activities other than exercise. Default=Vanilla
-        -- 1 = 3.5x
-        -- 2 = 2.3x
-        -- 3 = 1.4x
-        -- 4 = Vanilla
-        StrengthChance = 4,
-    },
-    aSleepOffline = {
-        -- 0 = disabled, the higher the number, the more penalty will be applied to the following player's stats:
-        -- 
-        -- - Support for sleeping: bed/chair/floor etc...
-        -- - objects related to sleep: pillow/sheet/tarp
-        -- - location: if you are outside/inside/tent/vehicle
-        -- 
-        -- The player can never die from it.
-        -- 
-        -- If set to 0, then no penalties will be applied, only bonuses if there are.
-        -- 
-        -- (Note that if Hardcore mode is 0, this will never apply negativity to the player's stats.)
-        --  Minimum=0 Maximum=5 Default=0
-        HardcoreMultiplyer = 0,
-        -- You can increase the number of IG hours needed to complete a full sleep, when the player is offline, the total sleep time is 10 hours.
-        -- 
-        -- The higher this number, the more it will be necessary of IG hour to achieve complete sleep while disconnected (to visualize, a complete cycle is virtulized at 10 a.m.). 
-        -- 
-        -- Setting 2 for example, corresponds to 2 times 10 hours of play, 20 hours of play will be necessary for total sleep, and thus maximum recovery/deduction of stats depending on the player's location.
-        --  Minimum=1 Maximum=50 Default=1
-        HourMaxForTotalSleep = 1,
-        -- If TRUE and you have the Avatar Offline mod activated, this option will apply a sleep penalty if you are too close to a player's avatar (outside a vehicle), this rule applies if you are near a bed,a chair, an armchair, a sofa, a tent or other support for sleeping other than a simple floor covering. 
-        -- 
-        -- (Note, if Hardcore mode is at 0, this will not apply any negativity to the player's stats, just they will be less rested, less stat gain.)
-        nearAvatarPenality = false,
-        -- If TRUE and you have the Avatar Offline mod activated, this option will apply a penalty to sleep if you find yourself with too many characters in a vehicle, the number of player avatars positioned in a vehicle will affect the quality of sleep depending on the space in the total inventory of the vehicle, the larger the vehicle, the more room there will be for several people, this rule only applies to avatars present in your vehicle and not around the vehicle. 
-        -- 
-        -- (Note, if Hardcore mode is at 0, this will not apply any negativity to the player's stats, just they will be less rested, less stat gain.)
-        vehicleAvatarPenality = false,
-    },
-    ReduceActionTime = {
-        -- Minimum=0 Maximum=100 Default=0
-        DecreasingRate = 0,
-        -- Saw Logs/Dismantle Digital Watch This excludes log cutting and digital clock disassembly.
-        ExcludedRecipes = "",
-        -- Minimum=0 Maximum=100 Default=0
-        Crafting = 40,
-        -- Minimum=0 Maximum=100 Default=0
-        Building = 40,
-        -- Minimum=0 Maximum=100 Default=0
-        ItemTransfer = 30,
-        -- Minimum=0 Maximum=100 Default=0
-        Equip = 20,
-        -- Minimum=0 Maximum=100 Default=0
-        Eat = 40,
-        -- Minimum=0 Maximum=100 Default=0
-        Cigarettes = 20,
-        -- Minimum=0 Maximum=100 Default=0
-        Wash = 20,
-        -- Minimum=0 Maximum=100 Default=0
-        ReadBook = 20,
-    },
-    RewardingNightCombat = {
-        enableIndicator = true,
-        draggableIndicator = false,
-        indicatorColor = 3,
-        enableTriggerSound = true,
-        -- Minimum=0 Maximum=100 Default=100
-        triggerProbability = 100,
-        -- Minimum=0 Maximum=365 Default=0
-        startAfterXDays = 0,
-        startTimeSummer = 24,
-        endTimeSummer = 7,
-        startTimeAutumn = 24,
-        endTimeAutumn = 7,
-        startTimeWinter = 24,
-        endTimeWinter = 7,
-        startTimeSpring = 24,
-        endTimeSpring = 7,
-        axeBonusMultiplier = 5,
-        longBluntBonusMultiplier = 5,
-        shortBluntBonusMultiplier = 6,
-        longBladeBonusMultiplier = 5,
-        shortBladeBonusMultiplier = 6,
-        spearBonusMultiplier = 5,
-        ignoreAimingXPNerf = false,
-        aimingBonusMultiplier = 5,
-    },
-    TrueCrawl = {
-        -- Use this option only if you're hosting an Local or Dedicated server. (To avoid issues). [Default is False]. 
-        StealhModeServer = true,
-        -- Toggles the Stealth Mode ON or OFF. If OFF, only the vanilla Sneaking system will be used. [Default is True].
-        StealhModeEnable = true,
-        -- Toggles the Moodle Stealth Indicator. (Works ONLY if Stealth Mode is ON!) [Default is True]. 
-        MoodleEnable = true,
-        -- Toggles the ability to Crawl under Vehicles. (YOU MUST BE CRAWLING!) [Default is True, Default Key is Shift]. 
-        CrawlUnderVehiclesEnable = true,
-        -- Toggles the Realistic Endurance mode. This mode improves the game immersion by limiting how much you can crawl. [Default is True]. 
-        RealisticEndurance = true,
-        -- Auto disable the Crawling Pose when spotted by zombies. [Default is False]. 
-        CancelCrawlWhenSpotted = false,
-        -- This value controls the zombie sight radius when player is crawling. It goes from 1(Extremely Small) to 20(Extremely Far). Default is 5 (Medium Radius). My recommendation is to keep between 5 - 10 to have a more immersive gameplay. Minimum=1 Maximum=20 Default=5
-        ZombieRadius = 5,
-    },
-    Advanced_trajectory = {
-        -- Show or hide crosshair.
-        aimpoint = true,
-        Enablerange = true,
-        Enablethrow = true,
-        hideTracer = false,
-        playerdamage = false,
-        -- Multiplier of gun's max dmg added as recoil to crosshair (adds bloom when shooting). Minimum=0.00 Maximum=20.00 Default=10.00
-        recoilModifier = 10.0,
-        -- Multiplier on base damage for headshot Minimum=0.00 Maximum=100.00 Default=20.00
-        headShotDmgMultiplier = 20.0,
-        -- Multiplier on base damage for bodyshot Minimum=0.00 Maximum=100.00 Default=5.00
-        bodyShotDmgMultiplier = 5.0,
-        -- Multiplier on base damage for footshot Minimum=0.00 Maximum=100.00 Default=1.00
-        footShotDmgMultiplier = 1.0,
-        -- Multiplier on base stat (range) of shotgun. Default value is 0.75 which means 75% of vanilla's range. Minimum=0.00 Maximum=5.00 Default=0.75
-        shotgunDistanceModifier = 0.75,
-        -- Linked to color when there is zero bloom on crosshair. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=0.00
-        crosshairRed = 0.0,
-        -- Linked to color when there is zero bloom on crosshair. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
-        crosshairGreen = 1.0,
-        -- Linked to color when there is zero bloom on crosshair. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=0.98
-        crosshairBlue = 0.98,
-        -- Linked to crosshair color. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
-        crosshairRedMain = 1.0,
-        -- Linked to crosshair color. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
-        crosshairGreenMain = 1.0,
-        -- Linked to crosshair color. Pick a color value from 0 to 255 and divide it by 255, must be from 0 to 1. Minimum=0.00 Maximum=1.00 Default=1.00
-        crosshairBlueMain = 1.0,
-        -- Value that limits how much bloom is added to crosshair. Higher means larger possible bloom. Minimum=-100.00 Maximum=100.00 Default=-9.00
-        maxaimnum = -9.0,
-        -- Value that adds bloom when moving. Minimum=0.00 Maximum=100.00 Default=1.30
-        moveeffect = 1.3,
-        -- Value that adds bloom when physically turning your feet, not hips. Minimum=0.00 Maximum=100.00 Default=0.70
-        turningeffect = 0.7,
-        -- Value that affects how fast your crosshair tightens. Higher means faster. Minimum=0.00 Maximum=100.00 Default=1.10
-        reducespeed = 1.1,
-        -- Minimum=0.00 Maximum=2.40 Default=1.70
-        bulletspeed = 1.7,
+    KATTAJ1 = {
+        Category1 = false,
         -- Minimum=0.00 Maximum=100.00 Default=1.00
-        bulletdistance = 1.0,
-        -- Amount of pellots shot Minimum=0 Maximum=100 Default=5
-        shotgunnum = 5,
-        -- Value affects shotgun spread. The lower the value, the more narrow the spread. Minimum=0.00 Maximum=1.00 Default=0.10
-        shotgundivision = 0.1,
-        -- For debugging, character says what body part was shot.
-        callshot = false,
-        -- Multiplies base damage of bullet. Minimum=0.00 Maximum=100.00 Default=1.00
-        ATY_damage = 1.0,
-        -- Value that affects crosshair's minimum bloom. Characters with low aiming level (0-2) will never be accurate (always has bloom). Set to 0 if you want to be OP or unlock focus mechanic at level 3. Minimum=0.00 Maximum=100.00 Default=5.00
-        minaimnumModifier = 5.0,
-        -- Value affects how much bloom is added when reloading and racking firearm. Minimum=0.00 Maximum=10.00 Default=0.10
-        reloadEffectModifier = 0.1,
-        -- Driving part of the focus mechanic. Determines how fast it takes for the crosshair to begin its process of reducing aimnum to 0 (max accuracy). Set to 0 to disable if you want to remove ability to gain max accuracy. Minimum=0.00 Maximum=10.00 Default=2.00
-        focusCounterSpeed = 2.0,
-        -- Part of the focus mechanic. Determines speed of crosshair reducing aimnum to 0 once process has begun. Minimum=0.00 Maximum=1.00 Default=1.00
-        maxFocusSpeed = 1.0,
-        -- When proning, you gain max accuracy faster (applies when focus mechanic is unlocked). Minimum=0.00 Maximum=10.00 Default=1.50
-        proneFocusCounterSpeedBuff = 1.5,
-        -- When proning, your crosshair reduces bloom faster. Helpful after intense cardio. Minimum=0.00 Maximum=2.00 Default=0.40
-        proneReduceSpeedBuff = 0.4,
-        -- When crouching, your crosshair reduces bloom faster. Helpful after intense cardio. Minimum=0.00 Maximum=2.00 Default=0.20
-        crouchReduceSpeedBuff = 0.2,
-        -- Part of the focus mechanic. Weapon's recoil delay affects how long it takes for character to recover from recoil and this is a multiplier of that. Set to 0 to ignore weapon's recoil delay stat. Minimum=0.00 Maximum=1.00 Default=0.01
-        recoilDelayModifier = 0.01,
-        -- Bloom affects crit chance. This is a multiplier to that. Set to 0 for better chances of crit. Minimum=0.00 Maximum=100.00 Default=1.00
-        critChanceModifier = 1.0,
-        -- Minimum=0.00 Maximum=100.00 Default=10.00
-        critChanceModifierShotgunsOnly = 10.0,
-        -- This value must be very small as it affects how slow your crosshair reduces bloom. This is a multiplier of the total pain value from arms and hands, which can go up to 200. Minimum=0.00 Maximum=1.00 Default=0.01
-        painModifier = 0.005,
-        -- This value amplifies move and turning effect, which means more bloom when performing those actions. Set to 0 to disable. Minimum=0.00 Maximum=100.00 Default=0.50
-        drunkActionEffectModifier = 0.5,
-        -- Multiplier that increases your maxaimnum or max bloom. Set to 0 to disable. Minimum=0.00 Maximum=100.00 Default=6.00
-        drunkModifier = 6.0,
-        -- Multiplier that affects how slow your crosshair reduces bloom. Minimum=0.00 Maximum=100.00 Default=1.00
-        hyperHypoModifier = 1.0,
-        -- Multiplier that affects how slow your crosshair reduces bloom. Minimum=0.00 Maximum=100.00 Default=1.00
-        tiredModifier = 1.0,
-        -- Multiplier that affects how much is added to minaimnum or minimum bloom. Minimum=0.00 Maximum=100.00 Default=4.00
-        stressBloomModifier = 4.0,
-        -- Affects how intense the crosshair shaking affect is. Set to 0 to disable. Minimum=0.00 Maximum=100.00 Default=3.00
-        stressVisualModifier = 3.0,
-        -- Value affects how much bloom is added when coughing. Minimum=0.00 Maximum=100.00 Default=2.00
-        coughModifier = 2.0,
-        -- Value affects the rate of bloom added when inhaling. Set to 0 to disable the whole endurance mechanic. Minimum=0.00 Maximum=100.00 Default=1.00
-        enduranceBreathModifier = 1.0,
-        -- Value determines how long the characters inhales (adds bloom). Links to exhaleModifier1. Inhale value must be greater than linked exhale value. Minimum=0.00 Maximum=100.00 Default=2.50
-        inhaleModifier1 = 2.5,
-        -- Value determines how long the characters exhales (reduces bloom). Links to exhaleModifier1. Exhale value must be less than linked inhale value. Minimum=0.00 Maximum=100.00 Default=0.80
-        exhaleModifier1 = 0.8,
-        -- Minimum=0.00 Maximum=100.00 Default=2.75
-        inhaleModifier2 = 2.75,
-        -- Minimum=0.00 Maximum=100.00 Default=1.50
-        exhaleModifier2 = 1.5,
-        -- Minimum=0.00 Maximum=100.00 Default=2.85
-        inhaleModifier3 = 2.85,
-        -- Minimum=0.00 Maximum=100.00 Default=3.00
-        exhaleModifier3 = 3.0,
-        -- Minimum=0.00 Maximum=100.00 Default=3.25
-        inhaleModifier4 = 3.25,
+        BlackGearedZombiesPatriotArmy = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=0.80
+        BlackGearedZombiesDefenderArmy = 0.8,
+        -- Minimum=0.00 Maximum=100.00 Default=0.40
+        BlackGearedZombiesVanguardArmy = 0.4,
+        EmptyLine11 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=2.00
+        DesertGearedZombiesPatriotArmy = 2.0,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        DesertGearedZombiesDefenderArmy = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=0.50
+        DesertGearedZombiesVanguardArmy = 0.5,
+        EmptyLine12 = false,
         -- Minimum=0.00 Maximum=100.00 Default=4.00
-        exhaleModifier4 = 4.0,
+        GreenGearedZombiesPatriotArmy = 4.0,
+        -- Minimum=0.00 Maximum=100.00 Default=2.00
+        GreenGearedZombiesDefenderArmy = 2.0,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        GreenGearedZombiesVanguardArmy = 1.0,
+        EmptyLine13 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        WhiteGearedZombiesPatriotArmy = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=0.80
+        WhiteGearedZombiesDefenderArmy = 0.8,
+        -- Minimum=0.00 Maximum=100.00 Default=0.40
+        WhiteGearedZombiesVanguardArmy = 0.4,
+        EmptyLine9 = false,
+        Category9 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=0.08
+        BlackGearedZombiesPatriotDefault = 0.08,
+        -- Minimum=0.00 Maximum=100.00 Default=0.06
+        BlackGearedZombiesDefenderDefault = 0.06,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        BlackGearedZombiesVanguardDefault = 0.04,
+        EmptyLine14 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=0.20
+        DesertGearedZombiesPatriotDefault = 0.2,
+        -- Minimum=0.00 Maximum=100.00 Default=0.10
+        DesertGearedZombiesDefenderDefault = 0.1,
+        -- Minimum=0.00 Maximum=100.00 Default=0.05
+        DesertGearedZombiesVanguardDefault = 0.05,
+        EmptyLine15 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=0.10
+        GreenGearedZombiesPatriotDefault = 0.1,
+        -- Minimum=0.00 Maximum=100.00 Default=0.08
+        GreenGearedZombiesDefenderDefault = 0.08,
+        -- Minimum=0.00 Maximum=100.00 Default=0.06
+        GreenGearedZombiesVanguardDefault = 0.06,
+        EmptyLine16 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=0.06
+        WhiteGearedZombiesPatriotDefault = 0.06,
+        -- Minimum=0.00 Maximum=100.00 Default=0.05
+        WhiteGearedZombiesDefenderDefault = 0.05,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        WhiteGearedZombiesVanguardDefault = 0.04,
+        EmptyLine10 = false,
+        Category10 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=3.00
+        BlackGearedZombiesPatriotSecretBase = 3.0,
+        -- Minimum=0.00 Maximum=100.00 Default=4.00
+        BlackGearedZombiesDefenderSecretBase = 4.0,
+        -- Minimum=0.00 Maximum=100.00 Default=2.00
+        BlackGearedZombiesVanguardSecretBase = 2.0,
+        EmptyLine17 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=0.20
+        DesertGearedZombiesPatriotSecretBase = 0.2,
+        -- Minimum=0.00 Maximum=100.00 Default=0.40
+        DesertGearedZombiesDefenderSecretBase = 0.4,
+        -- Minimum=0.00 Maximum=100.00 Default=0.60
+        DesertGearedZombiesVanguardSecretBase = 0.6,
+        EmptyLine18 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=0.60
+        GreenGearedZombiesPatriotSecretBase = 0.6,
+        -- Minimum=0.00 Maximum=100.00 Default=0.80
+        GreenGearedZombiesDefenderSecretBase = 0.8,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        GreenGearedZombiesVanguardSecretBase = 1.0,
+        EmptyLine19 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=0.80
+        WhiteGearedZombiesPatriotSecretBase = 0.8,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        WhiteGearedZombiesDefenderSecretBase = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=2.00
+        WhiteGearedZombiesVanguardSecretBase = 2.0,
+        EmptyLine2 = false,
+        Category2 = false,
+        EnableBlackGearLoot = true,
+        EnableDesertGearLoot = true,
+        EnableGreenGearLoot = true,
+        EnableWhiteGearLoot = true,
+        EnablePressGearLoot = true,
+        EmptyLine3 = false,
+        Category3 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=0.03
+        PatriotGear = 0.03,
+        -- Minimum=0.00 Maximum=100.00 Default=0.02
+        DefenderGear = 0.015,
+        -- Minimum=0.00 Maximum=100.00 Default=0.01
+        VanguardGear = 0.005,
+        EmptyLine4 = false,
+        Category4 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=0.05
+        PocketBackpack = 0.05,
+        -- Minimum=0.00 Maximum=100.00 Default=0.03
+        StrategistBackpack = 0.025,
+        -- Minimum=0.00 Maximum=100.00 Default=0.01
+        RangerBackpack = 0.0125,
+        -- Minimum=0.00 Maximum=100.00 Default=0.00
+        ColossusBackpack = 2.5E-4,
+        -- Minimum=0.00 Maximum=100.00 Default=0.01
+        EchoBackpack = 0.0125,
+        EmptyLine5 = false,
+        Category5 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=0.03
+        StormPackSmall = 0.03,
+        -- Minimum=0.00 Maximum=100.00 Default=0.02
+        StormPackMedium = 0.015,
+        -- Minimum=0.00 Maximum=100.00 Default=0.01
+        StormPackLarge = 0.005,
+        EmptyLine6 = false,
+        Category6 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=0.03
+        PouchesSmall = 0.03,
+        -- Minimum=0.00 Maximum=100.00 Default=0.02
+        PouchesMedium = 0.015,
+        -- Minimum=0.00 Maximum=100.00 Default=0.01
+        PouchesLarge = 0.005,
+        EmptyLine7 = false,
+        Category7 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=0.03
+        HipBagSmall = 0.03,
+        -- Minimum=0.00 Maximum=100.00 Default=0.02
+        HipBagMedium = 0.015,
+        EmptyLine8 = false,
+        Category8 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        HolsterSheath = 0.04,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        HeadApparel = 0.04,
+        -- Minimum=0.00 Maximum=100.00 Default=0.02
+        Balaclava = 0.02,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        Jacket = 0.04,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        Gloves = 0.04,
+        -- Minimum=0.00 Maximum=100.00 Default=0.02
+        MilitaryTShirts = 0.02,
+        -- Minimum=0.00 Maximum=100.00 Default=0.02
+        PantsShorts = 0.02,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        BootsShoes = 0.04,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        ThermalUnderwear = 0.04,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        NonMilitary = 0.04,
     },
-    SleepWithFriends = {
-        -- Choose if Sleep Length is being set to real-time minutes or in-game hours. Default=Real-Time Minutes
-        -- 1 = Real-Time Minutes
-        RTorIG = 1,
-        -- Average time spent sleeping when fully fatigued.
-        SleepLength = "2.0",
-        -- Determines how fast endurance is recovered while sleeping. 1 is the same rate as fatigue, 1.5 is one and a half times as fast, 2 is twice as fast, etc.
-        EndurMulti = "2.0",
-        -- Set if the AutoWake feature is enabled. Default=True
-        -- 1 = True
-        AutoWake = 1,
+    KillCount = {
+        doExport = false,
+        includePostDeathUI = true,
+        -- Minimum=0 Maximum=10000000 Default=500
+        MaxUpdateDelay = 500,
+        shareOnServer = true,
+        keepTrackOfDead = true,
     },
-    SkillRecoveryJournal = {
-        -- The amount of experienced recovered from reading bound journals. Minimum=1 Maximum=100 Default=100
-        RecoveryPercentage = 80,
-        -- A multiplier on the speed of transcribing journals. Minimum=0.00 Maximum=1000.00 Default=1.00
-        TranscribeSpeed = 4.0,
-        -- A multiplier on the speed of reading bound journals. Minimum=0.00 Maximum=1000.00 Default=1.00
-        ReadTimeSpeed = 2.0,
-        -- Starting with more than 1 point in a skill generally nets you bonus XP - with this toggled off that XP is not recorded. All XP recorded is that of a character with no starting skills. This does NOT recover starting levels - only the bonus XP earned.
-        RecoverProfessionAndTraitsBonuses = false,
-        -- Toggling this on will allow people to transcribe XP earned from watching TV/VHS. Note: This means players can carry over watched XP between characters cumulatively.
-        TranscribeTVXP = false,
-        -- Toggle on to record passive skills.
-        RecoverPassiveSkills = true,
-        -- Toggle on to record combat skills.
-        RecoverCombatSkills = true,
-        -- Toggle on to record firearm skills.
-        RecoverFirearmSkills = true,
-        -- Toggle on to record crafting skills.
-        RecoverCraftingSkills = true,
-        -- Toggle on to record survivalist skills.
-        RecoverSurvivalistSkills = true,
-        -- Toggle on to record agility skills.
-        RecoverAgilitySkills = true,
-        -- Toggle off to prevent journals from recovering/transcribing recipes.
-        RecoverRecipes = true,
-        -- Normally you can reread the journal as many times as you like - with this toggled on each individual XP point can only be recovered once. You can still add onto the journal, but each point can only be recovered once on each journal. Note: the tooltip for the journal will now display a fraction for unused points.
-        RecoveryJournalUsed = true,
-        Craftable = true,
+    VFE = {
+        PoliceWeapons = true,
+        MilitaryWeapons = true,
+        SurvivorWeapons = true,
+        OtherWeapons = true,
+        CarWeapons = true,
+        HouseWeapons = true,
+        -- Minimum=0.10 Maximum=10.00 Default=1.00
+        HouseWeaponsMulti = 1.0,
+        HeavyWeapons = true,
+    },
+    SapphCooking = {
+        NonPerishableChance = 3,
+        PerishableChance = 3,
+        MagazineChance = 3,
+        MREChance = 3,
+        KitchenUtensilsChance = 3,
+        AlcoholChance = 3,
+        ZombieLootSpawn = 3,
     },
     ExpandedHeli = {
-        -- The day the scheduler will start assigning events to. Minimum=0 Maximum=999 Default=0
+        -- Minimum=0 Maximum=999 Default=0
         StartDay = 0,
-        -- How long will the scheduler run from the start day.  The scheduler will adjust event progression to fit this duration. Minimum=1 Maximum=999 Default=90
+        -- Minimum=1 Maximum=999 Default=90
         SchedulerDuration = 90,
-        -- Toggle this on so that the scheduler will spawn events passed the duration limit. Events will still progress through stages according to the duration but events will never stop being scheduled.
-        ContinueScheduling = true,
-        -- When "Continue Scheduling Forever" is toggle on, this toggled on makes the scheduler only use late-game events.
+        ContinueScheduling = false,
         ContinueSchedulingLateGameOnly = true,
-        -- Whether weather will prevent events, or cause their crash.
         WeatherImpactsEvents = true,
-        -- How frequent jet events occur.  Jets fly by players causing horde movement. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_jet = 5,
-        -- How frequent Police events occur.  The police will take matters into their own hands and escort citizens around while firing on zombies. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
+        -- Minimum=0.00 Maximum=1000.00 Default=1.00
+        CrashChanceMulti = 1.0,
+        AirRaidSirenEvent = true,
+        Frequency_jet = 3,
         Frequency_police = 3,
-        -- How frequent news events occur.  News choppers will hone in on any citizen they find and follow them around for a short time. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_news_chopper = 4,
-        -- How frequent military events occur.  The military will progress through stages: warn citizens, purge the undead, then ultimately purge anything that moves. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_military = 5,
-        -- How frequent FEMA aid drop events occur.  FEMA will conduct aid drops early on in the apocalypse. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_FEMA_drop = 4,
-        -- How frequent samaritan events occur.  Samaritans will drop off supplies to help survivors. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_samaritan_drop = 5,
-        -- How frequent survivor events occur.  Survivors will only flyby on scouting missions causing horde movement. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_survivor_heli = 5,
-        -- How frequent raider events occur.  Raiders will hone in on survivors to torment them for some entertainment. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_raiders = 5,
+        Frequency_news_chopper = 3,
+        Frequency_military = 3,
+        Frequency_FEMA_drop = 3,
+        Frequency_samaritan_drop = 3,
+        Frequency_survivor_heli = 3,
+        Frequency_raiders = 3,
+    },
+    HTC_EHE_MilitaryDrop = {
+        -- Minimum=1 Maximum=8640 Default=168
+        TimeBetweenCall = 168,
+        -- Minimum=1.00 Maximum=200.00 Default=151.40
+        Frequency = 151.4,
+        -- Minimum=0 Maximum=1000 Default=30
+        MaxZSpawn = 30,
+        -- Minimum=0 Maximum=1000 Default=3
+        MinZSpawn = 3,
+        noteDropRate = 4,
+        onlyArmyAndPoliceCorpse = true,
+        -- Minimum=0 Maximum=100 Default=6
+        rollsLootBox = 6,
+    },
+    ExpandedHotwire = {
+        AllowHotwire = true,
+        AllowHotwireBurglar = true,
+        -- Minimum=0 Maximum=10 Default=1
+        HotwireElectricity = 1,
+        -- Minimum=0 Maximum=10 Default=2
+        HotwireMechanics = 2,
+        -- Minimum=0 Maximum=2147483647 Default=200
+        HotwireBaseDuration = 200,
+        -- Minimum=-2147483647 Maximum=2147483647 Default=3
+        HotwireElectricityScalar = 3,
+        -- Minimum=-2147483647 Maximum=2147483647 Default=0
+        HotwireMechanicsScalar = 0,
+        AllowUnHotwire = true,
+        -- Minimum=0 Maximum=10 Default=1
+        UnHotwireElectricity = 1,
+        -- Minimum=0 Maximum=10 Default=2
+        UnHotwireMechanics = 2,
+        -- Minimum=0 Maximum=2147483647 Default=200
+        UnHotwireBaseDuration = 200,
+        -- Minimum=-2147483647 Maximum=2147483647 Default=3
+        UnHotwireElectricityScalar = 3,
+        -- Minimum=-2147483647 Maximum=2147483647 Default=0
+        UnHotwireMechanicsScalar = 0,
+        AllowKeyCrafting = true,
+        -- Minimum=0 Maximum=10 Default=2
+        KeyCraftingElectricity = 2,
+        -- Minimum=0 Maximum=10 Default=4
+        KeyCraftingMechanics = 4,
+        -- Minimum=0 Maximum=10 Default=6
+        KeyCraftingMetalWelding = 6,
+        -- Minimum=0 Maximum=2147483647 Default=2000
+        KeyCraftingBaseDuration = 2000,
+        -- Minimum=-2147483647 Maximum=2147483647 Default=1
+        KeyCraftingElectricityScalar = 1,
+        -- Minimum=-2147483647 Maximum=2147483647 Default=2
+        KeyCraftingMechanicsScalar = 2,
+        -- Minimum=-2147483647 Maximum=2147483647 Default=3
+        KeyCraftingMetalWeldingScalar = 3,
     },
     FancyHandwork = {
-        -- Player Firearm Level to change to Tactical Aiming animation. <LINE> Set to 0 to always use this.  Set to 11 to never. Minimum=0 Maximum=11 Default=3
+        -- Minimum=0 Maximum=11 Default=3
         ExperiencedAim = 3,
-        -- When the character is not moving, they will turn to face an object they are interacting with after this many seconds. <LINE> Requires Turn Delay to be enabled. Minimum=0.01 Maximum=60.00 Default=1.00
+        -- Minimum=0.01 Maximum=60.00 Default=1.00
         TurnDelaySec = 1.0,
-        -- Controls when your character is forced to turn to objects when performing the World Interaction Default=Do forced turn after turn delay
-        -- 1 = Never do forced turn
-        -- 2 = Do forced turn after turn delay
         DisableTurn = 2,
-        -- Choose how often characters play the Rear Animations instead of Turning. <LINE> Notes: Character will still turn to objects that do not have a rear animation unless forced turn is disabled. <LINE> Turn delay or disabled turns must be selected to show rear animations. 'Always do forced turn' prevents rear animations. Default=Do rear animations until turn delay
-        -- 1 = Never do rear animations
-        -- 2 = Do rear animations until turn delay
         TurnBehavior = 2,
-        -- Hides the progress bar when a character is opening or closing a door, and when entering or exiting a vehicle.
         HideDoorProgressBar = false,
-        -- Hides the progress bar when a character is walking to a location to interact with a vehicle.
         HideVehicleWalkProgressBar = false,
     },
     BrutalHandwork = {
-        -- When a player is dual-wielding melee weapons, automatically alternate between left and right attacks. Disable to require the Modifier to be pressed for an offhand attack.
-        DualWieldMelee = true,
-        -- Even when a player is unarmed, they will be able to attack. By default, must be aiming and holding the Modifier key to punch.
+        DualWieldMelee = false,
         EnableUnarmed = true,
-        -- When a player is unarmed, always raise their fists when aiming for unarmed attacks.  Disable to require the Modifier to be held when aiming.
-        AlwaysUnarmed = true,
+        AlwaysUnarmed = false,
+    },
+    TrueCrawl = {
+        StealhModeServer = false,
+        StealhModeEnable = true,
+        MoodleEnable = true,
+        CrawlUnderVehiclesEnable = true,
+        RealisticEndurance = true,
+        CancelCrawlWhenSpotted = false,
+        -- Minimum=1 Maximum=20 Default=5
+        ZombieRadius = 5,
+    },
+    Advanced_trajectory = {
+        aimpoint = true,
+        showOutlines = false,
+        hideTracer = false,
+        Enablerange = true,
+        Enablethrow = true,
+        callshot = false,
+        IgnorePVPSafety = false,
+        enableBulletPenFlesh = true,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        ATY_damage = 1.0,
+        -- Minimum=0.00 Maximum=1.00 Default=0.25
+        penDamageReductionMultiplier = 0.25,
+        -- Minimum=0.00 Maximum=100.00 Default=0.00
+        DebugOffset = 0.0,
+        -- Minimum=0.00 Maximum=100.00 Default=0.00
+        DebugSpawnOffset = 0.0,
+        -- Minimum=0.00 Maximum=10.00 Default=0.42
+        DebugZomMindistCondition = 0.42,
+        -- Minimum=0.00 Maximum=10.00 Default=0.40
+        DebugPlayerMindistCondition = 0.4,
+        -- Minimum=0.00 Maximum=10.00 Default=0.50
+        DebugGridMultiplier = 0.5,
+        DebugEnableBow = false,
+        DebugEnableVoodoo = false,
+        DebugSayShotPart = false,
+        DebugRemoveFootHitbox = false,
+        -- Minimum=0 Maximum=1 Default=0
+        DebugHitCountShoot = 0,
+        -- Minimum=1.00 Maximum=100.00 Default=30.00
+        bowBreakChance = 30.0,
+        -- Minimum=-10.00 Maximum=10.00 Default=0.10
+        hitRegThreshold = 0.1,
+        -- Minimum=0.00 Maximum=300.00 Default=3.00
+        XPKillModifier = 3.0,
+        -- Minimum=0.00 Maximum=300.00 Default=0.50
+        XPHitModifier = 0.5,
+        -- Minimum=0.00 Maximum=1.00 Default=0.50
+        MaxProjCone = 0.5,
+        -- Minimum=0.00 Maximum=20.00 Default=7.00
+        maxaimnum = 7.0,
+        -- Minimum=0.00 Maximum=100.00 Default=7.00
+        minaimnumModifier = 7.0,
+        -- Minimum=0.00 Maximum=10.00 Default=3.00
+        focusLevel = 3.0,
+        enableDistanceLimitPenalty = true,
+        -- Minimum=0.00 Maximum=10.00 Default=2.00
+        distanceFocusPenalty = 2.0,
+        -- Minimum=0.00 Maximum=10.00 Default=0.10
+        reloadEffectModifier = 0.1,
+        -- Minimum=0.00 Maximum=100.00 Default=1.10
+        reducespeed = 1.1,
+        -- Minimum=0.00 Maximum=10.00 Default=2.00
+        focusCounterSpeed = 2.0,
+        -- Minimum=0.00 Maximum=10.00 Default=7.00
+        focusCounterSpeedScaleModifier = 7.0,
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
+        maxFocusSpeed = 1.0,
+        enableHitOrMiss = true,
+        announceHitOrMiss = false,
+        -- Minimum=0.00 Maximum=200.00 Default=60.00
+        shotgunHitBuff = 60.0,
+        -- Minimum=0.00 Maximum=20.00 Default=2.00
+        hitLevelScaling = 2.0,
+        -- Minimum=0.00 Maximum=300.00 Default=25.00
+        missMin = 25.0,
+        -- Minimum=0.00 Maximum=300.00 Default=120.00
+        missMax = 120.0,
+        -- Minimum=0.00 Maximum=1.00 Default=0.30
+        missMinTransparency = 0.3,
+        -- Minimum=0.00 Maximum=1.00 Default=0.01
+        recoilDelayModifier = 0.01,
+        -- Minimum=0.00 Maximum=30.00 Default=10.00
+        recoilModifier = 10.0,
+        -- Minimum=0.00 Maximum=200.00 Default=80.00
+        recoilScaleModifier = 80.0,
+        -- Minimum=0.00 Maximum=1.00 Default=0.70
+        proneRecoilBuff = 0.7,
+        -- Minimum=0.00 Maximum=1.00 Default=0.50
+        proneExpoRecoilBuff = 0.5,
+        -- Minimum=0.00 Maximum=1.00 Default=0.80
+        crouchRecoilBuff = 0.8,
+        -- Minimum=0.00 Maximum=1.00 Default=0.75
+        crouchExpoRecoilBuff = 0.75,
+        -- Minimum=0.00 Maximum=2.40 Default=1.70
+        bulletspeed = 1.7,
+        -- Minimum=0.00 Maximum=100.00 Default=4.00
+        bulletdistance = 4.0,
+        -- Minimum=0.00 Maximum=10.00 Default=10.00
+        runNGunLv = 10.0,
+        -- Minimum=0.00 Maximum=1.00 Default=0.50
+        runNGunBuff = 0.5,
+        -- Minimum=0.00 Maximum=100.00 Default=1.30
+        moveeffect = 1.3,
+        -- Minimum=0.00 Maximum=100.00 Default=0.70
+        turningeffect = 0.7,
+        -- Minimum=0.00 Maximum=10.00 Default=8.00
+        crouchCounterSpeed = 8.0,
+        -- Minimum=0.00 Maximum=10.00 Default=2.00
+        crouchPenaltyModifier = 2.0,
+        -- Minimum=0.00 Maximum=10.00 Default=3.00
+        crouchTurnEffect = 3.0,
+        -- Minimum=0.00 Maximum=10.00 Default=5.00
+        proneTurnEffect = 5.0,
+        -- Minimum=0.00 Maximum=1.00 Default=0.50
+        crouchFocusLimitBuff = 0.5,
+        -- Minimum=0.00 Maximum=1.00 Default=0.30
+        proneFocusLimitBuff = 0.3,
+        -- Minimum=0.00 Maximum=10.00 Default=1.50
+        proneFocusCounterSpeedBuff = 1.5,
+        -- Minimum=0.00 Maximum=2.00 Default=0.40
+        proneReduceSpeedBuff = 0.4,
+        -- Minimum=0.00 Maximum=2.00 Default=0.20
+        crouchReduceSpeedBuff = 0.2,
+        -- Minimum=0.00 Maximum=1.00 Default=0.80
+        maxDefenseReduction = 0.8,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        headShotIncChance = 20.0,
+        -- Minimum=0.00 Maximum=100.00 Default=10.00
+        footShotIncChance = 10.0,
+        -- Minimum=0.00 Maximum=100.00 Default=10.00
+        headShotDmgZomMultiplier = 10.0,
+        -- Minimum=0.00 Maximum=100.00 Default=5.00
+        bodyShotDmgZomMultiplier = 5.0,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        footShotDmgZomMultiplier = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=15.00
+        headShotDmgPlayerMultiplier = 15.0,
+        -- Minimum=0.00 Maximum=100.00 Default=5.00
+        bodyShotDmgPlayerMultiplier = 5.0,
+        -- Minimum=0.00 Maximum=100.00 Default=2.00
+        footShotDmgPlayerMultiplier = 2.0,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        critChanceModifier = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=10.00
+        fractureChance = 10.0,
+        -- Minimum=0.00 Maximum=100.00 Default=25.00
+        throughChance = 25.0,
+        -- Minimum=0.00 Maximum=1.00 Default=0.20
+        maxShotgunProjCone = 0.2,
+        -- Minimum=0.00 Maximum=10.00 Default=0.50
+        shotgunDistanceModifier = 0.5,
+        -- Minimum=0 Maximum=100 Default=5
+        shotgunnum = 5,
+        -- Minimum=0.00 Maximum=1.00 Default=0.10
+        shotgundivision = 0.1,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        shotgunDamageMultiplier = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=10.00
+        critChanceModifierShotgunsOnly = 10.0,
+        -- Minimum=0.00 Maximum=5.00 Default=0.00
+        staminaCrouchScale = 0.001,
+        -- Minimum=0.00 Maximum=5.00 Default=0.50
+        staminaHeavyCrouchScale = 0.5,
+        -- Minimum=0.00 Maximum=5.00 Default=0.00
+        staminaCrawlScale = 0.003,
+        -- Minimum=0.00 Maximum=5.00 Default=0.50
+        staminaHeavyCrawlScale = 0.5,
+        -- Minimum=0.00 Maximum=5.00 Default=0.50
+        heavyTurnEffectModifier = 0.5,
+        -- Minimum=0.00 Maximum=100.00 Default=0.50
+        drunkActionEffectModifier = 0.5,
+        -- Minimum=0.00 Maximum=100.00 Default=6.00
+        drunkMaxBloomModifier = 6.0,
+        -- Minimum=0.00 Maximum=100.00 Default=6.00
+        heavyMaxBloomModifier = 6.0,
+        -- Minimum=0.50 Maximum=2.00 Default=0.66
+        hyperHypoModifier = 0.66,
+        -- Minimum=0.50 Maximum=2.00 Default=0.50
+        tiredModifier = 0.5,
+        -- Minimum=0.00 Maximum=1.00 Default=0.10
+        painModifier = 0.1,
+        -- Minimum=0.00 Maximum=100.00 Default=2.00
+        painVisualModifier = 2.0,
+        -- Minimum=0.00 Maximum=5.00 Default=3.00
+        panicPenaltyModifier = 3.0,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        panicVisualModifier = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=4.00
+        stressBloomModifier = 4.0,
+        -- Minimum=0.00 Maximum=100.00 Default=1.25
+        stressVisualModifier = 1.25,
+        -- Minimum=0.00 Maximum=100.00 Default=2.00
+        coughModifier = 2.0,
+        -- Minimum=0.00 Maximum=100.00 Default=1.50
+        enduranceBreathModifier = 1.5,
+        -- Minimum=0.00 Maximum=100.00 Default=3.00
+        inhaleModifier1 = 3.0,
+        -- Minimum=0.00 Maximum=100.00 Default=2.00
+        exhaleModifier1 = 2.0,
+        -- Minimum=0.00 Maximum=100.00 Default=3.00
+        inhaleModifier2 = 3.0,
+        -- Minimum=0.00 Maximum=100.00 Default=3.66
+        exhaleModifier2 = 3.66,
+        -- Minimum=0.00 Maximum=100.00 Default=3.00
+        inhaleModifier3 = 3.0,
+        -- Minimum=0.00 Maximum=100.00 Default=4.00
+        exhaleModifier3 = 4.0,
+        -- Minimum=0.00 Maximum=100.00 Default=4.00
+        inhaleModifier4 = 4.0,
+        -- Minimum=0.00 Maximum=100.00 Default=7.00
+        exhaleModifier4 = 7.0,
+        enableOgCrosshair = false,
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairMaxTransparency = 1.0,
+        -- Minimum=0.00 Maximum=1.00 Default=0.20
+        crosshairRed = 0.2,
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairGreen = 1.0,
+        -- Minimum=0.00 Maximum=1.00 Default=0.20
+        crosshairBlue = 0.2,
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairRedMain = 1.0,
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairGreenMain = 1.0,
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairBlueMain = 1.0,
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairRedLimit = 1.0,
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
+        crosshairGreenLimit = 1.0,
+        -- Minimum=0.00 Maximum=1.00 Default=0.00
+        crosshairBlueLimit = 0.0,
+    },
+    DaysGone = {
+        DaysLater = false,
+        IncludePreOutbreak = false,
+        CustomText = "",
+        -- Minimum=0 Maximum=1000000 Default=0
+        StartingDay = 0,
+    },
+    StairsAlert = {
+        DisplayIfNoZombies = true,
+        DisplayZombieAmount = true,
+        DisplayMarker = true,
+    },
+    WhereAmI = {
+        HideUIOffRegion = false,
+    },
+    BLTAnnotations = {
+        DropMapOnDeath = false,
     },
     BLTRandomZombies = {
-        -- Percentage of Crawlers present in the world. Crawler%, Shambler%, FastShambler% and Sprinter% must add up to 100. Minimum=0.00 Maximum=100.00 Default=2.00
-        Crawler = 20.0,
-        -- Percentage of Shamblers present in the world. Crawler%, Shambler%, FastShambler% and Sprinter% must add up to 100. Minimum=0.00 Maximum=100.00 Default=15.00
-        Shambler = 40.0,
-        -- Percentage of Fast Shamblers present in the world. Crawler%, Shambler%, FastShambler% and Sprinter% must add up to 100. Minimum=0.00 Maximum=100.00 Default=78.00
-        FastShambler = 38.0,
-        -- Percentage of Sprinters present in the world. Crawler%, Shambler%, FastShambler% and Sprinter% must add up to 100. Minimum=0.00 Maximum=100.00 Default=5.00
-        Sprinter = 2.0,
-        -- Percentage of Fragile zombies present in the world. Fragile%, Normal% and Tough% must add up to 100. Minimum=0.00 Maximum=100.00 Default=0.00
-        Fragile = 50.0,
-        -- Percentage of zombies with normal toughness present in the world. Fragile%, Normal% and Tough% must add up to 100. Minimum=0.00 Maximum=100.00 Default=100.00
-        NormalTough = 30.0,
-        -- Percentage of Tough zombies present in the world. Fragile%, Normal% and Tough% must add up to 100. Minimum=0.00 Maximum=100.00 Default=0.00
-        Tough = 20.0,
-        -- Percentage of Smart zombies present in the world. These zombies can open doors and more. Minimum=0.00 Maximum=100.00 Default=0.00
-        Smart = 1.0,
-        -- [ADVANCED OPTION] The interval in milliseconds between two updates. Higher number means less CPU usage, lower number means less correctness issues Minimum=1000 Maximum=60000 Default=7500
+        -- Minimum=0.00 Maximum=100.00 Default=2.00
+        Crawler = 2.0,
+        -- Minimum=0.00 Maximum=100.00 Default=15.00
+        Shambler = 15.0,
+        -- Minimum=0.00 Maximum=100.00 Default=78.00
+        FastShambler = 78.0,
+        -- Minimum=0.00 Maximum=100.00 Default=5.00
+        Sprinter = 5.0,
+        -- Minimum=0.00 Maximum=100.00 Default=0.00
+        Fragile = 0.0,
+        -- Minimum=0.00 Maximum=100.00 Default=100.00
+        NormalTough = 100.0,
+        -- Minimum=0.00 Maximum=100.00 Default=0.00
+        Tough = 0.0,
+        -- Minimum=0.00 Maximum=100.00 Default=0.00
+        Smart = 0.0,
+        -- Minimum=1000 Maximum=60000 Default=7500
         Frequency = 7500,
     },
-    KillCount = {
-        -- May provoke stutters.
-        doExport = false,
-        -- Includes all kills into the final value in Post Death floating text.
-        includePostDeathUI = true,
-        -- Target time (in milliseconds) between two updates in multiplayer. Small value gives reactivity. High value reduces network use and server workload. Minimum=0 Maximum=10000000 Default=500
-        MaxUpdateDelay = 500,
-        -- Each client can see every character score. Deactivate on (very large) servers to reduce Global Mod Data transfer load.
-        shareOnServer = true,
-        -- Dead characters are kept and count toward server kills. Deactivate for server that never wipe.
-        keepTrackOfDead = true,
+    CAMmod = {
+        -- Minimum=5 Maximum=1000 Default=25
+        maximumCorpsePile = 25,
+    },
+    MoreImmersiveVehicles = {
+        -- Minimum=0 Maximum=100 Default=15
+        OpenedDoorChance = 15,
+        -- Minimum=0 Maximum=100 Default=20
+        OpenedTrunkDoorChance = 20,
+        -- Minimum=0 Maximum=100 Default=25
+        OpenedWindowChance = 25,
+    },
+    DGScentOfBlood = {
+        -- Minimum=1 Maximum=10 Default=3
+        BloodRange = 3,
+        BloodyBandage = false,
+        DeepWounds = false,
+    },
+    DefinitiveZombies = {
+        DebugEnable = false,
+        -- Minimum=100 Maximum=10000 Default=300
+        UpdateInterval = 300,
+        -- Minimum=0 Maximum=10 Default=3
+        RerollAttempts = 3,
+        SpeedEnable = true,
+        -- Default=Fast Shamblers
+        -- 1 = Sprinters
+        -- 2 = Fast Shamblers
+        Speed = 2,
+        StrengthEnable = true,
+        -- Default=Normal
+        -- 1 = Superhuman
+        -- 2 = Normal
+        Strength = 2,
+        ToughnessEnable = true,
+        -- Default=Normal
+        -- 1 = Tough
+        -- 2 = Normal
+        Toughness = 2,
+        CognitionEnable = true,
+        -- Default=Basic Navigation
+        -- 1 = Navigate + Use Doors
+        -- 2 = Navigate
+        Cognition = 3,
+        HearingEnable = true,
+        -- Default=Normal
+        -- 1 = Pinpoint
+        -- 2 = Normal
+        Hearing = 2,
+        MemoryEnable = true,
+        -- Default=Normal
+        -- 1 = Long
+        -- 2 = Normal
+        -- 3 = Short
+        Memory = 2,
+        SightEnable = true,
+        -- Default=Normal
+        -- 1 = Eagle
+        -- 2 = Normal
+        Sight = 2,
+        DayLightEnable = true,
+        -- Minimum=0.01 Maximum=0.99 Default=0.25
+        DayLight_Interval0 = 0.25,
+        DayLight_Effect0_Speed = 6,
+        DayLight_Effect0_Strength = 6,
+        DayLight_Effect0_Toughness = 6,
+        DayLight_Effect0_Cognition = 6,
+        DayLight_Effect0_Memory = 6,
+        DayLight_Effect0_Sight = 6,
+        DayLight_Effect0_Hearing = 6,
+        -- Minimum=0.01 Maximum=0.99 Default=0.50
+        DayLight_Interval1 = 0.5,
+        DayLight_Effect1_Speed = 6,
+        DayLight_Effect1_Strength = 6,
+        DayLight_Effect1_Toughness = 6,
+        DayLight_Effect1_Cognition = 6,
+        DayLight_Effect1_Memory = 6,
+        DayLight_Effect1_Sight = 5,
+        DayLight_Effect1_Hearing = 6,
+        -- Minimum=0.01 Maximum=0.99 Default=0.75
+        DayLight_Interval2 = 0.75,
+        DayLight_Effect2_Speed = 6,
+        DayLight_Effect2_Strength = 6,
+        DayLight_Effect2_Toughness = 6,
+        DayLight_Effect2_Cognition = 6,
+        DayLight_Effect2_Memory = 5,
+        DayLight_Effect2_Sight = 5,
+        DayLight_Effect2_Hearing = 6,
+        NightEnable = true,
+        -- Minimum=0.01 Maximum=0.99 Default=0.25
+        Night_Interval0 = 0.25,
+        Night_Effect0_Speed = 6,
+        Night_Effect0_Strength = 6,
+        Night_Effect0_Toughness = 6,
+        Night_Effect0_Cognition = 6,
+        Night_Effect0_Memory = 6,
+        Night_Effect0_Sight = 6,
+        Night_Effect0_Hearing = 6,
+        -- Minimum=0.01 Maximum=0.99 Default=0.50
+        Night_Interval1 = 0.5,
+        Night_Effect1_Speed = 6,
+        Night_Effect1_Strength = 6,
+        Night_Effect1_Toughness = 6,
+        Night_Effect1_Cognition = 6,
+        Night_Effect1_Memory = 6,
+        Night_Effect1_Sight = 7,
+        Night_Effect1_Hearing = 6,
+        -- Minimum=0.01 Maximum=0.99 Default=0.75
+        Night_Interval2 = 0.75,
+        Night_Effect2_Speed = 6,
+        Night_Effect2_Strength = 6,
+        Night_Effect2_Toughness = 6,
+        Night_Effect2_Cognition = 6,
+        Night_Effect2_Memory = 7,
+        Night_Effect2_Sight = 7,
+        Night_Effect2_Hearing = 5,
+        TemperatureEnable = true,
+        -- Minimum=-200.00 Maximum=200.00 Default=-200.00
+        Temperature_Interval0 = -200.0,
+        Temperature_Effect0_Speed = 8,
+        Temperature_Effect0_Strength = 6,
+        Temperature_Effect0_Toughness = 4,
+        Temperature_Effect0_Cognition = 6,
+        Temperature_Effect0_Memory = 4,
+        Temperature_Effect0_Sight = 6,
+        Temperature_Effect0_Hearing = 6,
+        -- Minimum=-200.00 Maximum=200.00 Default=0.00
+        Temperature_Interval1 = 0.0,
+        Temperature_Effect1_Speed = 7,
+        Temperature_Effect1_Strength = 6,
+        Temperature_Effect1_Toughness = 5,
+        Temperature_Effect1_Cognition = 6,
+        Temperature_Effect1_Memory = 5,
+        Temperature_Effect1_Sight = 6,
+        Temperature_Effect1_Hearing = 6,
+        -- Minimum=-200.00 Maximum=200.00 Default=10.00
+        Temperature_Interval2 = 10.0,
+        Temperature_Effect2_Speed = 6,
+        Temperature_Effect2_Strength = 6,
+        Temperature_Effect2_Toughness = 6,
+        Temperature_Effect2_Cognition = 6,
+        Temperature_Effect2_Memory = 6,
+        Temperature_Effect2_Sight = 6,
+        Temperature_Effect2_Hearing = 6,
+        FogIntensityEnable = true,
+        -- Minimum=0.01 Maximum=0.99 Default=0.25
+        FogIntensity_Interval0 = 0.25,
+        FogIntensity_Effect0_Speed = 6,
+        FogIntensity_Effect0_Strength = 6,
+        FogIntensity_Effect0_Toughness = 6,
+        FogIntensity_Effect0_Cognition = 6,
+        FogIntensity_Effect0_Memory = 6,
+        FogIntensity_Effect0_Sight = 7,
+        FogIntensity_Effect0_Hearing = 6,
+        -- Minimum=0.01 Maximum=0.99 Default=0.50
+        FogIntensity_Interval1 = 0.5,
+        FogIntensity_Effect1_Speed = 6,
+        FogIntensity_Effect1_Strength = 6,
+        FogIntensity_Effect1_Toughness = 6,
+        FogIntensity_Effect1_Cognition = 6,
+        FogIntensity_Effect1_Memory = 7,
+        FogIntensity_Effect1_Sight = 8,
+        FogIntensity_Effect1_Hearing = 6,
+        -- Minimum=0.01 Maximum=0.99 Default=0.75
+        FogIntensity_Interval2 = 0.75,
+        FogIntensity_Effect2_Speed = 6,
+        FogIntensity_Effect2_Strength = 6,
+        FogIntensity_Effect2_Toughness = 6,
+        FogIntensity_Effect2_Cognition = 6,
+        FogIntensity_Effect2_Memory = 8,
+        FogIntensity_Effect2_Sight = 9,
+        FogIntensity_Effect2_Hearing = 6,
+        RainIntensityEnable = true,
+        -- Minimum=0.01 Maximum=0.99 Default=0.25
+        RainIntensity_Interval0 = 0.25,
+        RainIntensity_Effect0_Speed = 6,
+        RainIntensity_Effect0_Strength = 6,
+        RainIntensity_Effect0_Toughness = 6,
+        RainIntensity_Effect0_Cognition = 6,
+        RainIntensity_Effect0_Memory = 6,
+        RainIntensity_Effect0_Sight = 6,
+        RainIntensity_Effect0_Hearing = 7,
+        -- Minimum=0.01 Maximum=0.99 Default=0.50
+        RainIntensity_Interval1 = 0.5,
+        RainIntensity_Effect1_Speed = 6,
+        RainIntensity_Effect1_Strength = 6,
+        RainIntensity_Effect1_Toughness = 6,
+        RainIntensity_Effect1_Cognition = 6,
+        RainIntensity_Effect1_Memory = 6,
+        RainIntensity_Effect1_Sight = 7,
+        RainIntensity_Effect1_Hearing = 8,
+        -- Minimum=0.01 Maximum=0.99 Default=0.75
+        RainIntensity_Interval2 = 0.75,
+        RainIntensity_Effect2_Speed = 6,
+        RainIntensity_Effect2_Strength = 6,
+        RainIntensity_Effect2_Toughness = 6,
+        RainIntensity_Effect2_Cognition = 6,
+        RainIntensity_Effect2_Memory = 7,
+        RainIntensity_Effect2_Sight = 8,
+        RainIntensity_Effect2_Hearing = 9,
+        SnowIntensityEnable = true,
+        -- Minimum=0.01 Maximum=0.99 Default=0.25
+        SnowIntensity_Interval0 = 0.25,
+        SnowIntensity_Effect0_Speed = 6,
+        SnowIntensity_Effect0_Strength = 6,
+        SnowIntensity_Effect0_Toughness = 6,
+        SnowIntensity_Effect0_Cognition = 6,
+        SnowIntensity_Effect0_Memory = 6,
+        SnowIntensity_Effect0_Sight = 7,
+        SnowIntensity_Effect0_Hearing = 6,
+        -- Minimum=0.01 Maximum=0.99 Default=0.50
+        SnowIntensity_Interval1 = 0.5,
+        SnowIntensity_Effect1_Speed = 6,
+        SnowIntensity_Effect1_Strength = 6,
+        SnowIntensity_Effect1_Toughness = 6,
+        SnowIntensity_Effect1_Cognition = 6,
+        SnowIntensity_Effect1_Memory = 7,
+        SnowIntensity_Effect1_Sight = 8,
+        SnowIntensity_Effect1_Hearing = 6,
+        -- Minimum=0.01 Maximum=0.99 Default=0.75
+        SnowIntensity_Interval2 = 0.75,
+        SnowIntensity_Effect2_Speed = 6,
+        SnowIntensity_Effect2_Strength = 6,
+        SnowIntensity_Effect2_Toughness = 6,
+        SnowIntensity_Effect2_Cognition = 6,
+        SnowIntensity_Effect2_Memory = 8,
+        SnowIntensity_Effect2_Sight = 9,
+        SnowIntensity_Effect2_Hearing = 6,
+        CloudIntensityEnable = true,
+        -- Minimum=0.01 Maximum=0.99 Default=0.25
+        CloudIntensity_Interval0 = 0.25,
+        CloudIntensity_Effect0_Speed = 6,
+        CloudIntensity_Effect0_Strength = 6,
+        CloudIntensity_Effect0_Toughness = 6,
+        CloudIntensity_Effect0_Cognition = 6,
+        CloudIntensity_Effect0_Memory = 6,
+        CloudIntensity_Effect0_Sight = 6,
+        CloudIntensity_Effect0_Hearing = 6,
+        -- Minimum=0.01 Maximum=0.99 Default=0.50
+        CloudIntensity_Interval1 = 0.5,
+        CloudIntensity_Effect1_Speed = 6,
+        CloudIntensity_Effect1_Strength = 6,
+        CloudIntensity_Effect1_Toughness = 6,
+        CloudIntensity_Effect1_Cognition = 6,
+        CloudIntensity_Effect1_Memory = 6,
+        CloudIntensity_Effect1_Sight = 7,
+        CloudIntensity_Effect1_Hearing = 6,
+        -- Minimum=0.01 Maximum=0.99 Default=0.75
+        CloudIntensity_Interval2 = 0.75,
+        CloudIntensity_Effect2_Speed = 6,
+        CloudIntensity_Effect2_Strength = 6,
+        CloudIntensity_Effect2_Toughness = 6,
+        CloudIntensity_Effect2_Cognition = 6,
+        CloudIntensity_Effect2_Memory = 7,
+        CloudIntensity_Effect2_Sight = 7,
+        CloudIntensity_Effect2_Hearing = 6,
+        WindIntensityEnable = true,
+        -- Minimum=0.01 Maximum=0.99 Default=0.25
+        WindIntensity_Interval0 = 0.25,
+        WindIntensity_Effect0_Speed = 6,
+        WindIntensity_Effect0_Strength = 6,
+        WindIntensity_Effect0_Toughness = 6,
+        WindIntensity_Effect0_Cognition = 6,
+        WindIntensity_Effect0_Memory = 6,
+        WindIntensity_Effect0_Sight = 6,
+        WindIntensity_Effect0_Hearing = 7,
+        -- Minimum=0.01 Maximum=0.99 Default=0.50
+        WindIntensity_Interval1 = 0.5,
+        WindIntensity_Effect1_Speed = 6,
+        WindIntensity_Effect1_Strength = 6,
+        WindIntensity_Effect1_Toughness = 6,
+        WindIntensity_Effect1_Cognition = 6,
+        WindIntensity_Effect1_Memory = 6,
+        WindIntensity_Effect1_Sight = 6,
+        WindIntensity_Effect1_Hearing = 8,
+        -- Minimum=0.01 Maximum=0.99 Default=0.75
+        WindIntensity_Interval2 = 0.75,
+        WindIntensity_Effect2_Speed = 6,
+        WindIntensity_Effect2_Strength = 6,
+        WindIntensity_Effect2_Toughness = 6,
+        WindIntensity_Effect2_Cognition = 6,
+        WindIntensity_Effect2_Memory = 6,
+        WindIntensity_Effect2_Sight = 6,
+        WindIntensity_Effect2_Hearing = 9,
+        MoonPhaseEnable = true,
+        -- Minimum=0.00 Maximum=1.00 Default=0.75
+        MoonPhaseMoonThreshold = 0.75,
+        -- Minimum=0.00 Maximum=0.00 Default=0.00
+        MoonPhase_Interval0 = 0.0,
+        MoonPhase_Effect0_Speed = 6,
+        MoonPhase_Effect0_Strength = 6,
+        MoonPhase_Effect0_Toughness = 6,
+        MoonPhase_Effect0_Cognition = 6,
+        MoonPhase_Effect0_Memory = 6,
+        MoonPhase_Effect0_Sight = 6,
+        MoonPhase_Effect0_Hearing = 6,
+        -- Minimum=1.00 Maximum=1.00 Default=1.00
+        MoonPhase_Interval1 = 1.0,
+        MoonPhase_Effect1_Speed = 6,
+        MoonPhase_Effect1_Strength = 6,
+        MoonPhase_Effect1_Toughness = 6,
+        MoonPhase_Effect1_Cognition = 6,
+        MoonPhase_Effect1_Memory = 5,
+        MoonPhase_Effect1_Sight = 6,
+        MoonPhase_Effect1_Hearing = 6,
+        -- Minimum=2.00 Maximum=2.00 Default=2.00
+        MoonPhase_Interval2 = 2.0,
+        MoonPhase_Effect2_Speed = 6,
+        MoonPhase_Effect2_Strength = 6,
+        MoonPhase_Effect2_Toughness = 6,
+        MoonPhase_Effect2_Cognition = 6,
+        MoonPhase_Effect2_Memory = 5,
+        MoonPhase_Effect2_Sight = 5,
+        MoonPhase_Effect2_Hearing = 6,
+        -- Minimum=3.00 Maximum=3.00 Default=3.00
+        MoonPhase_Interval3 = 3.0,
+        MoonPhase_Effect3_Speed = 6,
+        MoonPhase_Effect3_Strength = 6,
+        MoonPhase_Effect3_Toughness = 6,
+        MoonPhase_Effect3_Cognition = 6,
+        MoonPhase_Effect3_Memory = 5,
+        MoonPhase_Effect3_Sight = 4,
+        MoonPhase_Effect3_Hearing = 6,
+        -- Minimum=4.00 Maximum=4.00 Default=4.00
+        MoonPhase_Interval4 = 4.0,
+        MoonPhase_Effect4_Speed = 6,
+        MoonPhase_Effect4_Strength = 6,
+        MoonPhase_Effect4_Toughness = 6,
+        MoonPhase_Effect4_Cognition = 6,
+        MoonPhase_Effect4_Memory = 4,
+        MoonPhase_Effect4_Sight = 4,
+        MoonPhase_Effect4_Hearing = 6,
+        -- Minimum=5.00 Maximum=5.00 Default=5.00
+        MoonPhase_Interval5 = 5.0,
+        MoonPhase_Effect5_Speed = 6,
+        MoonPhase_Effect5_Strength = 6,
+        MoonPhase_Effect5_Toughness = 6,
+        MoonPhase_Effect5_Cognition = 6,
+        MoonPhase_Effect5_Memory = 5,
+        MoonPhase_Effect5_Sight = 4,
+        MoonPhase_Effect5_Hearing = 6,
+        -- Minimum=6.00 Maximum=6.00 Default=6.00
+        MoonPhase_Interval6 = 6.0,
+        MoonPhase_Effect6_Speed = 6,
+        MoonPhase_Effect6_Strength = 6,
+        MoonPhase_Effect6_Toughness = 6,
+        MoonPhase_Effect6_Cognition = 6,
+        MoonPhase_Effect6_Memory = 5,
+        MoonPhase_Effect6_Sight = 5,
+        MoonPhase_Effect6_Hearing = 6,
+        -- Minimum=7.00 Maximum=7.00 Default=7.00
+        MoonPhase_Interval7 = 7.0,
+        MoonPhase_Effect7_Speed = 6,
+        MoonPhase_Effect7_Strength = 6,
+        MoonPhase_Effect7_Toughness = 6,
+        MoonPhase_Effect7_Cognition = 6,
+        MoonPhase_Effect7_Memory = 5,
+        MoonPhase_Effect7_Sight = 6,
+        MoonPhase_Effect7_Hearing = 6,
+        TimeEnable = false,
+        -- Minimum=0.00 Maximum=24.00 Default=4.00
+        Time_Interval0 = 4.0,
+        Time_Effect0_Speed = 6,
+        Time_Effect0_Strength = 6,
+        Time_Effect0_Toughness = 6,
+        Time_Effect0_Cognition = 6,
+        Time_Effect0_Memory = 6,
+        Time_Effect0_Sight = 6,
+        Time_Effect0_Hearing = 6,
+        -- Minimum=0.00 Maximum=24.00 Default=18.00
+        Time_Interval1 = 18.0,
+        Time_Effect1_Speed = 6,
+        Time_Effect1_Strength = 6,
+        Time_Effect1_Toughness = 6,
+        Time_Effect1_Cognition = 6,
+        Time_Effect1_Memory = 6,
+        Time_Effect1_Sight = 6,
+        Time_Effect1_Hearing = 6,
+        EntropyEnable = true,
+        -- Minimum=1 Maximum=9999 Default=28
+        Entropy_Interval0 = 28,
+        Entropy_Effect0_Speed = 6,
+        Entropy_Effect0_Strength = 6,
+        Entropy_Effect0_Toughness = 6,
+        Entropy_Effect0_Cognition = 6,
+        Entropy_Effect0_Memory = 6,
+        Entropy_Effect0_Sight = 7,
+        Entropy_Effect0_Hearing = 7,
+        -- Minimum=1 Maximum=99999 Default=196
+        Entropy_Interval1 = 196,
+        Entropy_Effect1_Speed = 6,
+        Entropy_Effect1_Strength = 6,
+        Entropy_Effect1_Toughness = 6,
+        Entropy_Effect1_Cognition = 7,
+        Entropy_Effect1_Memory = 7,
+        Entropy_Effect1_Sight = 7,
+        Entropy_Effect1_Hearing = 7,
+        -- Minimum=1 Maximum=9999 Default=851
+        Entropy_Interval2 = 851,
+        Entropy_Effect2_Speed = 7,
+        Entropy_Effect2_Strength = 7,
+        Entropy_Effect2_Toughness = 7,
+        Entropy_Effect2_Cognition = 7,
+        Entropy_Effect2_Memory = 7,
+        Entropy_Effect2_Sight = 7,
+        Entropy_Effect2_Hearing = 7,
+        Speed_Seed_Enable = false,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Speed_Seed1 = 20.0,
+        Speed_Seed1_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Speed_Seed2 = 20.0,
+        Speed_Seed2_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Speed_Seed3 = 20.0,
+        Speed_Seed3_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Speed_Seed4 = 20.0,
+        Speed_Seed4_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Speed_Seed5 = 20.0,
+        Speed_Seed5_Effect = 6,
+        Strength_Seed_Enable = false,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Strength_Seed1 = 20.0,
+        Strength_Seed1_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Strength_Seed2 = 20.0,
+        Strength_Seed2_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Strength_Seed3 = 20.0,
+        Strength_Seed3_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Strength_Seed4 = 20.0,
+        Strength_Seed4_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Strength_Seed5 = 20.0,
+        Strength_Seed5_Effect = 6,
+        Toughness_Seed_Enable = false,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Toughness_Seed1 = 20.0,
+        Toughness_Seed1_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Toughness_Seed2 = 20.0,
+        Toughness_Seed2_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Toughness_Seed3 = 20.0,
+        Toughness_Seed3_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Toughness_Seed4 = 20.0,
+        Toughness_Seed4_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Toughness_Seed5 = 20.0,
+        Toughness_Seed5_Effect = 6,
+        Cognition_Seed_Enable = false,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Cognition_Seed1 = 20.0,
+        Cognition_Seed1_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Cognition_Seed2 = 20.0,
+        Cognition_Seed2_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Cognition_Seed3 = 20.0,
+        Cognition_Seed3_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Cognition_Seed4 = 20.0,
+        Cognition_Seed4_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Cognition_Seed5 = 20.0,
+        Cognition_Seed5_Effect = 6,
+        Memory_Seed_Enable = false,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Memory_Seed1 = 20.0,
+        Memory_Seed1_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Memory_Seed2 = 20.0,
+        Memory_Seed2_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Memory_Seed3 = 20.0,
+        Memory_Seed3_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Memory_Seed4 = 20.0,
+        Memory_Seed4_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Memory_Seed5 = 20.0,
+        Memory_Seed5_Effect = 6,
+        Sight_Seed_Enable = false,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Sight_Seed1 = 20.0,
+        Sight_Seed1_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Sight_Seed2 = 20.0,
+        Sight_Seed2_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Sight_Seed3 = 20.0,
+        Sight_Seed3_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Sight_Seed4 = 20.0,
+        Sight_Seed4_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Sight_Seed5 = 20.0,
+        Sight_Seed5_Effect = 6,
+        Hearing_Seed_Enable = false,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Hearing_Seed1 = 20.0,
+        Hearing_Seed1_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Hearing_Seed2 = 20.0,
+        Hearing_Seed2_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Hearing_Seed3 = 20.0,
+        Hearing_Seed3_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Hearing_Seed4 = 20.0,
+        Hearing_Seed4_Effect = 6,
+        -- Minimum=0.00 Maximum=100.00 Default=20.00
+        Hearing_Seed5 = 20.0,
+        Hearing_Seed5_Effect = 6,
+    },
+    CreepySounds = {
+        -- Minimum=0 Maximum=23 Default=0
+        HourStart = 0,
+        -- Minimum=0 Maximum=23 Default=4
+        HourEnd = 4,
+        -- Minimum=0.00 Maximum=1.00 Default=0.15
+        Chance = 0.15,
     },
     EvolvingTraitsWorld = {
-        -- Defines if Affinity System is enabled for some traits tied to systems and some complex ones (for example, weight Fear of Locations system, Herbalist, or Sleep System. Check which Systems and Traits are a subject to Affinity system in Google sheets).
-        -- Affinity system makes it easier to hold onto traits you picked on character creation, both negative and positive. With it enabled, you halve (modifiable) the speed at which you lose these traits, and double (also modifiable) the speed at which you earn these traits.
         AffinitySystem = true,
-        -- How much harder it is to lose perks that have Affinity System functionality (only affects perks you started with!). Setting it to 1, would mean that it doesn't make it harder to lose. Setting it to 2 means you'll be twice as slow to lose them. Setting to 1.5 would make it 50% slower, and so on. So if you start with positive trait that you can lose, it'll be much harder to lose it. But it also affects negative traits! Minimum=1.00 Maximum=100.00 Default=2.00
+        -- Minimum=1.00 Maximum=100.00 Default=2.00
         AffinitySystemLoseDivider = 2.0,
-        -- How much easier it is to gain perks that have Affinity System functionality (only affects perks you started with!). Setting it to 1, would mean that it doesn't make it easier to gain. Setting it to 2 means it'll take twice as fast to gain them. Setting to 1.5 would make it 50% faster, and so on. So if you start with positive dynamic trait and later lose it, you'll get it back much faster. But it also affects negative traits! Minimum=1.00 Maximum=100.00 Default=2.00
+        -- Minimum=1.00 Maximum=100.00 Default=2.00
         AffinitySystemGainMultiplier = 2.0,
+        DelayedTraitsSystem = true,
+        -- Minimum=1 Maximum=5000 Default=336
+        DelayedTraitsSystemDefaultDelay = 336,
+        -- Minimum=1 Maximum=5000 Default=504
+        DelayedTraitsSystemDefaultStartingDelay = 504,
+        UIPage = true,
         BraverySystem = true,
-        -- Here you set up how many kills you need to get to MAX your bravery system. Melee kills count twice for progress. Progression is as follows: Cowardly -> Fear of Blood -> Pacifist -> Adrenaline Junkie -> Brave -> Desensitized
-        --  Amounts ot reach each stage are as follows:
-        -- Cowardly: 10% of max kills
-        -- Fear of blood: 20% of max Kills
-        -- Pacifist: 30% of max Kills
-        -- Adrenaline Junkie: 40% of max Kills
-        -- Brave: 60% of max Kills
-        -- Desensitized: 100% of max Kills
-        -- Example: Max kills is set to 1000. You start with Cowardly. You need 100 kills to remove it. If you get 50 melee kills, it'll be removed. Same is true if you'd get 40 melee kills (x2 = 80 kills for counter) and 20 firearms kills Minimum=0 Maximum=500000 Default=20000
+        -- Minimum=0 Maximum=500000 Default=20000
         BraverySystemKills = 20000,
-        -- If enabled, getting desensitized through Bravery system will also remove other fear perks like Pluviophile, Homichlophobia, Agoraphobic, Claustrophobic and prevent you from gaining them.
         BraverySystemRemovesOtherFearPerks = false,
         ColdIllnessSystem = true,
-        -- How many instances of moderate to heavy colds you have to weather to lose/get related traits (Prone to Illness and Resilient). Prone to illness is lost when hitting 50% of counter, Resilient when hitting 100% Minimum=0 Maximum=5000 Default=100
+        -- Minimum=0 Maximum=5000 Default=100
         ColdIllnessSystemColdsWeathered = 100,
-        -- This system allows you to gain/lose trait in more random and not in so meta-game way. How it works is that when you qualify for adding/removing a trait (list of traits that are affected by this system can be found on google sheets, link in workshop description) you don't get/lose it instantly. Instead, it's added to a table with amount of hours it can take to get it (based on sandbox settings below). Then, every hour, game is rolling for you to get/lose every trait in this table (each trait is rolled separately). So you get 1 in X chance to get your trait every hour. If roll fails, X is reduced by 1. So longer you go, higher chances of trait that you earned to catch up with you.
-        -- IMPORTANT: traits that rely on skill levels will be unlocked as described above. However, traits that rely on internal counters added by this mod (example: Prone To Illness, Weak Stomach, Outdoorsman, Cat Eyes, etc) will unlock next time that they have to increase those internal counters. It'll be this way because coding separate unlock mechanism for those specific traits is a pain and a lot of extra unneeded work. Example: You qualify for Cat Eyes, and it's added to Delayed Traits Table. Let's say some time later you roll success in gaining it in the middle of the day. You won't get it straight away, but you'll get it as soon as Cat Eyes counter increases next time (the closest evening/night). All these specific cases are noted on google sheets.
-        DelayedTraitsSystem = true,
-        -- Default delay (in hours), how many hours it can take the trait to appear/disappear. So, for example, if you set it to 240, and qualify for new trait, you'll get 1 in 240 chance to get it in 1st hour. If it fails, next hour it's 1 in 239. Next hour it's 1 in 238, and so on. Minimum=1 Maximum=5000 Default=336
-        DelayedTraitsSystemDefaultDelay = 336,
-        -- Additional delay (in hours) that is stacked on top of default delay for 'free' traits that you get at the start of the game. Example: Starting with 9 Strength would usually give you Hoarder for free. If Delayed Traits system is enabled and let's say Default Delay is 240 and Additional Delay for Starting Traits is 480, you won't get Hoarder at the start of the game, instead it'll go into the table with Max hours being 720. So you'll have 1 in 720 to get it in 1st hour, and so on. Minimum=1 Maximum=5000 Default=504
-        DelayedTraitsSystemDefaultStartingDelay = 504,
         FearOfLocationsSystem = true,
-        -- Counter = amount of minutes you need to spend outside/inside to lose respective trait, Agoraphobic or Claustrophobic. Being outside/inside when stressed or unhappy will decrease counter. Reaching -counter value will GAIN you appropriate trait. Reaching +counter value will get rid of appropriate trait, being in between -counter and +counter will get you nothing. Lower boundary is -2x of counter, upper boundary is 2x of set value here. Minimum=0 Maximum=500000 Default=12000
+        FearOfLocationsExclusiveFears = true,
+        -- Minimum=0.00 Maximum=8.00 Default=0.00
+        FearOfLocationsSystemPassiveCounterDecay = 0.0,
+        -- Minimum=0 Maximum=500000 Default=12000
         FearOfLocationsSystemCounter = 12000,
-        -- How fast you decrease counter when you either unhappy (50%+) or stressed (50%+). Considering you're more often normal than unhappy or stressed, I'd recommend not setting this too low. Formula for how much counter decreases every minute is 1 * (1 + unhappiness(0-1)) + (1 * stress(0-1)) * multiplier, so at minimum you lose 0 * multiplier, at maximum you lose 4 * multiplier. Minimum=0.00 Maximum=100.00 Default=1.00
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
         FearOfLocationsSystemCounterLoseMultiplier = 1.0,
         FogSystem = true,
-        -- You get fogIntensity * FogSystemCounterIncreaseMultiplier every minute you spend in fog. You also lose fogIntensity * panic * 0.9 * FogSystemCounterDecreaseMultiplier at same time. Counter max and min boundaries are -2*counter and 2*counter. When being under -counter, you gain Homichlophobia, when reaching counter, you gain Homichlophile. When in between, you get nothing. Minimum=0 Maximum=500000 Default=30000
-        FogSystemCounter = 30000,
-        -- Adjusts how fast your counter increases, details in tooltip of Fog System Counter Minimum=0.00 Maximum=100.00 Default=1.00
+        -- Minimum=0 Maximum=500000 Default=20000
+        FogSystemCounter = 20000,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
         FogSystemCounterIncreaseMultiplier = 1.0,
-        -- Adjusts how fast your counter decreases, details in tooltip of Fog System Counter Minimum=0.00 Maximum=100.00 Default=1.00
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
         FogSystemCounterDecreaseMultiplier = 1.0,
         FoodSicknessSystem = true,
-        -- How much food sickness you have to accumulate to lose/gain Food Sickness related traits, Weak Stomach and Iron Gut. Sickness can be between 0 and 1, where at one you can actually die. Each minute, your current sickness is added to counter, simple as that. Minimum=0 Maximum=500000 Default=40000
+        -- Minimum=0 Maximum=500000 Default=40000
         FoodSicknessSystemCounter = 40000,
         HearingSystem = true,
-        -- How many levels in Agility + Combat (without Maintenance) you have to get to lose/get hearing perks (Hard Of Hearing and Keen Hearing). You lose Hard of Hearing when passing half of required levels, and obtain Keen Hearing when hitting the set number. Minimum=0 Maximum=100 Default=80
+        -- Minimum=0 Maximum=100 Default=80
         HearingSystemSkill = 80,
         InventoryTransferSystem = true,
-        -- How many items (and weight) you have to transfer to earn/lose traits related to item transfer: Disorganized, Organized, All Thumbs, Dexterous, Butterfingers (More Traits)
-        -- Disorganized: 60% of Weight counter and 30% of Items counter
-        -- Organized: 100% of Weight counter and 60% of Items counter
-        -- All Thumbs: 30% of Weight counter and 60% of Items counter
-        -- Dexterous: 60% of Weight counter and 100% of Items counter.
-        -- Butterfingers (More Traits): 150% of Weight counter and 150% of Items counter. Minimum=0 Maximum=2500000 Default=500000
-        InventoryTransferSystemItems = 500000,
-        -- How many weight (and items) you have to transfer to earn/lose traits related to item transfer: Disorganized, Organized, All Thumbs, Dexterous, Butterfingers (More Traits)
-        -- Disorganized: 60% of Weight counter and 30% of Items counter
-        -- Organized: 100% of Weight counter and 60% of Items counter
-        -- All Thumbs: 30% of Weight counter and 60% of Items counter
-        -- Dexterous: 60% of Weight counter and 100% of Items counter.
-        -- Butterfingers (More Traits): 150% of Weight counter and 150% of Items counter. Minimum=0 Maximum=2500000 Default=50000
+        -- Minimum=0 Maximum=2500000 Default=50000
+        InventoryTransferSystemItems = 50000,
+        -- Minimum=0 Maximum=2500000 Default=50000
         InventoryTransferSystemWeight = 50000,
+        LearnerSystem = true,
+        -- Minimum=0 Maximum=90 Default=60
+        LearnerSystemSkill = 60,
         LuckSystem = true,
-        -- Code will count ALL your skill levels (including any added by mods and passives), and check if you have % of skill levels required to lose/gain Unlucky/Lucky. You lose Unlucky when you reach half of % you set. Meaning on default settings, you'll lose Unlucky when sum of your skill levels is 33% or higher (from max) and you'll get lucky when you hit 66%. Minimum=0.00 Maximum=100.00 Default=66.00
+        -- Minimum=0.00 Maximum=100.00 Default=66.00
         LuckSystemSkill = 66.0,
         RainSystem = true,
-        -- You get 1 * rainIntensity every minute you spend in rain. If you have above 25% panic, instead you lose 1 * rainIntensity * panicPercentage * RainSystemDecreaseMultiplier. Counter max and min boundaries are -2*counter and 2*counter. When being under -counter, you gain Pluviophobia, when reaching counter, you gain Pluviophile. When in between, you get nothing. Minimum=0 Maximum=500000 Default=50000
-        RainSystemCounter = 50000,
-        -- Defines how fast or slow you decrease your Rain System Counter, explained in Rain System Counter tooltip Minimum=0.00 Maximum=100.00 Default=1.00
+        -- Minimum=0 Maximum=500000 Default=40000
+        RainSystemCounter = 40000,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
         RainSystemCounterMultiplier = 1.0,
-        -- Enables obtaining/losing sleep related traits, Wakeful and Sleepyhead. 
-        -- ---General description---
-        -- Mod tracks at which hours you like to sleep, and as long as you sleep within around those hours, you reinforce your healthy sleep schedule. If you sleep outside of it, you lose some schedule integrity. Not sleeping for more than 24h also starts to damage your sleep schedule. Mod tracks at which hours you like to sleep by checking midpoint of your last sleep, so it's possible to shift your schedule to different hours.
-        -- ---Technical description, don't read this if you don't want to meta-game much---
-        -- Every time you sleep, mod tracks midpoint of your sleep, so if u sleep between 23:00 and 05:30, midpoint would be 03:45, and it would be your optimal sleeping hour. If you sleep within +-6h you get progress to your SleepHealthiness bar. Goes from -200 to 200. Check is made every 10 min, you get + 0.167 to said bar, so essentially 1h of sleeping in correct schedule gives +1 to bar. Sleeping outside of it removes 0.167 from bar every 10 min. After not sleeping for more than 24h you start getting -0.167 every ten minutes. If your bar below -100, you get Sleepyhead. If it's above 100, you get Wakeful. Starting with either trait will set starting value of the bar to max/min point, so for Wakeful +200 and for Sleepyhead -200.
         SleepSystem = true,
-        -- How fast you increase/decrease SleepHealthiness counter, which dictates if you get/lose Wakeful and Sleepyhead. Higher values = faster gain but also faster lose. Same goes other way, lower multiplier = slower gain but also harder to lose them. Minimum=0.00 Maximum=100.00 Default=1.00
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
         SleepSystemMultiplier = 1.0,
-        -- Describing conditions on which you lose/gain traits in here would take a lot of text, so just check goolge sheets for details (link in mod workshop page description). Affected traits that can be gained/lost dynamically: High/Low Thirst, Light Eater/Hearty Appetite, Thick/Thin Skinned, Slow/Fast Healer.
-        -- IMPORTANT: if you pick any of these traits in character creation they will be permanent on your character, both negative and positive.
+        TraitsLockSystemCanLoosePositive = true,
+        TraitsLockSystemCanGainPositive = true,
+        TraitsLockSystemCanLoseNegative = true,
+        TraitsLockSystemCanGainNegative = true,
         WeightSystem = true,
-        -- How many levels in Strength + Fitness you need to have to gain Thick Skinned and Fast Healer (this is not only condition, once again check google sheets) Minimum=0 Maximum=20 Default=16
+        -- Minimum=0 Maximum=20 Default=16
         WeightSystemSkill = 16,
-        -- If this option is disabled, moodle won't show up. For single-player leave this on and change moodles you see with Mod Options. If it's a server setting, players won't be able to enable moodle client-sided.
+        -- Minimum=0.00 Maximum=100.00 Default=60.00
+        WeightSystemLowerMentalThreshold = 60.0,
+        -- Minimum=0.00 Maximum=100.00 Default=80.00
+        WeightSystemUpperMentalThreshold = 80.0,
         BloodlustMoodle = true,
-        -- For how many hours bloodlust moodle is visible after a nearby kill on zombie Minimum=1 Maximum=480 Default=6
+        -- Minimum=1 Maximum=480 Default=6
         BloodlustMoodleVisibilityHours = 6,
-        -- If this option is disabled, moodle won't show up. For single-player leave this on and change moodles you see with Mod Options. If it's a server setting, players won't be able to enable moodle client-sided.
         SleepMoodle = true,
-        -- If this option is disabled, moodle won't show up. For single-player leave this on and change moodles you see with Mod Options. If it's a server setting, players won't be able to enable moodle client-sided.
-        SmokerMoodle = true,
-        -- This controls when moodle shows up. Setting this to 20%, for example, will make moodle show up when you're 20% away from earning or loosing Smoker. Setting to 100 will leave smoker moodle up always. For single-player It's recommended to set this to 100, and then change % in Mod Options. For servers, this setting controls what's maximum % that clients can set up for themselves. So if this value in server settings is at 10%, players can't set their value to 30%. Well, they can, but it'll still only show up when it hits 10%. But if you set this value to 50%, players can then change it client-sided to 20%, for example. Minimum=0.00 Maximum=100.00 Default=100.00
-        SmokerMoodlePercentage = 100.0,
-        -- Multiplies effect of bloodlust by this value. By default, unhappiness, stress and panic each reduced by 4% for each kill. This multiplier is applied to those 4%. So setting this to 0.5 would make those stats being reduced by 2% instead. Minimum=0.00 Maximum=100.00 Default=1.00
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
         BloodlustMultiplier = 1.0,
         -- Minimum=0.00 Maximum=100.00 Default=0.50
         HoarderWeight = 0.5,
@@ -1520,59 +1786,51 @@ SandboxVars = {
         HomichlophileMultiplier = 1.0,
         -- Minimum=0.00 Maximum=100.00 Default=1.00
         HomichlophobiaMultiplier = 1.0,
-        -- All effects (Unhappiness, Stress and Boredom decrease) are multiplied by this value. Minimum=0.00 Maximum=100.00 Default=1.00
+        -- Minimum=0.00 Maximum=100.00 Default=60.00
+        PainToleranceThreshold = 60.0,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
         PluviophileMultiplier = 1.0,
-        -- All effects (Unhappiness, Stress and Boredom decrease) are multiplied by this value. Minimum=0.00 Maximum=100.00 Default=1.00
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
         PluviophobiaMultiplier = 1.0,
-        -- % to not increase amount of times item was repaired after repair. Minimum=1 Maximum=100 Default=75
+        -- Minimum=1 Maximum=100 Default=75
         RestorationExpertChance = 75,
         Asthmatic = true,
-        -- What value on counter you should reach to gain asthmatic trait. Minimum=0 Maximum=500000 Default=20000
+        -- Minimum=0 Maximum=500000 Default=20000
         AsthmaticCounter = 20000,
-        -- ---General understanding---
-        -- This perk allows you to gain a benefit by filling and maintaining a bloodlust meter. The bloodlust meter is soft-capped at 36 hours and can be filled by killing zombies within a certain distance. The closer the zombies are, the more quickly the meter will fill. When you're above half of the meter, every hour it will give you progress towards the bloodlust perk, when it's below, it'll remove progress. The bloodlust meter is naturally decaying by 1 every hour.
-        -- ---Technical description, don't read this if you don't want to meta-game much---
-        -- To fill the bloodlust meter, you must kill zombies within a certain distance from you. The exact amount the meter fills is determined by a formula that takes into account the distance of the zombies and a multiplier. The precise formula is: math.min(1 / distance, 1) * multiplier. Every hour, the meter is reduced by one hour. If your bloodlust meter is above half, every hour you will gain 10% of it as progress towards gaining the bloodlust perk. If it's below 50%, you'll lose 3.6-0.1*BloodlustBar, so if you slightly below 50% you lose around 1.8 but if you're at 0%, you'll lose 3.6 from your progress. Progress is capped at 2x of Bloodlust Progress value
         Bloodlust = true,
-        -- How fast do you fill your bloodlust meter Minimum=0.00 Maximum=100.00 Default=0.50
+        -- Minimum=0.00 Maximum=100.00 Default=0.50
         BloodlustMeterFillMultiplier = 0.5,
-        -- How much total bloodlust progress you need to get trait. Keeping your bloodlust meter full would earn you 3.6 points in 1h. Be aware, that you also loose bloodlust if this meter ever falls below 50%. So if you set it low, it's going to be easy to earn but also easy to lose the perk. Progress is capped at 2x of Bloodlust Progress value. Minimum=1 Maximum=500000 Default=1000
+        -- Minimum=1 Maximum=500000 Default=1000
         BloodlustProgress = 1000,
         CatEyes = true,
-        -- ---General understanding---
-        -- This perk allows you to gain points by seeing and observing squares within a certain radius of your character. The number of points you earn is influenced by factors such as the time of day, the darkness of the square, and whether you and the square are inside or outside. The more squares you see and the darker they are, the more points you will earn.
-        -- ---Technical description, don't read this if you don't want to meta-game much---
-        -- To earn points for this perk, you must see and observe squares within a 30 radius of your character. The exact number of points you earn for each square is determined by a formula that takes into account the darkness of the square, the time of day, and whether you and the square are inside or outside. The detailed formula for calculating points for each square is: 0.01 * darkness of square * 2 (if both player and square are inside) * time of day. On average, spending a full night outside will net you approximately 1.1k points. Minimum=0 Maximum=2500000 Default=250000
+        -- Minimum=0 Maximum=2500000 Default=250000
         CatEyesCounter = 250000,
         EagleEyed = true,
-        -- At what distance must a zombie be to count this as a kill to Eagle-Eyed kill counter. For vanilla would recommend leaving at 20, for mods that add good firearms (Gunfighter + Brita for example), would recommend setting to 25 or so Minimum=0 Maximum=50 Default=20
+        -- Minimum=0 Maximum=50 Default=20
         EagleEyedDistance = 20,
         -- Minimum=0 Maximum=500000 Default=200
         EagleEyedKills = 200,
         Herbalist = true,
-        -- How many herbs you have to pick up (from foraging) to gain the trait Minimum=0 Maximum=500000 Default=1000
+        -- Minimum=0 Maximum=500000 Default=1000
         HerbalistHerbsPicked = 1000,
-        -- How many herbs are removed from the counter each day. Dropping down to half a counter will remove the trait, so you'll have to earn it again. Minimum=0 Maximum=500000 Default=1
+        -- Minimum=0 Maximum=500000 Default=1
         HerbalistHerbsDecay = 1,
         Outdoorsman = true,
-        -- ---General understanding---
-        -- This allows you to gain a trait by spending time outside and being exposed to various weather conditions. The more adverse the weather conditions are, the more quickly you will gain the trait. Being inside slowly loses progress. Reaching counter will gain the trait, dropping down to half will lose it.
-        -- ---Technical details---
-        -- Every minute you spend outside will add 1 point to a counter. The rate at which the counter increases is further multiplied by certain weather conditions, such as rain, snow, and wind. When the counter reaches specified threshold, you will gain the trait. From testing, it has been determined that spending 24 hours in clear weather with one foggy morning will result in approximately 1.7k points, while spending 24 hours in weather with two foggy mornings and a storm at midday will result in approximately 5k points. If you're inside, you lose 10% of what you'd gain if you'd be outside. This has liner scaling to 100% over the course of 900 minutes of being inside. You can reset current % at which you lose point by being outside. You decrease % by 0.3 for each minute being outside (You can go from 100% to 10% in 300 minutes). When reaching half of the counter you set up, you lose the trait. Counter has upper boundary of 10x the counter value and lower boundary of 0 Minimum=0 Maximum=2500000 Default=500000
+        -- Minimum=0 Maximum=2500000 Default=500000
         OutdoorsmanCounter = 500000,
-        -- Defines how fast or slow you decrease your outdoorsman counter, multiplier of 1 is described in previous tooltip Minimum=0.00 Maximum=100.00 Default=1.00
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
         OutdoorsmanCounterLoseMultiplier = 1.0,
         Smoker = true,
-        -- Upon reaching this value on the counter, you'll get Smoker trait. When dropping to half of it, you'll lose it. Counter boundaries are 0 to 2x counter Minimum=0 Maximum=500000 Default=1000
-        SmokerCounter = 1000,
-        -- How fast your addiction decaying Minimum=0.00 Maximum=1000.00 Default=8.00
-        SmokingAddictionDecay = 8.0,
-        -- How fast your addiction is increasing Minimum=0.00 Maximum=100.00 Default=1.00
+        -- Minimum=0 Maximum=500000 Default=500
+        SmokerCounter = 500,
+        -- Minimum=0.00 Maximum=1000.00 Default=12.00
+        SmokingAddictionDecay = 12.0,
+        -- Minimum=0.00 Maximum=1000.00 Default=1.00
         SmokingAddictionMultiplier = 1.0,
         Mechanics = true,
         -- Minimum=0 Maximum=10 Default=4
         MechanicsSkill = 4,
-        -- How much % of car condition you have to repair to qualify for perk. Works on every part of a car, saved between all cars. Minimum=0 Maximum=500000 Default=1000
+        -- Minimum=0 Maximum=500000 Default=1000
         MechanicsRepairs = 1000,
         Fishing = true,
         -- Minimum=0 Maximum=10 Default=4
@@ -1581,7 +1839,7 @@ SandboxVars = {
         -- Minimum=0 Maximum=10 Default=4
         AVClubSkill = 4,
         Axeman = true,
-        -- How many trees you have to cut down to get Axeman. Minimum=0 Maximum=500000 Default=500
+        -- Minimum=0 Maximum=500000 Default=500
         AxemanTrees = 500,
         AxeThrower = true,
         -- Minimum=0 Maximum=10 Default=4
@@ -1594,20 +1852,20 @@ SandboxVars = {
         -- Minimum=0 Maximum=500000 Default=200
         BaseballPlayerKills = 200,
         BodyworkEnthusiast = true,
-        -- Metalworking + Mechanics Minimum=0 Maximum=20 Default=12
+        -- Minimum=0 Maximum=20 Default=12
         BodyworkEnthusiastSkill = 12,
-        -- How much % of car condition you have to repair to qualify for perk. Works on every part of a car, saved between all cars. Minimum=0 Maximum=500000 Default=6000
+        -- Minimum=0 Maximum=500000 Default=6000
         BodyworkEnthusiastRepairs = 6000,
         Brawler = true,
-        -- Axe + Long Blunt Minimum=0 Maximum=20 Default=12
+        -- Minimum=0 Maximum=20 Default=12
         BrawlerSkill = 12,
-        -- Axe + Long Blunt Minimum=0 Maximum=500000 Default=600
+        -- Minimum=0 Maximum=500000 Default=600
         BrawlerKills = 600,
         Burglar = true,
-        -- Mechanics + Electrical + Nimble. Please note that You need to have at least 2 levels in each of Mechanics and Electrical Minimum=4 Maximum=30 Default=7
+        -- Minimum=4 Maximum=30 Default=7
         BurglarSkill = 7,
         Clumsy = true,
-        -- Sneak + Lightfooted Minimum=0 Maximum=20 Default=12
+        -- Minimum=0 Maximum=20 Default=12
         ClumsySkill = 12,
         Conspicuous = true,
         -- Minimum=0 Maximum=10 Default=4
@@ -1615,9 +1873,6 @@ SandboxVars = {
         Cook = true,
         -- Minimum=0 Maximum=10 Default=8
         CookSkill = 8,
-        FastLearner = true,
-        -- Maintenance + Carpentry + Cooking + Farming + First Aid + Electrical + Metalworking + Mechanics + Tailoring Minimum=0 Maximum=90 Default=60
-        FastLearnerSkill = 60,
         FirstAid = true,
         -- Minimum=0 Maximum=10 Default=4
         FirstAidSkill = 4,
@@ -1628,24 +1883,24 @@ SandboxVars = {
         -- Minimum=0 Maximum=10 Default=4
         GardenerSkill = 4,
         Graceful = true,
-        -- Nimble + Sneaking + Lightfooted Minimum=0 Maximum=30 Default=9
+        -- Minimum=0 Maximum=30 Default=9
         GracefulSkill = 9,
         GunEnthusiast = true,
-        -- Aiming + Reloading Minimum=0 Maximum=20 Default=12
+        -- Minimum=0 Maximum=20 Default=12
         GunEnthusiastSkill = 12,
         -- Minimum=0 Maximum=500000 Default=600
         GunEnthusiastKills = 600,
         Gymnast = true,
-        -- Lightfooted + Nimble Minimum=0 Maximum=20 Default=15
+        -- Minimum=0 Maximum=20 Default=15
         GymnastSkill = 15,
         GymRat = true,
-        -- Strength + Fitness Minimum=0 Maximum=20 Default=14
+        -- Minimum=0 Maximum=20 Default=14
         GymRatSkill = 14,
         Handy = true,
-        -- Maintenance + Carpentry Minimum=0 Maximum=20 Default=13
+        -- Minimum=0 Maximum=20 Default=13
         HandySkill = 13,
         Hiker = true,
-        -- Foraging + Trapping Minimum=0 Maximum=20 Default=10
+        -- Minimum=0 Maximum=20 Default=10
         HikerSkill = 10,
         Hoarder = true,
         -- Minimum=0 Maximum=10 Default=8
@@ -1654,9 +1909,9 @@ SandboxVars = {
         -- Minimum=0 Maximum=10 Default=4
         HomeCookSkill = 4,
         Hunter = true,
-        -- Sneaking + Aiming + Small Blade + Trapping Minimum=8 Maximum=40 Default=24
+        -- Minimum=8 Maximum=40 Default=24
         HunterSkill = 24,
-        -- Firearm + Small Blade Minimum=0 Maximum=500000 Default=200
+        -- Minimum=0 Maximum=500000 Default=200
         HunterKills = 200,
         Inconspicuous = true,
         -- Minimum=0 Maximum=10 Default=7
@@ -1677,6 +1932,9 @@ SandboxVars = {
         LowProfile = true,
         -- Minimum=0 Maximum=10 Default=4
         LowProfileSkill = 4,
+        PainTolerance = true,
+        -- Minimum=0 Maximum=500000 Default=30000
+        PainToleranceCounter = 30000,
         RestorationExpert = true,
         -- Minimum=0 Maximum=10 Default=9
         RestorationExpertSkill = 9,
@@ -1686,9 +1944,6 @@ SandboxVars = {
         Sewer = true,
         -- Minimum=0 Maximum=10 Default=4
         SewerSkill = 4,
-        SlowLearner = true,
-        -- Maintenance + Carpentry + Cooking + Farming + First Aid + Electrical + Metalworking + Mechanics + Tailoring Minimum=0 Maximum=90 Default=30
-        SlowLearnerSkill = 30,
         Sojutsu = true,
         -- Minimum=0 Maximum=10 Default=4
         SojutsuSkill = 4,
@@ -1700,39 +1955,620 @@ SandboxVars = {
         -- Minimum=0 Maximum=500000 Default=200
         StickFighterKills = 200,
     },
-    ProxInv = {
-        -- Enable this if you want the Proximity Inventory to work only on zombies
-        ZombieOnly = false,
+    FWOFitness = {
+        InitialPerkBonus = true,
+        currentExerciseRegularityBonus = true,
+        -- Minimum=0 Maximum=100 Default=25
+        currentExerciseOffset = 25,
+        -- Minimum=0.01 Maximum=100.00 Default=5.00
+        currentExerciseRate = 5.0,
+        -- Minimum=0.00 Maximum=100.00 Default=6.00
+        AverageExerciseRegularityBonus = 6.0,
+        -- Minimum=0.00 Maximum=100.00 Default=0.30
+        LevelBonus = 0.3,
+        SpaceOutExercise = true,
+        -- Minimum=0.00 Maximum=100.00 Default=0.90
+        SpaceOutExerciseNegative = 0.9,
+        RestedBonus = true,
+        -- Minimum=0.00 Maximum=10.00 Default=0.90
+        RestedBonusNegative = 0.9,
+        -- Minimum=0.01 Maximum=10.00 Default=1.00
+        XPMultiplier = 1.0,
+        -- Minimum=0.00 Maximum=10.00 Default=1.00
+        PassiveMultiplier = 1.0,
+        -- Minimum=0.00 Maximum=10.00 Default=1.00
+        BoredomMultiplier = 1.0,
+        -- Minimum=0.00 Maximum=10.00 Default=1.00
+        UnhappynessMultiplier = 1.0,
+        DropBags = false,
+        KeepBagsOn = false,
     },
-    FBforageSystem = {
-        -- Warning: Too much spawn could cause performance issues Minimum=1 Maximum=5 Default=2
-        ForestDensity = 2,
-        -- Warning: Too much spawn could cause performance issues Minimum=1 Maximum=5 Default=2
-        DeepForestDensity = 2,
-        -- 1.5 for vanilla Minimum=1.50 Maximum=10.00 Default=4.00
-        MinimalSpottingRange = 4.0,
+    FWOWorkingTreadmill = {
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        StrengthXPMultiply = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        SprintingXPMultiply = 1.0,
+        TreadmillDropBags = false,
+        BenchpressDropBags = false,
+        BenchTreadKeepBagsOn = false,
     },
-    TheyKnewExtended = {
-        ImmunityChanceEnabled = false,
-        -- Minimum=0 Maximum=100 Default=50
-        ImmunityChance = 50,
+    ISA = {
+        ChargeFreq = 1,
+        DrainCalc = 2,
+        -- Minimum=1 Maximum=100 Default=25
+        solarPanelEfficiency = 25,
+        -- Minimum=0 Maximum=1000 Default=100
+        batteryDegradeChance = 100,
+        -- Minimum=1 Maximum=10000 Default=100
+        DIYBatteryMultiplier = 100,
+        -- Minimum=0 Maximum=100 Default=25
+        solarPanelWorldSpawns = 25,
+        BatteryBankSpawn = 3,
+        StashMode = 1,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        LRMSolarPanels = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        LRMBatteries = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        LRMMisc = 1.0,
+        -- Minimum=1 Maximum=1000 Default=120
+        ConnectPanelMin = 120,
+        enableExpandedRecipes = false,
     },
-    WaterPipes = {
-        SmartPipes = true,
-        -- Minimum=3 Maximum=100 Default=20
-        SmartPipesFillMax = 20,
-        SmartPipesUpdateNotWatered = false,
+    DynamicBackpacks = {
+        KnivesCanRemove = false,
+        -- Minimum=0 Maximum=10 Default=1
+        BaseUpgradeSlots = 1,
+        -- Minimum=-20 Maximum=10 Default=1
+        BackSlotModifier = 1,
+        -- Minimum=-20 Maximum=10 Default=0
+        FannySlotModifier = 0,
+        -- Minimum=-20 Maximum=10 Default=0
+        OtherSlotModifier = 0,
+        -- Minimum=0 Maximum=10 Default=10
+        TailoringModifier = 10,
+        -- Minimum=0.00 Maximum=1.00 Default=0.10
+        ClothCapacityPercentage = 0.1,
+        -- Minimum=-100 Maximum=100 Default=1
+        ClothCapacityBonus = 1,
+        -- Minimum=0.01 Maximum=1.00 Default=0.15
+        ClothReductionPercentage = 0.15,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        ClothLootSpawns = 1.0,
+        -- Minimum=0.00 Maximum=1.00 Default=0.20
+        JeanCapacityPercentage = 0.2,
+        -- Minimum=-100 Maximum=100 Default=1
+        JeanCapacityBonus = 1,
+        -- Minimum=0.01 Maximum=1.00 Default=0.25
+        JeanReductionPercentage = 0.25,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        JeanLootSpawns = 1.0,
+        -- Minimum=0.00 Maximum=1.00 Default=0.25
+        LeatherCapacityPercentage = 0.25,
+        -- Minimum=-100 Maximum=100 Default=2
+        LeatherCapacityBonus = 2,
+        -- Minimum=0.01 Maximum=1.00 Default=0.35
+        LeatherReductionPercentage = 0.35,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        LeatherLootSpawns = 1.0,
+        -- Minimum=0.00 Maximum=1.00 Default=0.35
+        MilitaryCapacityPercentage = 0.35,
+        -- Minimum=-100 Maximum=100 Default=2
+        MilitaryCapacityBonus = 2,
+        -- Minimum=0.01 Maximum=1.00 Default=0.50
+        MilitaryReductionPercentage = 0.5,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        MilitaryLootSpawns = 1.0,
+    },
+    LSComfort = {
+        -- Minimum=0.00 Maximum=3.00 Default=1.00
+        ComfortNeedMultiplier = 1.0,
+    },
+    Text = {
+        DividerMusicNew = true,
+        DividerDancingNew = true,
+        DividerMeditationNew = true,
+        DividerHygiene = true,
+        DividerDebug = false,
+    },
+    Music = {
+        StrengthMultiplier = 2,
+        LearningChance = 3,
+    },
+    Dancing = {
+        StrengthMultiplier = 2,
+    },
+    Meditation = {
+        StrengthMultiplier = 2,
+        MindfulnessDuration = 2,
+        -- Minimum=0.00 Maximum=10.00 Default=2.00
+        HealFactor = 2.0,
+        EffectMultiplier = 2,
+    },
+    LSMeditation = {
+        RemoveLevitation = false,
+    },
+    LSHygiene = {
+        -- Minimum=0.00 Maximum=3.00 Default=1.00
+        HygieneNeedMultiplier = 1.0,
+        -- Minimum=0.00 Maximum=3.00 Default=1.00
+        BladderNeedMultiplier = 1.0,
+        HygieneNeedExpectationTime = 1,
+        CleaningExpectationTime = 1,
+        CleansMakeup = true,
+    },
+    Debug = {
+        MoodlePriority = false,
+        Expressions = false,
+        DanceAnim = false,
+    },
+    LingeringVoices = {
+        RespondToSound = true,
+        CustomLines = true,
+        -- Minimum=0 Maximum=604800 Default=5
+        LowerLineLimit = 5,
+        -- Minimum=0 Maximum=604800 Default=86400
+        UpperLineLimit = 86400,
+        -- Minimum=0 Maximum=1000 Default=1
+        StaggerSpeakChance = 1,
+    },
+    AirbobbelzLoot = {
+        -- Minimum=0 Maximum=100000000 Default=100
+        GlobalMultiplier = 100,
+        -- Minimum=0 Maximum=100 Default=20
+        ChanceMaxCondition = 20,
+        -- Minimum=0 Maximum=100 Default=10
+        MinimumCondition = 10,
+        -- Minimum=0 Maximum=100 Default=20
+        ChanceMaxDrainable = 20,
+        -- Minimum=0 Maximum=100 Default=20
+        MinimumDrainable = 20,
+        -- Minimum=0 Maximum=100000000 Default=100
+        OutfitMultiplier = 100,
+        -- Minimum=0 Maximum=100000000 Default=100
+        BagContentsMultiplier = 100,
+        -- Minimum=0 Maximum=1000 Default=12
+        GunLooseBulletsRolls = 12,
+        -- Minimum=0 Maximum=1000 Default=100
+        GunLooseBulletsMultiplier = 100,
+        -- Minimum=0 Maximum=100000000 Default=100
+        AmmoMultiplier = 100,
+        -- Minimum=0 Maximum=100000000 Default=100
+        AmmoBoxMultiplier = 100,
+        -- Minimum=0 Maximum=100000000 Default=100
+        MeleeMultiplier = 100,
+        -- Minimum=0 Maximum=100000000 Default=100
+        PistolMultiplier = 100,
+        -- Minimum=0 Maximum=100000000 Default=100
+        LongGunMultiplier = 100,
+        -- Minimum=0 Maximum=100000000 Default=100
+        OtherGunsMultiplier = 100,
+        -- Minimum=0 Maximum=100000000 Default=100
+        CannedFoodMultiplier = 100,
+        -- Minimum=0 Maximum=100000000 Default=100
+        OtherFoodMultiplier = 100,
+        -- Minimum=0 Maximum=100000000 Default=100
+        ResourceMultiplier = 100,
+        -- Minimum=0 Maximum=100000000 Default=100
+        BagMultiplier = 100,
+        -- Minimum=0 Maximum=100000000 Default=100
+        GunBagMultiplier = 100,
+        -- Minimum=0 Maximum=100000000 Default=100
+        JunkMultiplier = 100,
+        -- Minimum=0 Maximum=100000000 Default=100
+        ExtraMultiplier = 100,
+        ExtraRollEach = "",
+        ExtraRollOne1 = "",
+        ExtraRollOne2 = "",
+        ExtraRollOne3 = "",
+        RemoveItems = "",
+    },
+    MIR = {
+        SkipItems = "",
+        SkipSkills = "Mechanics;Aiming",
+        SkipFixers = "",
+    },
+    TTAJ1bl4 = {
+        Category1 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=2.00
+        MilitekGearedZombiesRegularArmy = 2.0,
+        -- Minimum=0.00 Maximum=100.00 Default=0.10
+        MilitekGearedZombiesRegularDefault = 0.1,
+        -- Minimum=0.00 Maximum=100.00 Default=0.80
+        MilitekGearedZombiesRegularSecretBase = 0.8,
+        EmptyLine11 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        MilitekGearedZombiesOfficerArmy = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=0.10
+        MilitekGearedZombiesOfficerDefault = 0.1,
+        -- Minimum=0.00 Maximum=100.00 Default=0.50
+        MilitekGearedZombiesOfficerSecretBase = 0.5,
+        EmptyLine3 = false,
+        Category3 = false,
+        -- Minimum=0.00 Maximum=100.00 Default=0.01
+        VanguardGear = 0.005,
+        -- Minimum=0.00 Maximum=100.00 Default=0.01
+        RangerBackpack = 0.0125,
+        -- Minimum=0.00 Maximum=100.00 Default=0.00
+        ColossusBackpack = 2.5E-4,
+        -- Minimum=0.00 Maximum=100.00 Default=0.01
+        EchoBackpack = 0.0125,
+        -- Minimum=0.00 Maximum=100.00 Default=0.01
+        StormPackLarge = 0.005,
+        -- Minimum=0.00 Maximum=100.00 Default=0.02
+        HipBagMedium = 0.015,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        HolsterSheath = 0.04,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        HeadApparel = 0.04,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        Jacket = 0.04,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        Gloves = 0.04,
+        -- Minimum=0.00 Maximum=100.00 Default=0.02
+        PantsShorts = 0.02,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        BootsShoes = 0.04,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        ThermalUnderwear = 0.04,
     },
     MoreBuilds = {
-        -- Set max water storage capacity for well in more builds <LINE> note: set it to 9999 will display the capacity as unlimited Minimum=1 Maximum=10000 Default=1200
+        -- Minimum=1 Maximum=10000 Default=1200
         MaxWaterWallStorageAmount = 1200,
-        -- Set the permission level that more build can be used in the server. if setting, only players with the specified permission level can build. By default, there is no permission limit. Default=None
-        -- 1 = None
-        -- 2 = Observer
-        -- 3 = GM
-        -- 4 = Overseer
-        -- 5 = Moderator
         BuildingPermission = 1,
+    },
+    DecreasingLoot = {
+        -- Minimum=0 Maximum=1000 Default=2
+        StartDay = 2,
+        -- Minimum=0 Maximum=1000 Default=30
+        PeakDay = 30,
+        -- Minimum=0 Maximum=100 Default=0
+        OriginalChance = 0,
+        -- Minimum=0 Maximum=100 Default=75
+        MaxChance = 75,
+        -- Minimum=-100 Maximum=100 Default=20
+        FoodChanceModifier = 20,
+        -- Minimum=-100 Maximum=100 Default=0
+        LiteratureChanceModifier = 0,
+        -- Minimum=-100 Maximum=100 Default=0
+        MeleeWeaponsChanceModifier = 0,
+        -- Minimum=-100 Maximum=100 Default=0
+        RangedWeaponsChanceModifier = 0,
+        -- Minimum=-100 Maximum=100 Default=0
+        AmmoChanceModifier = 0,
+        EnhancedVariance = true,
+        TriggerOnVehicleParts = true,
+        TriggerOnDeadBodies = false,
+        TriggerOnProximity = false,
+        TriggerOnHouseStories = false,
+    },
+    UnderCoverOfDarkness = {
+        NormalZombieSight = 2,
+        ReducedZombieSight = 3,
+        MinimumDarknessLevel = 3,
+        -- Minimum=0.00 Maximum=1.00 Default=0.10
+        MinimumFogIntensity = 0.1,
+    },
+    MoreMaps = {
+        ForageableMaps = true,
+        -- Minimum=0.00 Maximum=4.00 Default=1.00
+        MapLootMultiplier = 1.0,
+        KentuckyCompleteMap = false,
+        LouisVilleCompleteMap = true,
+        LouisVilleDistrictMaps = true,
+        TrailerParkMaps = true,
+        ValleyStationMap = true,
+        ValleyStationMallAreaMap = true,
+        EasternSummerCampMap = true,
+        AbandonedFactoryMap = true,
+        EkronMap = true,
+        MilitaryMaps = true,
+        FortRedstoneMap = true,
+        MilitaryAirportMap = true,
+        FortBenningMap = true,
+        FortRockRidgeMap = true,
+        MuldraughMilitaryBaseMap = true,
+        FortWaterfrontMap = true,
+        FortKnoxMaps = true,
+        RiversideCountryClubMap = true,
+        SmallTownWestMap = true,
+        PonyRoamOMap = true,
+        MuldraughRailyardMap = true,
+        MuldraughWarehouseComplexMap = true,
+        CabinLocations = true,
+        CampGroundsLocation = true,
+        GrapeseedMap = true,
+        BlackwoodMap = true,
+        PitstopMap = true,
+        OverTheRiverMap = true,
+        LakeIvyMap = true,
+        WeatherStationLocations = true,
+        CompleteRavenCreekMap = true,
+        RavenCreekDistrictMaps = true,
+        RosewoodExpansionMap = true,
+        MarchRidgeExpansionMap = true,
+        CONResearchMap = true,
+        GreenleafMap = true,
+        LittleTownshipMap = true,
+        LindenMap = true,
+        RefordvilleMap = true,
+        ChernavilleMap = true,
+        ChinatownMap = true,
+        BlueberryMap = true,
+        WestPointSouthTrailerParkMap = true,
+        KingsmouthMap = true,
+        SurvivorWarehouseLocation = true,
+        CoryerdonMap = true,
+        OldParkTownMap = true,
+        WestPointExpansionMap = true,
+        GlenportMap = true,
+        CompleteEerieCountryMap = true,
+        EerieCountryDifferentMaps = true,
+        SlocanLakeMaps = true,
+        BillionaireSafehouseLocation = true,
+        WildberriesMap = true,
+        TugalandMap = true,
+        RemusMap = true,
+        TrimbleCountyMaps = true,
+        EZPZCommunityCenterMap = true,
+        OldPineVillageMap = true,
+        ChristmasVillageMap = true,
+        HyruleCountyMap = true,
+        RiverwoodMap = true,
+        HongKongYauMaTeiMap = true,
+        WesternMilitaryComplexMap = true,
+        MansionAdress = true,
+        ConstructionFactoryMap = true,
+        WestwoodMap = true,
+        AnthemMap = true,
+        LaconiaMap = true,
+        AshenwoodMap = true,
+        ElysiumIslandMap = true,
+        HopewellMap = true,
+        WalnutRidgeMap = true,
+        HeavensHillMansionAdress = true,
+        ChestownMap = true,
+        NashvilleMap = true,
+        OverlookHotelMap = true,
+        PerfectShelterMap = true,
+        OConnorFarmAddress = true,
+        LincolnRegionalAirportMap = true,
+        MuldraughWesternShippingCompanyMap = true,
+        RosewoodMilitaryHospitalMap = true,
+        TheMuseumMap = true,
+        TheEyeLakeMap = true,
+        AddamsFamilyMansionMap = true,
+        JeffersonvilleMap = true,
+        CherokeeLakeMap = true,
+        RiversideMansionMap = true,
+        FinneganMentalAsylumMap = true,
+        PapavilleMap = true,
+        SouthTownMap = true,
+        ChinatownMapExpansionMap = true,
+        LouisvilleBunkerLocationMap = true,
+        OrchidwoodMap = true,
+        WinchesterMap = true,
+        BreakpointMap = true,
+        WilboreMap = true,
+        PetrovilleMap = true,
+        CedarHillMap = true,
+        CathayaValleyMap = true,
+        SpringwoodMap = true,
+        NaturesVengeanceTownshipMap = true,
+        BigBearLakeMaps = true,
+        SimsZomboidMap = true,
+        DirkerdamMaps = true,
+        LakeCumberlandMaps = true,
+        PharmaceuticalFactoryMap = true,
+        NettleTownshipMap = true,
+        StMooseHospitalMap = true,
+        ShortrestCountyMap = true,
+        LeavenburgMap = true,
+        BunkerDayOfTheDeadMap = true,
+        SuperGigaMartMap = true,
+        ZtardewValleyMap = true,
+        TheWalkingDeadPrisonMap = true,
+        TheWalkingDeadTerminusMap = true,
+        HuntersBaseMap = true,
+        PortCityMap = true,
+        SpringValleyMap = true,
+        OakshireMap = true,
+        RangersHomesteadMap = true,
+        FrigateMap = true,
+        BunkerLastMinutePrepperMap = true,
+        LouisvilleQuarantineZoneMap = true,
+        LVInternationalAirport = true,
+        MuldraughCheckpointMap = true,
+        SpeckMap = true,
+        HomesteadWindyMap = true,
+        MilitaryFuelDepotMap = true,
+        SpencerMansionMap = true,
+        UncleRedsBunkerMap = true,
+        HopefallsMap = true,
+        VineGroveMap = true,
+        LouisianaMap = true,
+        CaliforniaMaps = true,
+        WeyhausenMap = true,
+        DaisyCountyMap = true,
+        McCoysBunkerMap = true,
+        OtterCreekMap = true,
+        WellsburgLakeMap = true,
+        FortBoonesboroughMap = true,
+        CrowlakeMap = true,
+        GustonMap = true,
+        JaspervilleMap = true,
+        YakamaStateParkMap = true,
+        ValuTechAmusementParkMap = true,
+        CanvasbackStudiosMap = true,
+        PlefordSpringsMap = true,
+        FoxWoodMap = true,
+        BrazilMap = true,
+        FortLoidMap = true,
+        HavenRidgeMap = true,
+    },
+    UndeadSurvivor = {
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        StalkerChance = 0.04,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        NomadChance = 0.04,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        PrepperChance = 0.04,
+        -- Minimum=0.00 Maximum=100.00 Default=0.04
+        HeadhunterChance = 0.04,
+        -- Minimum=0.00 Maximum=100.00 Default=0.08
+        AmazonaChance = 0.08,
+    },
+    PlayerConnectionMessage = {
+        disableDeathMessage = true,
+        disableKillMessage = true,
+        hideAdmin = false,
+        hideModerator = false,
+        hideStaff = false,
+        -- Minimum=0.00 Maximum=1.00 Default=0.00
+        connectedMessageColorRed = 0.0,
+        -- Minimum=0.00 Maximum=1.00 Default=0.70
+        connectedMessageColorGreen = 0.7,
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
+        connectedMessageColorBlue = 1.0,
+        -- Minimum=0.00 Maximum=1.00 Default=1.00
+        disconnectedMessageColorRed = 1.0,
+        -- Minimum=0.00 Maximum=1.00 Default=0.30
+        disconnectedMessageColorGreen = 0.3,
+        -- Minimum=0.00 Maximum=1.00 Default=0.00
+        disconnectedMessageColorBlue = 0.0,
+    },
+    ProxInv = {
+        ZombieOnly = false,
+    },
+    RandomSoundEvents = {
+        disabled = false,
+        deafZombies = false,
+        -- Minimum=1.00 Maximum=10000000.00 Default=60.00
+        minCooldownMinutes = 60.0,
+        -- Minimum=1.00 Maximum=10000000.00 Default=120.00
+        maxCooldownMinutes = 120.0,
+    },
+    RandomSoundEvents_Disasters = {
+        disabled = false,
+        -- Minimum=0.00 Maximum=999999999.00 Default=14.00
+        daysSinceApocalypse = 14.0,
+        -- Minimum=0.00 Maximum=999999999.00 Default=999999999.00
+        daysSinceApocalypseEnd = 9.99999999E8,
+        disableSpeech = false,
+        disableFear = false,
+        disableWakingUp = false,
+    },
+    RandomSoundEvents_Sirens = {
+        disabled = false,
+        -- Minimum=0.00 Maximum=999999999.00 Default=7.00
+        daysSinceApocalypse = 7.0,
+        -- Minimum=0.00 Maximum=999999999.00 Default=30.00
+        daysSinceApocalypseEnd = 30.0,
+        disableFear = false,
+        disableWakingUp = false,
+    },
+    ReduceActionTime = {
+        -- Minimum=0 Maximum=100 Default=0
+        DecreasingRate = 0,
+        ExcludedAction = "",
+        ExcludedRecipes = "",
+        -- Minimum=0 Maximum=100 Default=0
+        Crafting = 0,
+        -- Minimum=0 Maximum=100 Default=0
+        Building = 0,
+        -- Minimum=0 Maximum=100 Default=0
+        ItemTransfer = 0,
+        -- Minimum=0 Maximum=100 Default=0
+        Equip = 0,
+        -- Minimum=0 Maximum=100 Default=0
+        Eat = 0,
+        -- Minimum=0 Maximum=100 Default=0
+        Cigarettes = 0,
+        -- Minimum=0 Maximum=100 Default=0
+        Wash = 0,
+        -- Minimum=0 Maximum=100 Default=0
+        ReadBook = 0,
+    },
+    ScavengerSkill = {
+        -- Minimum=1 Maximum=100 Default=5
+        Level0FindChance = 5,
+        -- Minimum=1 Maximum=100 Default=10
+        Level1FindChance = 10,
+        -- Minimum=1 Maximum=100 Default=14
+        Level2FindChance = 14,
+        -- Minimum=1 Maximum=100 Default=18
+        Level3FindChance = 18,
+        -- Minimum=1 Maximum=100 Default=22
+        Level4FindChance = 22,
+        -- Minimum=1 Maximum=100 Default=26
+        Level5FindChance = 26,
+        -- Minimum=1 Maximum=100 Default=30
+        Level6FindChance = 30,
+        -- Minimum=1 Maximum=100 Default=34
+        Level7FindChance = 34,
+        -- Minimum=1 Maximum=100 Default=38
+        Level8FindChance = 38,
+        -- Minimum=1 Maximum=100 Default=42
+        Level9FindChance = 42,
+        -- Minimum=1 Maximum=100 Default=50
+        Level10FindChance = 50,
+        -- Minimum=1 Maximum=1000 Default=100
+        Level0BonusLoot = 100,
+        -- Minimum=1 Maximum=1000 Default=110
+        Level1BonusLoot = 110,
+        -- Minimum=1 Maximum=1000 Default=120
+        Level2BonusLoot = 120,
+        -- Minimum=1 Maximum=1000 Default=130
+        Level3BonusLoot = 130,
+        -- Minimum=1 Maximum=1000 Default=140
+        Level4BonusLoot = 140,
+        -- Minimum=1 Maximum=1000 Default=150
+        Level5BonusLoot = 150,
+        -- Minimum=1 Maximum=1000 Default=160
+        Level6BonusLoot = 160,
+        -- Minimum=1 Maximum=1000 Default=170
+        Level7BonusLoot = 170,
+        -- Minimum=1 Maximum=1000 Default=180
+        Level8BonusLoot = 180,
+        -- Minimum=1 Maximum=1000 Default=190
+        Level9BonusLoot = 190,
+        -- Minimum=1 Maximum=1000 Default=200
+        Level10BonusLoot = 200,
+        -- Minimum=1 Maximum=100 Default=4
+        XPGain = 4,
+    },
+    SkillRecoveryJournal = {
+        -- Minimum=1 Maximum=100 Default=100
+        RecoveryPercentage = 100,
+        -- Minimum=0.00 Maximum=1000.00 Default=1.00
+        TranscribeSpeed = 1.0,
+        -- Minimum=0.00 Maximum=1000.00 Default=1.00
+        ReadTimeSpeed = 1.0,
+        RecoverProfessionAndTraitsBonuses = false,
+        TranscribeTVXP = false,
+        -- Minimum=-1 Maximum=100 Default=0
+        RecoverPassiveSkills = 0,
+        -- Minimum=-1 Maximum=100 Default=-1
+        RecoverCombatSkills = -1,
+        -- Minimum=-1 Maximum=100 Default=-1
+        RecoverFirearmSkills = -1,
+        -- Minimum=-1 Maximum=100 Default=-1
+        RecoverCraftingSkills = -1,
+        -- Minimum=-1 Maximum=100 Default=-1
+        RecoverSurvivalistSkills = -1,
+        -- Minimum=-1 Maximum=100 Default=-1
+        RecoverAgilitySkills = -1,
+        RecoverRecipes = true,
+        RecoveryJournalUsed = false,
+        Craftable = true,
+        -- Minimum=0 Maximum=100 Default=0
+        KillsTrack = 0,
+    },
+    SleepWithFriends = {
+        RTorIG = 1,
+        SleepLength = "2.0",
+        EndurMulti = "2.0",
+        AutoWake = 1,
     },
     TheyKnew = {
         -- Minimum=1 Maximum=1000000 Default=500
@@ -1742,43 +2578,50 @@ SandboxVars = {
         -- Minimum=0 Maximum=100 Default=0
         LootChanceZomboxycycline = 0,
     },
-    bikinitools = {
-        EnableGetKeyContext = false,
-        EnableOpenSesame = false,
-        EnableVehicleRemover = false,
-        EnableCellVehicleRemover = false,
-        EnableRepairContext = false,
-        EnableSkinSwitcher = false,
-        EnableVehicleSpawner = false,
-        EnableTrunkUnlocker = false,
-        EnableGravelBuddy = true,
-        EnableGardener = true,
-        AllowTYLPlantRemoval = true,
-        EnableLumberjack = true,
-        EnableFarmer = true,
-        EnableContainerUnloader = true,
-        EnableHomeWrecker = false,
-        EnableCorpseStacker = true,
-        EnableVehicleItemHide = true,
+    UdderlySafeLogin = {
+        -- Minimum=1.00 Maximum=120.00 Default=20.00
+        SafeTime = 20.0,
+        -- Minimum=0.00 Maximum=1.00 Default=0.50
+        MovementMultiplier = 0.5,
+        UseInvisbiility = false,
     },
-    HordeNightMain = {
-        -- At which hour would the HordeNight start. Minimum=0 Maximum=23 Default=22
-        HordeNightHour = 22,
-        -- At which day would the first HordeNight start. 0 means the spawn day, 1 means the day after the spawn day. Minimum=0 Maximum=365 Default=10
-        FirstHordeNightDay = 10,
-        -- How many days would a HordeNight start after one another. 1 means HordeNight every day. Minimum=1 Maximum=365 Default=5
-        HordeNightFrequency = 15,
-        -- How many zombies would spawn at the first HordeNight. Warnning: too much spawn will cause performance issues. Minimum=1 Maximum=7200 Default=100
-        FirstHordeNightZombiesCount = 100,
-        -- How many more zombies would spawn in the next HordeNight after you survived one. Warnning: too much spawn will cause performance issues. Minimum=0 Maximum=1000 Default=50
-        HordeNightZombieIncrement = 50,
-        -- The maximal amount of zombies could spawn in a HordeNight. Warnning: too much spawn will cause performance issues. Minimum=0 Maximum=7200 Default=800
-        HordeNightZombieCountMax = 800,
-        -- The random chance to start a HordeNight, outside of the regular frequency. It will only happen after the first HordeNight. 0.0 means no random HordeNight, 1.0 means HordeNight everyday. Minimum=0.00 Maximum=1.00 Default=0.00
-        RandomHordeNightChance = 0.0,
-        -- The maximal distance for a HordeNight zombie to spawn around players.  Turn down the value if you don't see zombies spawn in the HordeNight. Minimum=10 Maximum=90 Default=75
-        HordeNightZombieSpawnDistance = 75,
-        -- When it's on, there will be an icon on the top right if it's currently the HordeNight day.This will not indicates the random HordeNight.
-        HordeNightIndicator = true,
+    UdderlyUpToDate = {
+        -- Minimum=0.00 Maximum=60.00 Default=5.00
+        RestartDelayMinutes = 5.0,
+        -- Minimum=1.00 Maximum=1440.00 Default=15.00
+        WorkshopPollingIntervalMinutes = 15.0,
+        -- Minimum=15.00 Maximum=270.00 Default=15.00
+        QuitDelaySeconds = 15.0,
+    },
+    UdderlyVehicleRespawn = {
+        -- Minimum=0.00 Maximum=168.00 Default=72.00
+        UntouchedVehicleLifespanHours = 72.0,
+        -- Minimum=1.00 Maximum=150.00 Default=40.00
+        VehicleSeenDistance = 40.0,
+        -- Minimum=1.00 Maximum=3600.00 Default=7.00
+        PerCellThrottleSeconds = 7.0,
+        Blacklist = "",
+        -- Minimum=0.00 Maximum=100.00 Default=60.00
+        WreckChance = 60.0,
+    },
+    VehicleRepairOverhaul = {
+        DisableVehicleSalvage = false,
+    },
+    ZombiesTripOverZombies = {
+        -- Minimum=1 Maximum=100 Default=20
+        zombieTripChance = 20,
+        sprintersOnly = false,
+    },
+    aSleepOffline = {
+        -- Minimum=0 Maximum=5 Default=0
+        HardcoreMultiplyer = 0,
+        -- Minimum=1 Maximum=50 Default=1
+        HourMaxForTotalSleep = 1,
+        nearAvatarPenality = false,
+        vehicleAvatarPenality = false,
+    },
+    sts = {
+        -- Minimum=1.00 Maximum=15.00 Default=10.00
+        MaxDaysInMonth = 10.0,
     },
 }
